@@ -1,0 +1,27 @@
+/* ---------------------------------------------------------------------
+title - Stacked title used in header
+------------------------------------------------------------------------ */
+.title {
+    //font-family: $FONT_SECONDARY;
+    font-family: $FONT;
+    font-size: 11px;
+    //text-transform: uppercase;
+    line-height: 1;
+}
+
+.title-hd {
+    color: #adadad;
+}
+
+.title-subHd {
+    font-weight: 500;
+}
+
+/* Theme for Red page */
+.theme-red .title-hd {
+    color: #adadad;
+}
+
+.theme-red .title-subHd {
+    color: #333333;
+}

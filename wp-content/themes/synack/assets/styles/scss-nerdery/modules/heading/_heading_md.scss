@@ -1,0 +1,144 @@
+/* ----------------------------------------------------------------------
+ heading - content section heading module
+---------------------------------------------------------------------- */
+.heading {
+    padding: 5px 35px 0 35px;
+}
+
+.heading_full {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.heading_pushed {
+    margin-top: 55px;
+}
+
+.heading_pushedLg {
+    margin-top: 133px;
+}
+
+.heading-hd,
+.heading-ft {
+    font-size: 11px;
+}
+
+.heading-bd {
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 1.22;
+}
+
+.heading-bd_secondary {
+    font-size: 60px;
+}
+
+.heading-bd_tertiary {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.heading-bd_small {
+    font-size: 28px;
+}
+
+.heading-bd_xSmall {
+    font-size: 16px;
+}
+
+.heading-bd_hero {
+    font-size: 36px;
+}
+
+.mix-heading-bd_tight {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.mix-heading-bd_bottom {
+    min-height: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.heading-bd-align {
+    display: block;
+    width: 100%;
+}
+
+.heading-icon {
+    box-sizing: border-box;
+    width: 130px;
+    height: 110px;
+    margin: 0 auto 10px auto;
+}
+
+.heading-icon_md {
+    width: 130px;
+}
+
+.heading-icon_lg {
+    width: 160px;
+}
+
+.mix-heading-icon_center {
+    padding-top: 38px;
+}
+
+.heading-img {
+    box-sizing: border-box;
+    margin: 0 auto 20px auto;
+}
+
+.heading-img_sm {
+    max-width: 140px;
+}
+
+.mix-heading-meta_tight {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.heading-ft-cta {
+    font-size: 16px;
+}
+
+.heading-sole {
+    margin-top: 64px;
+}
+
+.heading-text {
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.heading-text_spaced + .heading-text_spaced {
+    margin-top: 40px;
+}
+
+.heading-text_tight {
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+}
+
+.heading-text_2ColOnLarge {
+    column-gap: 50px;
+    column-count: 2;
+}
+
+.mix-heading_rightMd {
+    text-align: right;
+}
+
+.mix-heading_leftMd {
+    text-align: left;
+}
+
+.mix-heading_centerMd {
+    text-align: center;
+}
+
+.mix-heading_tight {
+    padding: 0;
+}

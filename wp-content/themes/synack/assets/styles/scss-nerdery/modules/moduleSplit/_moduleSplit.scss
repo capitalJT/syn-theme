@@ -1,0 +1,16 @@
+/* ----------------------------------------------------------------------
+ moduleSplit - Module that has media section betwee title and body that is moved aside on larger screens. Used on home page.
+---------------------------------------------------------------------- */
+.moduleSplit {
+    margin-bottom: 160px;
+}
+
+.moduleSplit-media {
+    margin-top: -90px;
+    background-image: url("../media/images/plane-m.jpg");
+    height: 280px;
+    text-align: right;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

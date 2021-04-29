@@ -1,0 +1,27 @@
+.inputGroup {
+    @include clearfix();
+}
+
+.inputGroup-label {
+    float: left;
+}
+
+.inputGroup-field {
+    display: inline-block;
+    min-width: 100px;
+    margin-left: 5px;
+    position: relative;
+    font-kerning: none;
+    letter-spacing: 0.5px;
+}
+
+.inputGroup-field-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    margin-bottom: -3px; // offset font prop inheritence
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $COLOR_BRAND_THEME;
+}

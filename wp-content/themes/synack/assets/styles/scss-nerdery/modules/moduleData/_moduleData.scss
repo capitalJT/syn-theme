@@ -1,0 +1,69 @@
+/* ----------------------------------------------------------------------
+ moduleData - Module that has header, media, and data sections. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleData {
+    margin-bottom: 135px;
+    position: relative; /* So children can be positioned relative to it. Used for background.  */
+    text-align: center;
+}
+
+.moduleData-bg {
+    width: 100%;
+    position: absolute; /* Set up for aspect ratio inner container */
+    top: 75px;
+    left: 0;
+    background-image: url("../media/images/sphere-d.jpg");
+    background-size: 108% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.moduleData-bg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 135%; /* For aspect ratio. */
+}
+
+.moduleData-bg-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* To move the container into place on top of the placeholder that forces aspect ratio */
+    top: 0;
+    left: 0;
+}
+
+.moduleData-hd {
+    margin-bottom: 27px;
+    position: relative; /* For z-index positioning. Needed so background image doesn't cover it. */
+    z-index: $Z_INDEX_REORDER;
+}
+
+.moduleData-bd {
+    margin-right: 7%;
+    margin-left: 7%;
+    position: relative; /* For z-index positioning. Needed so background image doesn't cover it. */
+    z-index: $Z_INDEX_REORDER;
+    font: 300 14px/1 $FONT;
+}
+
+.moduleData-bd-item + .moduleData-bd-item {
+    margin-top: 60px;
+}
+
+.moduleData-bd-item-number {
+    margin-bottom: 14px;
+    font-size: 60px;
+    color: $COLOR_BRAND;
+}
+
+.moduleData-bd-item-label {
+    font: 400 11px/1 $FONT_SECONDARY;
+    color: #7c7c7c;
+    text-transform: uppercase;
+}
+
+/* Theme for Red page */
+.theme-red .moduleData-bd-item-number {
+    color: $COLOR_BRAND_THEME;
+}

@@ -1,0 +1,17 @@
+/* ---------------------------------------------------------------------
+linkNav - Link used in footer nav
+------------------------------------------------------------------------ */
+.linkNav {
+    display: block;
+}
+
+.linkNav:active,
+.linkNav:hover {
+    color: $COLOR_BRAND;
+}
+
+/* Theme for Red page */
+.theme-red .linkNav:active,
+.theme-red .linkNav:hover {
+    color: $COLOR_BRAND_THEME;
+}

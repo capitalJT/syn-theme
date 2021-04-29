@@ -1,0 +1,13 @@
+/* ----------------------------------------------------------------------
+ navScroll - Nav to scroll to sections of the page.
+---------------------------------------------------------------------- */
+.navScroll-item-link:hover {
+    border-color: $COLOR_BRAND;
+    background-color: $COLOR_BRAND;
+}
+
+/* Theme for Red page */
+.theme-red .navScroll-item-link:hover {
+    border-color: $COLOR_BRAND_THEME;
+    background-color: $COLOR_BRAND_THEME;
+}

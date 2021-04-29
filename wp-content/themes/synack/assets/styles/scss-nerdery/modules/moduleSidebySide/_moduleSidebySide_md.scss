@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------------------
+ moduleSidebySide - Module that has text content and media content side by side in larger screens.
+---------------------------------------------------------------------- */
+.moduleSidebySide {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.moduleSidebySide-media {
+    height: 540px;
+    margin-bottom: 90px;
+    background-image: url("../media/images/map-t.jpg");
+}
+
+.moduleSidebySide-bd {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.moduleMediaLabel-item-label {
+    display: block; /* Resetting from mobile */
+    text-align: left;
+    text-transform: uppercase;
+    font: 400 10px/1 $FONT_SECONDARY;
+    color: #cbccce;
+}

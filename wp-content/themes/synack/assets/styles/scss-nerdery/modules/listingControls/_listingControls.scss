@@ -1,0 +1,20 @@
+/* ----------------------------------------------------------------------
+ listingControls - compenent which hosts a list view's controls
+---------------------------------------------------------------------- */
+.listingControls {
+    display: flex;
+    border-top: 1px solid $COLOR_UI_ACCENT;
+    border-bottom: 1px solid $COLOR_UI_ACCENT;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listingControls-search,
+.listingControls-feed {
+    display: none; // not available on small screens
+}
+
+.listingControls-select {
+    width: 100%;
+}

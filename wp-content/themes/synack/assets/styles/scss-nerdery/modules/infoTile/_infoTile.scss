@@ -1,0 +1,100 @@
+/* ----------------------------------------------------------------------
+ infoTile - image container with active/focus/hover info box
+---------------------------------------------------------------------- */
+.infoTile {
+    display: block;
+    text-align: left;
+    position: relative;
+    z-index: 1; // above the triangles
+}
+
+.infoTile_hasModal {
+    cursor: pointer;
+}
+
+.infoTile-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    background-color: transparent;
+    transition: background-color 250ms;
+}
+
+.infoTile-content:after {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 35%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.46) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.46)));
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.46) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.46) 100%);
+    content: '';
+    display: block;
+    z-index: 10;
+}
+
+.infoTile-content-name {
+    margin-bottom: 5px;
+    font: 700 15px/1.0 $FONT_SECONDARY;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    z-index: 20;
+}
+
+.infoTile-content-role {
+    margin-bottom: 15px;
+    font: 400 8px/1.0 $FONT_SECONDARY;
+    color: #ffffff;
+    z-index: 20;
+}
+
+.infoTile-content-meta {
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+    font: 400 11px/1.45 $FONT;
+    color: #ffffff;
+}
+
+.infoTile-figure {
+    display: block;
+    width: 100%;
+}
+
+// active:focus:hover state
+// =================
+.infoTile:active .infoTile-content,
+.infoTile:focus .infoTile-content,
+.infoTile:hover .infoTile-content {
+    justify-content: flex-start;
+    background-color: $COLOR_BRAND;
+}
+
+.infoTile:active .infoTile-content:after,
+.infoTile:focus .infoTile-content:after,
+.infoTile:hover .infoTile-content:after {
+    display:none;
+}
+
+.theme-red .infoTile:active .infoTile-content,
+.theme-red .infoTile:focus .infoTile-content,
+.theme-red .infoTile:hover .infoTile-content,
+.infoTile_red:active .infoTile-content,
+.infoTile_red:focus .infoTile-content,
+.infoTile_red:hover .infoTile-content {
+    background-color: $COLOR_BRAND_THEME;
+}
+
+.infoTile:active .infoTile-content-meta,
+.infoTile:focus .infoTile-content-meta,
+.infoTile:hover .infoTile-content-meta {
+    display: block;
+    opacity: 1;
+}

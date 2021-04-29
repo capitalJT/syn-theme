@@ -1,0 +1,18 @@
+/* ----------------------------------------------------------------------
+ marquee - major heading statement
+---------------------------------------------------------------------- */
+.marquee {
+    width: 100%;
+    padding-top: 25px;
+    background: transparent center center no-repeat;
+}
+
+.marquee_terra {
+    background-image: url(../media/images/marquee/demiTerra.jpg);
+    background-size: 225%;
+    background-position: center 25px;
+}
+
+.mix-marquee_space {
+    padding-top: 65px;
+}

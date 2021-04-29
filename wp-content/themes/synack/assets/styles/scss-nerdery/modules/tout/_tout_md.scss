@@ -1,0 +1,80 @@
+/* ----------------------------------------------------------------------
+ tout
+---------------------------------------------------------------------- */
+.tout-md {
+    padding-right: 27%;
+    padding-left: 27%;
+    margin-bottom: 35px;
+}
+
+.tout-md_noBottom {
+    margin-bottom: 5px;
+}
+
+.tout-md_wide {
+    padding-right: 22%;
+    padding-left: 23%;
+}
+
+.tout-hr {
+    display: none; /* This element is only needed for mobile */
+}
+
+.tout-hd {
+    color: $COLOR_TEXT;
+    transition: color 250ms;
+    font-size: 16px;
+}
+
+.mix-tout-hd_small {
+    font-size: 11px;
+}
+
+.tout-bd {
+    // opacity: 0;
+    opacity: 1;
+    transition: opacity 250ms;
+    font-size: 16px;
+}
+
+.mix-tout-bd_small {
+    font-size: 10px;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item:first-of-type .tout-hd {
+    color: $COLOR_UI_DARK;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner:hover .tout-hd {
+    color: $COLOR_TEXT;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item:hover .tout-hd,
+.moduleBlocksOverflow-inner-item:active .tout-hd,
+.moduleBlocksOverflow-inner-item:focus .tout-hd,
+.tout:hover .tout-hd,
+.tout:active .tout-hd,
+.tout:focus .tout-hd {
+    color: $COLOR_UI_DARK;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item .tout-bd {
+    opacity: 1;
+}
+
+/* Static variation of tout */
+.tout_static .tout-bd {
+    opacity: 1;
+    text-align: left;
+}
+
+.tout_static .tout-hd {
+    color: $COLOR_UI_DARK;
+    text-align: left;
+}
+
+

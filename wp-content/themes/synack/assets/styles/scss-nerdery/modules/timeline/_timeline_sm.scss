@@ -1,0 +1,92 @@
+/* ----------------------------------------------------------------------
+ timeline - company timeline of notable information
+---------------------------------------------------------------------- */
+$padding: 18%;
+
+.timeline {
+    border: none;
+}
+
+.timeline:before {
+    left: 50%;
+    margin-left: -6px;
+    z-index: 1;
+}
+
+.timeline:after {
+    border-left: 1px solid $COLOR_UI_MEDIUM;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+}
+
+.timeline-row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.timeline-row + .timeline-row {
+    margin-top: -40px;
+}
+
+.timeline-row {
+    clear: both;
+    width: 50%;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 0;
+    padding-right: $padding;
+    text-align: right;
+}
+
+.timeline-row:nth-child(odd) .timeline-item {
+    text-align: left;
+    padding-left: $padding;
+    padding-right: 0;
+}
+
+.timeline-row:nth-child(odd) {
+    float: right;
+    padding-right: 0;
+}
+
+.timeline-line {
+    left: auto;
+    right: 0;
+    top: 40px;
+    width: $padding / 1.8;
+}
+
+.timeline-row:nth-child(odd) .timeline-line {
+    left: 0;
+    right: auto;
+}
+
+.timeline-line:before {
+    right: -2px;
+    left: auto;
+}
+
+.timeline-line:after {
+    right: auto;
+    left: -4px;
+}
+
+.timeline-row:nth-child(odd) .timeline-line:before {
+    left: -1px;
+    right: auto;
+}
+
+.timeline-row:nth-child(odd) .timeline-line:after {
+    left: auto;
+    right: -4px;
+}

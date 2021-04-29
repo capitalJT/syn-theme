@@ -1,0 +1,15 @@
+/* ----------------------------------------------------------------------
+ listingControls - compenent which hosts a list view's controls
+---------------------------------------------------------------------- */
+.listingControls-search {
+    flex-grow: 3;
+}
+
+.listingControls-search::before {
+    left: 3%;
+}
+
+.listingControls_2up .listingControls-search {
+  flex-grow: 2;
+}
+

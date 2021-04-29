@@ -1,0 +1,54 @@
+/* ----------------------------------------------------------------------
+ navIcon - List of social links with icons
+---------------------------------------------------------------------- */
+$navIcon-ICON_WIDTH: 24px;
+$navIcon-ICON_HEIGHT: 24px;
+
+.navIcon > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: $navIcon-ICON_WIDTH;
+    height: $navIcon-ICON_HEIGHT;
+    margin-right: 15px; /* For graceful wrapping */
+    margin-left: 16px; /* For graceful wrapping */
+    margin-bottom: 20px; /* For graceful wrapping */
+}
+
+.navIcon > li > a {
+    display: block;
+    width: $navIcon-ICON_WIDTH;
+    height: $navIcon-ICON_HEIGHT;
+    position: relative;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navIcon > li > a:before {
+    content: "";
+    display: block;
+    width: $navIcon-ICON_WIDTH;
+    height: $navIcon-ICON_HEIGHT;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.navIcon > li > a[href*="facebook.com"]:before {
+    background-image: url("../media/images/icon-facebook.svg");
+}
+
+.navIcon > li > a[href*="twitter.com"]:before {
+    background-image: url("../media/images/icon-twitter.svg");
+    background-position: 0 1px;
+}
+
+.navIcon > li > a[href*="linkedin.com"]:before {
+    background-image: url("../media/images/icon-linkedin.svg");
+}
+
+.navIcon > li > a[href*="slideshare.net"]:before {
+    background-image: url("../media/images/icon-slideshare.svg");
+}

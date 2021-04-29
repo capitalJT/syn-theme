@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------------------
+ moduleVs - Module that has title and 2 sections that are compared. Used on the home page.
+---------------------------------------------------------------------- */
+.moduleVs-hd {
+    padding: 0 30px;
+}
+
+.moduleVs-bd-inner-1,
+.moduleVs-bd-inner-2 {
+    display: block;
+}
+
+.moduleVs-bd-inner-1-fg {
+    padding: 65px 0 65px 45%;
+    margin-top: -30px;
+    background-image: url("../media/images/brain-man-m.jpg");
+    background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.moduleVs-bd-inner-2-fg {
+    padding: 95px 45% 135px 0;
+    background-image: url("../media/images/brain-machine-m.jpg");
+    background-size: auto 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,84 @@
+/* ---------------------------------------------------------------------
+Triangle - Decorative triangles.
+------------------------------------------------------------------------ */
+/* Numbers are to identify triangles, not for heirarchy. Triangles don't follow a pattern. */
+
+/* Mobile triangles */
+.triangle-shape_4 {
+    bottom: -395px;
+    left: 0;
+}
+
+.triangle-shape_12 {
+    top: 1000px;
+    right: 0px;
+}
+
+/* Tablet triangles */
+.triangle-shape_5 {
+    display: block; /* Reset from mobile */
+    right: 0;
+    top: -355px;
+}
+
+.triangle-shape_6 {
+    display: block; /* Reset from mobile */
+    top: 85px;
+    right: 0;
+    opacity: 0.5;
+}
+
+.triangle-shape_7 {
+    display: block; /* Reset from mobile */
+    left: -40px;
+    top: -340px;
+}
+
+.triangle-shape_8 {
+    display: block; /* Reset from mobile */
+    right: 0;
+    top: 10px;
+}
+
+.triangle-shape_11 {
+    display: block; /* Reset from mobile */
+    left: -50px;
+    bottom: -150px;
+}
+
+.triangle-shape_1r {
+    display: block; /* Reset from mobile */
+    right: -135px;
+    top: 168px;
+}
+
+.triangle-shape_2r {
+    display: block; /* Reset from mobile */
+    bottom: 100px;
+    left: -121px;
+}
+
+.triangle-shape_3r {
+    display: block; /* Reset from mobile */
+    right: -129px;
+    top: -11px;
+}
+
+.triangle-shape_4r {
+    display: block; /* Reset from mobile */
+    left: -126px;
+    bottom: -65px;
+}
+
+.triangle-shape_1c {
+    display: block; /* Reset from mobile */
+    right: -126px;
+    top: -388px;
+}
+
+// Mobile only triangles
+.triangle-shape_1,
+.triangle-shape_2,
+.triangle-shape_3 {
+    display: none;
+}

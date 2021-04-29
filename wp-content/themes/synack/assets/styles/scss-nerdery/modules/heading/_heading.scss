@@ -1,0 +1,175 @@
+/* ----------------------------------------------------------------------
+ heading - content section heading module
+---------------------------------------------------------------------- */
+.heading {
+    padding: 5px 16px 0 16px;
+    text-align: center;
+}
+
+.heading_constrain {
+    @include wrapper();
+}
+
+.heading_pushed,
+.heading_pushedLg {
+    margin-top: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.heading-hd,
+.heading-ft {
+    font: 400 10px / 1 $FONT_SECONDARY;
+    color: #cbccce;
+}
+
+.heading-hd {
+    margin-bottom: 10px;
+    word-break: break-word;
+    text-transform: uppercase;
+}
+
+.heading-bd {
+    font: 300 24px / 1.33 $FONT;
+    color: $COLOR_BRAND;
+}
+
+.heading-bd_space {
+    margin-bottom: 10px;
+}
+
+.heading-bd_blue {
+    color: $COLOR_BRAND;
+}
+
+.heading-bd_red {
+    color: $COLOR_BRAND_THEME;
+}
+
+.heading-bd_dark {
+    color: #555555;
+}
+
+.heading-bd_secondary,
+.heading-bd_tertiary {
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.heading-bd_xSmall {
+    font-size: 16px;
+}
+
+.heading-icon {
+    width: 65px;
+    height: 72px;
+    margin: 0 auto 10px auto;
+}
+
+.heading-icon_md {
+    width: 75px;
+}
+
+.heading-icon_lg {
+    width: 80px;
+}
+
+.heading-img {
+    margin-bottom: 20px;
+}
+
+.heading-ft-hdg {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.heading-ft-cta {
+    font: 300 14px / 1 $FONT;
+    text-decoration: underline;
+    color: $COLOR_BRAND;
+}
+
+.heading-ft-cta_space {
+    padding-top: 20px;
+}
+
+.heading-sole {
+    margin-top: 80px;
+}
+
+.heading-meta {
+    font: 300 14px / 1.7 $FONT;
+    color: $COLOR_TEXT;
+}
+
+.heading-meta_highlight {
+    font-size: 15px;
+}
+
+.heading-meta_strong {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.heading-meta_strongLt {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.mix-heading-meta_space {
+    margin-bottom: 10px;
+}
+
+.heading-meta-strong {
+    color: #333333;
+}
+
+.heading-text {
+    font: 300 14px / 1.7 $FONT;
+    color: $COLOR_TEXT;
+}
+
+.heading-text_spaced + .heading-text_spaced {
+    margin-top: 20px;
+}
+
+.heading-bd-highlight {
+    color: $COLOR_BRAND;
+}
+
+.mix-heading_tight {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.mix-heading_right {
+    text-align: right;
+}
+
+.mix-heading_left {
+    text-align: left;
+}
+
+.mix-heading_spacer {
+    margin-bottom: 15px;
+}
+
+/* Theme for Red page */
+.theme-red .heading {
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.theme-red .heading-bd {
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.theme-red .heading-meta_highlight {
+    color: $COLOR_TEXT_REVERSE;
+}

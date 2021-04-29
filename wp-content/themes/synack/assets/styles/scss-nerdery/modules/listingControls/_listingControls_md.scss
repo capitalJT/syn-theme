@@ -1,0 +1,58 @@
+/* ----------------------------------------------------------------------
+ listingControls - component which hosts a list view's controls
+---------------------------------------------------------------------- */
+.listingControls-search,
+.listingControls-feed {
+    display: block; /* Reset */
+}
+
+.listingControls-search {
+    position: relative;
+    flex-grow: 8;
+}
+
+.listingControls-search > * {
+    margin-left: 40px;
+}
+
+.listingControls-search-form-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background-image: url("../media/images/icon-search.svg");
+}
+
+.listingControls-feed {
+    flex-grow: 1;
+    text-transform: uppercase;
+    font: 400 11px/1.5 $FONT_SECONDARY;
+    color: $COLOR_TEXT_LIGHT;
+}
+
+.listingControls-tabs {
+    flex-grow: 8;
+}
+
+.listingControls_2up .listingControls-search {
+    flex-grow: 1;
+}
+
+.listingControls-feed-link {
+    display: block;
+    padding: 21px 15px;
+}
+
+.listingControls-select {
+    width: auto;
+    flex-grow: 1;
+}
+
+.listingControls_2up .listingControls-search,
+.listingControls-feed,
+.listingControls-select {
+    border-left: 1px solid $COLOR_UI_ACCENT;
+}

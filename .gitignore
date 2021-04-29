@@ -1,0 +1,25 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+wp-content/themes/synack/next/node_modules/*
+
+# Choose plugins to check-in
+wp-content/plugins/*
+!wp-content/plugins/synack-*
+
+# MAMP-Pro configs
+.well-known/MAMP-PRO
+
+# Ignore All-in-One Plugin
+wp-content/ai1wm-backups/*
+
+# Watch Advanced Custom Fields
+!wp-content/themes/synack/acf-json/*
+

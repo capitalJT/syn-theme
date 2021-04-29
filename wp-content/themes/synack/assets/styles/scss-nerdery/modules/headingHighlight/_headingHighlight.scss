@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------------------
+ headingHighlight - Heading in container that is highlighted
+---------------------------------------------------------------------- */
+.headingHighlight {
+    background: $COLOR_UI_LIGHT;
+    border-top: 1px solid $COLOR_UI_ACCENT;
+    border-bottom: 1px solid $COLOR_UI_ACCENT;
+}
+
+.headingHighlight-inner {
+    padding: 49px 20px 38px 20px;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #333333;
+    box-sizing: border-box;
+    @include wrapper();
+}
+
+.headingHighlight-inner-highlight {
+    color: $COLOR_BRAND;
+}

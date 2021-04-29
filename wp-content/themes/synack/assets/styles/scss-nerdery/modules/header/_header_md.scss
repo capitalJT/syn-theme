@@ -1,0 +1,24 @@
+/* ----------------------------------------------------------------------
+ header - Main header
+---------------------------------------------------------------------- */
+.header {
+    padding: 15px 17px 14px 17px;
+}
+
+.header-logo {
+    margin-right: 14px;
+    padding-top: 2px;
+}
+
+.header-title {
+    display: block; /* Reset */
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-bottom: 2px;
+    border-left: 1px solid #eeeeee;
+}
+
+/* Theme for Red page */
+.theme-red .header-title {
+    border-left-color: #2a2a2a;
+}

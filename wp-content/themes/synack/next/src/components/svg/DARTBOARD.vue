@@ -1,0 +1,69 @@
+<template functional>
+    <svg
+        class="svg-dartboard"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100px"
+        height="100px"
+        viewBox="0 0 100 100"
+        overflow="visible"
+        xml:space="preserve"
+    >
+        <image
+            width="101"
+            height="101"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAYAAABUfC3PAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+    GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVxJREFUeNrs3bGtwjAYhVH+TEHN
+    DOw/ATNQswWIBokiIaAYX8P5JnjivOvEDdQuoP3heN2FdDmfqvffUP/wQY+GVyDykApEHk7ByMMp
+    IHk4BSMPpoDk4RSQPJgCkgdTQPJgCkgezAQkr8lH0K+5f/6ykrxjzFICKyvJW4ulJC/FSnLWYile
+    ibUaxdFlKXpxmYRiKYIyKoqHvKVozY3eUixFUKAIChRBgSIoggJFUKAIChRBERQoggJFUKAIiqBA
+    ERQoggJFUAQFiqBAERQogiIoUAQFiqBAERRBgSIov9D9u4mhJC4l4bdy5fiCIihQtP2b1wPFw95S
+    BGWso+sJxRFmKVrI7zyGHV2WMspSrKXvSmZRwPQDcXwFgiyieEUOe6Y4xvqtZBUKmO+CrEYB8z2Q
+    t1DAtMf4CAVOe5CPUeC0wdgEBU6bq8Smd5F/xtnyXtf0gvjLSC0v1zcBBgCheonVDlesUQAAAABJ
+    RU5ErkJggg=="
+            transform="matrix(1 0 0 1 -0.3868 -0.94)"
+        ></image>
+        <g transform="translate(19.000000, 19.000000)">
+            <path
+                fill="#106BFF"
+                d="M30.7,62.9C13,62.9-1.5,48.5-1.5,30.7S13-1.5,30.7-1.5c17.8,0,32.2,14.5,32.2,32.2S48.5,62.9,30.7,62.9z
+    		 M30.7,1.5C14.6,1.5,1.5,14.6,1.5,30.7c0,16.1,13.1,29.2,29.2,29.2c16.1,0,29.2-13.1,29.2-29.2C59.9,14.6,46.8,1.5,30.7,1.5z"
+            />
+            <path
+                fill="#0FDBFF"
+                d="M30.7,55.3c-13.6,0-24.6-11-24.6-24.6c0-13.6,11-24.6,24.6-24.6c13.6,0,24.6,11,24.6,24.6
+    		C55.3,44.3,44.3,55.3,30.7,55.3z M30.7,8.1C18.2,8.1,8.1,18.2,8.1,30.7c0,12.5,10.1,22.6,22.6,22.6s22.6-10.2,22.6-22.6
+    		C53.3,18.2,43.2,8.1,30.7,8.1z"
+            />
+            <path
+                fill="#0FDBFF"
+                d="M30.7,49.3c-10.3,0-18.6-8.4-18.6-18.6s8.4-18.6,18.6-18.6s18.6,8.4,18.6,18.6S41,49.3,30.7,49.3z
+    		 M30.7,14.1c-9.2,0-16.6,7.5-16.6,16.6s7.5,16.6,16.6,16.6c9.2,0,16.6-7.5,16.6-16.6S39.9,14.1,30.7,14.1z"
+            />
+            <path
+                fill="#0FDBFF"
+                d="M30.7,43.3c-6.9,0-12.6-5.6-12.6-12.6s5.6-12.6,12.6-12.6c6.9,0,12.6,5.6,12.6,12.6S37.6,43.3,30.7,43.3z
+    		 M30.7,20.2c-5.8,0-10.6,4.7-10.6,10.6s4.7,10.6,10.6,10.6c5.8,0,10.6-4.7,10.6-10.6S36.5,20.2,30.7,20.2z"
+            />
+            <path
+                fill-rule="evenodd"
+                fill="#106BFF"
+                d="M30.7,36.3c3.1,0,5.6-2.5,5.6-5.6S33.9,25,30.7,25s-5.6,2.5-5.6,5.6
+    		S27.6,36.3,30.7,36.3"
+            />
+            <path
+                fill-rule="evenodd"
+                fill="#FFFFFF"
+                d="M55.1,16.9c0.3,0.6,0.1,1.3-0.4,1.6L31.9,31.6
+    		c-0.6,0.3-1.3,0.1-1.6-0.4s-0.1-1.3,0.4-1.6l22.8-13.1C54,16.1,54.7,16.3,55.1,16.9z"
+            />
+            <polygon
+                fill-rule="evenodd"
+                fill="#FFFFFF"
+                points="48,15.8 46.4,21.9 51.8,23.8 61.3,18.6 55.3,16.9 56.9,10.8 	"
+            />
+        </g>
+    </svg>
+</template>

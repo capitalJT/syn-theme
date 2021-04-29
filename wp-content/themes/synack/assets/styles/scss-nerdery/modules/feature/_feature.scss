@@ -1,0 +1,65 @@
+/* ----------------------------------------------------------------------
+ feature - Feature with photo, heading, body, and cta.
+---------------------------------------------------------------------- */
+.feature {
+    display: block;
+}
+
+.feature-media {
+    display: none; /* Not on mobile. Not an accessibility concern */
+}
+
+.feature-bd-detail {
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-family: $FONT_SECONDARY;
+    color: #cbccce;
+    text-transform: uppercase;
+}
+
+.feature-bd-hd {
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.feature-bd-content {
+    margin-bottom: 36px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.feature-bd-cta {
+    display: inline-block;
+    padding: 17px 47px 17px 16px;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    position: relative; /* So arrow is positioned relative to container */
+    text-align: left;
+    text-transform: uppercase;
+    font: 400 12px / 1 $FONT_SECONDARY;
+    color: $COLOR_BRAND;
+}
+
+.feature-bd-cta:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent; /* Creates arrow shape */
+    border-left-color: $COLOR_BRAND;
+    position: absolute;
+    right: 15px;
+    top: 40%;
+}
+
+.feature:active .feature-bd-cta,
+.feature:hover .feature-bd-cta {
+    border-color: $COLOR_BRAND;
+    background-color: $COLOR_BRAND;
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.feature:active .feature-bd-cta:after,
+.feature:hover .feature-bd-cta:after {
+    border-left-color: #ffffff;
+}

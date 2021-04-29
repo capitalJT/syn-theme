@@ -1,0 +1,24 @@
+/* ----------------------------------------------------------------------
+ blocksScroll - Blocks that scroll on mobile.
+---------------------------------------------------------------------- */
+.blocksScroll {
+    margin-left: 0%;
+}
+
+.blocksScroll-item {
+    width: 25%;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.mix-blocksScroll_define {
+    border: 0 solid #f2f2f2;
+    border-top-width: 1px;
+    border-left-width: 1px;
+}
+
+.mix-blocksScroll_define .blocksScroll-item {
+    border: 0 solid #f2f2f2;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}

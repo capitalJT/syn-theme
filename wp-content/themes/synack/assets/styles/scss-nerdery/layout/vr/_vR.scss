@@ -1,0 +1,23 @@
+/* ----------------------------------------------------------------------
+ vR - vertical rhythm
+---------------------------------------------------------------------- */
+$vR-SPACE: 10px;
+
+.vR {
+    margin-bottom: 5px;
+}
+
+/* Loop through vR extensions. For example .vr_x5 */
+@for $i from 1 through 16 {
+    .vR_x#{$i} {
+        margin-bottom: calc(#{$vR-SPACE} * #{$i});
+    }
+}
+
+.vR_x12to14to7 {
+    margin-bottom: calc(#{$vR-SPACE} * 12);
+}
+
+.vR_x2to4to6 {
+    margin-bottom: calc(#{$vR-SPACE} * 2);
+}

@@ -1,0 +1,19 @@
+/* ----------------------------------------------------------------------
+ moduleTxtHero - Module that has title and text
+---------------------------------------------------------------------- */
+//.moduleTxtHero {}
+
+//.moduleTxtHero-hd {}
+
+.moduleTxtHero-bd {
+    margin-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font: 300 14px/1.7 $FONT;
+    text-align: center;
+    color: $COLOR_TEXT;
+}
+
+.moduleTxtHero-ft {
+    text-align: center;
+}

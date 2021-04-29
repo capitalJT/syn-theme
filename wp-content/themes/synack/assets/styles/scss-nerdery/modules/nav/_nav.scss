@@ -1,0 +1,88 @@
+/* ----------------------------------------------------------------------
+ nav - Main navigation
+---------------------------------------------------------------------- */
+.nav {
+    text-transform: uppercase;
+    font-family: $FONT_SECONDARY;
+}
+
+.nav-toggle {
+    width: 38px;
+    padding-top: 5px;
+    position: absolute; /* For z-index positioning */
+    top: 5px;
+    right: 8px;
+    z-index: $Z_INDEX_TOGGLE;
+}
+
+.nav-main {
+    box-sizing: border-box;
+    width: 0%;
+    height: 0%;
+    max-height: 100%;
+    padding-top: 13px;
+    padding-bottom: 70px;
+    position: fixed; /* So it attaches to the top of the browser */
+    top: 0;
+    right: 0;
+    z-index: $Z_INDEX_NAV;
+    background-color: #006bff;
+    overflow: auto;
+    clip-path: polygon(100% 0%, 300% 0%, 300% 100%, 200% 100%); 
+    -webkit-clip-path: polygon(100% 0%, 300% 0%, 300% 100%, 200% 100%); 
+    transition: -webkit-clip-path 0.25s ease-in-out;
+    -webkit-transition: -webkit-clip-path 0.25s ease-in-out;
+    transform-perspective: 1000;
+}
+
+.nav-main-menu {
+    margin-bottom: 26px;
+}
+
+.nav-main-menu:after {
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 0 42%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    text-align: center;
+    transition: border-color 0.1s linear;
+    -webkit-transition: border-color 0.1s linear;
+}
+
+.isOpenNav .nav-main-menu:after {
+    border-bottom-color: #ffffff;
+    -webkit-transition: border-color 0.1s 0.65s linear;
+}
+
+.nav-main-logo {
+    position: relative;
+    width: 29px;
+    margin: 0 auto 28px auto;
+}
+
+/* Theme for Red page */
+.theme-red .nav-main {
+    background-color: $COLOR_BRAND_THEME;
+}
+
+/* .isOpen and .isTransitioningDisplay is added to body with JavaScript when mobile nav is open */
+.isOpenNav .nav-main,
+.isTransitioningDisplay .nav-main {
+    width: 100%;
+    height: 100%;
+}
+
+.isOpenNav .nav-main {
+    clip-path: polygon(-100% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(-100% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: clip-path 0.5s ease-in-out;
+    -webkit-transition: clip-path 0.5s ease-in-out;
+}
+
+.isOpenNav .nav-toggle {
+    position: fixed;
+}
+

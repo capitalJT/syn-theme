@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------------------
+ Headings - Various Heading sizes and Styles
+---------------------------------------------------------------------- */
+.hdg {
+    font-family: $FONT;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $COLOR_UI_DARK;
+}
+
+.hdg_1 {
+    font-size: 22px;
+    line-height: 1.9;
+}
+
+.hdg_2 {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* Theme Styles */
+.theme-red .hdg {
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.theme-red .mix-hdg_themeGray {
+    color: $COLOR_TEXT;
+}

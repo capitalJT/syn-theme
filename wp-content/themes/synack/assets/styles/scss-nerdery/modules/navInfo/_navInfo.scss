@@ -1,0 +1,15 @@
+/* ----------------------------------------------------------------------
+ navInfo - List navigation used in footer with sub menus that are desktop only
+---------------------------------------------------------------------- */
+.navInfo-item + .navInfo-item {
+    margin-top: 9px;
+}
+
+.navInfo-item-hd {
+    color: $COLOR_TEXT_REVERSE;
+    font-size: 14px;
+}
+
+.navInfo-item-sub {
+    display: none; /* Not an accessibility concern */
+}

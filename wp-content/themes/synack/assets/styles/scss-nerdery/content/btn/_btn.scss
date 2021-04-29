@@ -1,0 +1,130 @@
+/* ---------------------------------------------------------------------
+Global Button Styles - used throughout the site.
+------------------------------------------------------------------------ */
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font: 400 14px/1.0 $FONT_SECONDARY;
+    background: transparent;
+    transition: background 250ms, color 250ms;
+    cursor: pointer;
+    padding: 12px 30px;
+    border-radius: 2px;
+}
+
+.btn_primary {
+    border: 1px solid $COLOR_BRAND;
+    color: $COLOR_BRAND;
+}
+
+.btn_primary:hover {
+    color: $COLOR_TEXT_REVERSE;
+    background: $COLOR_BRAND;
+}
+
+.btn_block {
+    width: 100%;
+    text-align: center;
+}
+
+.btn_reverse {
+    border: 1px solid rgba($COLOR_TEXT_REVERSE, 0.5);
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.btn_reverse:hover {
+    background: $COLOR_TEXT_REVERSE;
+    color: $COLOR_BRAND;
+}
+
+.btn_arrow {
+    border: 1px solid rgba($COLOR_TEXT_REVERSE, 0.5);
+    position: relative;
+    padding: 12px 40px 12px 16px;
+}
+
+.btn_arrow:after {
+    border-left: 5px solid $COLOR_TEXT_REVERSE;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: '';
+    width: 5px;
+    height: 0px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.btn_arrow:hover {
+    color: $COLOR_BRAND;
+    background: $COLOR_TEXT_REVERSE;
+}
+
+.btn_arrow:hover:after {
+    border-left-color: $COLOR_BRAND;
+}
+
+.btn_mutedArrow {
+    border: 1px solid $COLOR_UI_ACCENT;
+    position: relative;
+    padding: 12px 40px 12px 16px;
+}
+
+.btn_mutedArrow:after {
+    border-left: 5px solid $COLOR_BRAND_THEME;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: '';
+    width: 5px;
+    height: 0px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.btn_mutedArrow:hover {
+    border-color: $COLOR_BRAND_THEME;
+    background: $COLOR_BRAND_THEME;
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.btn_mutedArrow:hover:after {
+    border-left-color: $COLOR_TEXT_REVERSE;
+}
+
+.btn_red {
+    border: 1px solid $COLOR_BRAND_THEME;
+    color: $COLOR_BRAND_THEME;
+}
+
+.btn_red:hover {
+    color: #ffffff;
+    background: $COLOR_BRAND_THEME;
+}
+
+.mix-btn_icon {
+    padding-left: 20px;
+    padding-right: 80px;
+    position: relative;
+    text-align: left;
+}
+
+.btn-icon {
+    width: 15px;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+
+/* Theme for Red page */
+.theme-red .btn_primary {
+    border-color: $COLOR_BRAND_THEME;
+    color: $COLOR_BRAND_THEME;
+}
+
+.theme-red .btn_primary:hover {
+    color: #000000;
+    background: $COLOR_BRAND_THEME;
+}

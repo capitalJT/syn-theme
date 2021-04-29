@@ -1,0 +1,189 @@
+/* ------------------------------------------------------------------------------
+ Hero Image Module Medium - Holds a large image centered with text content variations
+--------------------------------------------------------------------------------- */
+.moduleHeroBrain {
+    position: relative;
+    margin-bottom: 97px;
+}
+
+.moduleHeroBrain-hd {
+    margin-bottom: 20px;
+    position: relative; /* To move the heading over the image (-md) */
+    z-index: $Z_INDEX_REORDER;
+}
+
+.moduleHeroBrain-hd_spaced {
+    padding-bottom: 80px;
+}
+
+.moduleHeroBrain-bd {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 22px;
+}
+
+.moduleHeroBrain-cta {
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 34.4%;
+}
+
+.moduleHeroBrain-cta-fg > * {
+    display: block;
+}
+
+//.moduleHeroBrain-cta-fg-left {}
+//.moduleHeroBrain-cta-fg-right {}
+
+.moduleHeroBrain-cta-fg-left-link,
+.moduleHeroBrain-cta-fg-right-link {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    background-image: url("../media/images/brain_large_highlight.png");
+    background-size: 200% auto;
+}
+
+.moduleHeroBrain-cta-fg-left:focus,
+.moduleHeroBrain-cta-fg-right:focus {
+    outline: 0;
+}
+
+.moduleHeroBrain-cta-fg-left-link {
+    left: 0;
+    background-position: center left;
+}
+
+.moduleHeroBrain-cta-fg-right-link {
+    right: 0;
+    background-position: center right;
+}
+
+.moduleHeroBrain-cta-fg-left:hover > .moduleHeroBrain-cta-fg-left-link,
+.moduleHeroBrain-cta-fg-right:hover > .moduleHeroBrain-cta-fg-right-link {
+    visibility: visible;
+    opacity: 1;
+}
+
+.moduleHeroBrain-cta-fg-left-label,
+.moduleHeroBrain-cta-fg-left-link-indicator,
+.moduleHeroBrain-cta-fg-right-label,
+.moduleHeroBrain-cta-fg-right-link-indicator {
+    display: block;
+    position: absolute;
+    top: 110px;
+    color: #000000;
+    font: 300 24px/1.33 $FONT;
+    transition: color 250ms;
+    z-index: 5;
+}
+
+.moduleHeroBrain-cta-fg-left-link-indicator,
+.moduleHeroBrain-cta-fg-right-link-indicator {
+    pointer-events: none;
+}
+
+.moduleHeroBrain-cta-fg-left-label,
+.moduleHeroBrain-cta-fg-right-label {
+    background-color: #ffffff; // to clip the indicator
+}
+
+.moduleHeroBrain-cta-fg-left-label {
+    margin-right: 25%; // stretch box model to maintain hover
+    padding-right: 18px;
+    padding-left: 25px;
+    left: -15%;
+}
+
+.moduleHeroBrain-cta-fg-right-label {
+    margin-left: 25%;  // stretch box model to maintain hover
+    padding-right: 25px;
+    padding-left: 18px;
+    right: -15%;
+}
+
+.moduleHeroBrain-cta-fg-left-label::before,
+.moduleHeroBrain-cta-fg-right-label::before {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-top: transparent solid 7px;
+    border-bottom: transparent solid 7px;
+    position: absolute;
+    top: -3px;
+    bottom: 0;
+    content: "";
+    transition: border-color 250ms;
+}
+
+.moduleHeroBrain-cta-fg-left-label::before {
+    border-right: #cccccc solid 10px;
+    left: 0;
+}
+
+.moduleHeroBrain-cta-fg-right-label::before {
+    border-left: #cccccc solid 10px;
+    right: 0;
+}
+
+.moduleHeroBrain-cta-fg-left:hover > .moduleHeroBrain-cta-fg-left-label::before {
+    border-right-color: $COLOR_BRAND;
+}
+
+.moduleHeroBrain-cta-fg-right:hover > .moduleHeroBrain-cta-fg-right-label::before {
+    border-left-color: $COLOR_BRAND;
+}
+
+.moduleHeroBrain-cta-fg-left:hover > .moduleHeroBrain-cta-fg-left-label,
+.moduleHeroBrain-cta-fg-right:hover > .moduleHeroBrain-cta-fg-right-label {
+    color: $COLOR_BRAND;
+}
+
+.moduleHeroBrain-cta-fg-right:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.moduleHeroBrain-cta-fg-left-link-indicator,
+.moduleHeroBrain-cta-fg-right-link-indicator {
+    width: 0;
+    height: 0;
+    border-bottom: 1px solid $COLOR_BRAND;
+    top: 125px
+}
+
+.moduleHeroBrain-cta-fg-left-link-indicator::after,
+.moduleHeroBrain-cta-fg-right-link-indicator::after {
+    width: 0;
+    height: 0;
+    border: 5px solid $COLOR_BRAND;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    content: "";
+    transform: translateY(-50%);
+}
+
+$moduleHeroBrain-cta-fg-left-indicator_OFFSET: 20px;
+
+.moduleHeroBrain-cta-fg-left-link-indicator {
+    right: calc(30% + #{$moduleHeroBrain-cta-fg-left-indicator_OFFSET});
+}
+
+.moduleHeroBrain-cta-fg-right-link-indicator {
+    left: calc(30% - #{$moduleHeroBrain-cta-fg-left-indicator_OFFSET});
+}
+
+.moduleHeroBrain-cta-fg-left-link-indicator::after {
+    right: 0;
+}
+
+.moduleHeroBrain-cta-fg-right-link-indicator::after {
+    left: 0;
+}

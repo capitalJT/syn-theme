@@ -1,0 +1,31 @@
+/* -------------------------------------------------------------------------------
+ contactListing
+-------------------------------------------------------------------------------- */
+.contactListing-hd {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $FONT_SECONDARY;
+    font-size: 11px;
+    line-height: 1.5;
+    color: $COLOR_TEXT_WYSIWYG;
+}
+
+.contactListing-link {
+    text-decoration: underline;
+    font-family: $FONT;
+    font-weight: 200;
+    color: $COLOR_BRAND;
+    font-size: 14px;
+}
+
+.contactListing-link:hover {
+    text-decoration: none;
+}
+
+.contactListing-text {
+    line-height: 1.6;
+    font-family: $FONT;
+    font-weight: 200;
+    color: $COLOR_TEXT_WYSIWYG;
+    font-size: 14px;
+}

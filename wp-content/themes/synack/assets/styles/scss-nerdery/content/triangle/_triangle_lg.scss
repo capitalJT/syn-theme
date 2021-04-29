@@ -1,0 +1,73 @@
+/* ---------------------------------------------------------------------
+Triangle - Decorative triangles.
+------------------------------------------------------------------------ */
+.triangle-shape {
+    width: 500px;
+    height: 1000px;
+    opacity: 0.5;
+}
+
+/* Numbers are to identify triangles, not for heirarchy. Triangles don't follow a pattern. */
+
+/* Mobile triangles */
+.triangle-shape_4 {
+    bottom: -645px;
+    left: -75px;
+    background-position: top center;
+}
+
+/* Tablet triangles */
+.triangle-shape_5 {
+    top: -400px;
+    right: -95px;
+}
+
+/* Desktop triangles */
+.triangle-shape_9 {
+    display: block;
+    right: -90px;
+    top: -700px;
+}
+
+.triangle-shape_10 {
+    display: block;
+    top: -580px;
+    left: -76px;
+}
+
+.triangle-shape_11 {
+    left: 0;
+    bottom: -150px;
+}
+
+.triangle-shape_1r {
+    right: -90px;
+    top: -13px;
+}
+
+.triangle-shape_2r {
+    bottom: -18px;
+    left: -81px;
+}
+
+.triangle-shape_3r {
+    right: -86px;
+    top: -215px;
+}
+
+.triangle-shape_4r {
+    left: -85px;
+    bottom: -636px;
+}
+
+.triangle-shape_1c {
+    right: -85px;
+    top: -636px;
+}
+
+/* Mobile and tablet only triangles */
+.triangle-shape_6,
+.triangle-shape_7,
+.triangle-shape_8 {
+    display: none;
+}

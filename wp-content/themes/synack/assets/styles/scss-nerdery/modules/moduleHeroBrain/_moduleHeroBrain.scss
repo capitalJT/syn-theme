@@ -1,0 +1,53 @@
+/* ------------------------------------------------------------------------------
+ Hero Image Module - Holds a large image centered with text content variations
+--------------------------------------------------------------------------------- */
+.moduleHeroBrain {
+    position: relative;
+}
+
+.moduleHeroBrain-md {
+    text-align: center;
+    padding-bottom: 215px;
+}
+
+.moduleHeroBrain-bd {
+    font-family: $FONT;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $COLOR_TEXT;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.moduleHeroBrain-cta {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 49.255319148%;
+}
+
+.moduleHeroBrain-cta-bg {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../media/images/brain_large.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.moduleHeroBrain-cta-fg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.moduleHeroBrain-cta-fg > * {
+    display: none;
+}

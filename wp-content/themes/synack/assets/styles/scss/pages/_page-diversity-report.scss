@@ -1,0 +1,6 @@
+a.resource-item{
+  transition: border-color $global-speed $global-ease;
+  &:hover{
+    border-color: map-get($theme-colors, dark) !important;
+  }
+}

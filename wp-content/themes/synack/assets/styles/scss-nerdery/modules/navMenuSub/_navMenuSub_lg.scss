@@ -1,0 +1,79 @@
+/* ----------------------------------------------------------------------
+ navMenuSub - Sub navigation for the main navigation
+---------------------------------------------------------------------- */
+.navMenuSub {
+    display: block; /* Not an accessibility concern */
+    overflow: hidden; /* So children are hidden when height is animated */
+    width: 100%;
+    max-height: 0;
+    margin-top: 0; /* Reset from mobile */
+    margin-bottom: 0; /* Reset from mobile */
+    position: absolute;
+    top: 71px;
+    left: 0;
+    background-color: #fcfcfc;
+    font-weight: normal; /* Reset from mobile */
+    transition: max-height $TRANSITION_DURATION;
+}
+
+/* Using pseudo class for border, so the link borders can lay over it and not be cut off with overflow: hidden */
+.navMenuSub:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    position: absolute;
+    bottom: 0; /* So it sticks to the bottom of the container when it is opening */
+}
+
+.navMenuSub_isActive,
+.navMenuSub:hover,
+a:hover + .navMenuSub {
+    max-height: 60px;
+}
+
+.navMenuSub-item {
+    display: inline-block;
+    position: relative; /* To prepare for z-index positioning */
+    z-index: $Z_INDEX_REORDER;
+}
+
+.navMenuSub-item-link {
+    display: block;
+    padding: 22px 0;
+    margin-right: 13px;
+    margin-left: 13px;
+    border-bottom: 1px solid transparent;
+    color: #9d9d9d;
+    transition: color $TRANSITION_DURATION, border-color $TRANSITION_DURATION;
+}
+
+.navMenuSub-item-link:active,
+.navMenuSub-item-link:focus,
+.navMenuSub-item-link:hover {
+    border-bottom: 1px solid $COLOR_BRAND;
+    background-color: transparent;
+    color: #222222;
+}
+
+/* Theme for Red page */
+.theme-red .navMenuSub {
+    background-color: #111111;
+}
+
+.theme-red .navMenuSub:after {
+    border-bottom-color: $COLOR_UI_ACCENT_THEME;
+}
+
+.theme-red .navMenuSub-item-link:active,
+.theme-red .navMenuSub-item-link:focus,
+.theme-red .navMenuSub-item-link:hover {
+    background-color: transparent;
+    border-bottom-color: $COLOR_BRAND_THEME; /* Reset from mobile */
+    color: #ffffff;
+}
+
+/* .isOpenSubNav is added to navMenuSub when it is open */
+.isOpenSubNav.navMenuSub {
+    max-height: 60px; /* Setting initial state */
+}

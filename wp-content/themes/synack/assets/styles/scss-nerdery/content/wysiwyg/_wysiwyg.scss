@@ -1,0 +1,262 @@
+/* ----------------------------------------------------------------------
+ wysiwyg - User content styles
+---------------------------------------------------------------------- */
+.wysiwyg {
+    font-size: 14px;
+    line-height: 1.75;
+    color: $COLOR_TEXT;
+    font-weight: 300;
+}
+
+.wysiwyg h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.wysiwyg h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.wysiwyg h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.wysiwyg h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.wysiwyg h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.wysiwyg h6 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.wysiwyg p {
+    margin-bottom: 20px;
+}
+
+.wysiwyg mark {
+    background: $COLOR_BRAND;
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.wysiwyg blockquote {
+    border-left: 4px solid $COLOR_BRAND;
+    padding-left: 20px;
+    font-style: italic;
+    color: $COLOR_TEXT_LIGHT;
+    margin-bottom: 30px;
+    line-height: 1.75;
+}
+
+.wysiwyg a {
+    color: $COLOR_BRAND;
+    text-decoration: underline;
+}
+
+.wysiwyg a:hover {
+    text-decoration: none;
+}
+
+.wysiwyg ul,
+.wysiwyg ol,
+.wysiwyg dl {
+    list-style: none;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.wysiwyg ol li {
+    counter-increment: step-counter;
+    line-height: 1.5;
+    padding-left: 50px;
+    position: relative;
+}
+
+.wysiwyg ul li + li,
+.wysiwyg ol li + li {
+    margin-top: 15px;
+}
+
+.wysiwyg ul li:before,
+.wysiwyg ol li:before {
+    padding: 0 15px 0 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wysiwyg ol li:before {
+    content: counter(step-counter);
+    color: $COLOR_BRAND;
+}
+
+.theme-red .wysiwyg ol li:before {
+    content: counter(step-counter);
+    color: $COLOR_BRAND_THEME;
+}
+
+.wysiwyg ul li,
+.wysiwyg ol li {
+    line-height: 1.5;
+    padding-left: 30px;
+    position: relative;
+}
+
+.wysiwyg ol li {
+    counter-increment: step-counter;
+}
+
+.wysiwyg ul li:before {
+    background: url(../media/images/icon-unorderedList.svg) no-repeat;
+    background-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    content: '';
+    height: 16px;
+    width: 16px;
+}
+
+.wysiwyg p.wp-caption-text {
+    text-transform: uppercase;
+    font-size: 8px;
+    font-family: $FONT_SECONDARY;
+    color: $COLOR_TEXT_LIGHT;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.wysiwyg img.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.wysiwyg img.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.wysiwyg img.aligncenter,
+.wysiwyg p.wp-caption.aligncenter img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    width: auto;
+    max-width: 100%;
+}
+
+.wysiwyg pre {
+    margin: 0 0 12px 0;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.wysiwyg address {
+    font-style: italic;
+    margin: 0 0 12px 0;
+}
+
+.wysiwyg abbr {
+    border-bottom: dotted 1px;
+}
+
+.wysiwyg cite,
+.wysiwyg dfn,
+.wysiwyg var,
+.wysiwyg em,
+.wysiwyg i {
+    font-style: italic;
+}
+
+.wysiwyg samp,
+.wysiwyg kbd,
+.wysiwyg code,
+.wysiwyg tt {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.wysiwyg strong,
+.wysiwyg b {
+    color: $COLOR_UI_DARK;
+    font-weight: 400;
+}
+
+.wysiwyg sub {
+    vertical-align: sub;
+    font-size: 11px;
+    line-height: 0;
+}
+
+.wysiwyg sup {
+    vertical-align: super;
+    font-size: 11px;
+    line-height: 0;
+}
+
+.wysiwyg small {
+    font-size: smaller;
+}
+
+.wysiwyg ins,
+.wysiwyg u {
+    text-decoration: underline;
+}
+
+.wysiwyg del,
+.wysiwyg s,
+.wysiwyg strike {
+    text-decoration: line-through;
+}
+
+.wysiwyg acronym {
+    border-bottom: dotted 1px;
+}
+
+.wysiwyg caption {
+    font-size: smaller;
+}
+
+.wysiwyg table {
+    color: $COLOR_TEXT;
+}
+
+.wysiwyg th {
+    font-weight: 600;
+    background: $COLOR_UI_ACCENT;
+    padding: 10px;
+}
+
+.wysiwyg td {
+    padding: 10px;
+}
+
+.wysiwyg img {
+    max-width: 100%;
+    height: auto !important; /** overrides WordPress's height attribute on uploaded images **/
+}
+
+/* WYSIWYG fields in small sections such as the pre-footer */
+
+.wysiwyg_lite {
+    p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+.wysiwyg_reverse {
+    p {
+        color: #ffffff;
+    }
+}

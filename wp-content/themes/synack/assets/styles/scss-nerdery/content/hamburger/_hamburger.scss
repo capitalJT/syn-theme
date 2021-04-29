@@ -1,0 +1,64 @@
+/* ---------------------------------------------------------------------
+hamburger - Hamburger icon
+------------------------------------------------------------------------ */
+.hamburger {
+    box-sizing: border-box;
+    display: block;
+    width: 38px;
+    padding: 10px; /* Inceases hit area and prepares for hover style */
+    transition: background-color $TRANSITION_DURATION;
+}
+
+.hamburger-line {
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $COLOR_BRAND;
+    transition: background-color $TRANSITION_DURATION;
+}
+
+.hamburger-line + .hamburger-line {
+    margin-top: 3px;
+}
+
+.hamburger:hover .hamburger-line {
+    background-color: #000000;
+}
+
+/* Theme for Red page */
+.theme-red .hamburger-line {
+    background-color: $COLOR_BRAND_THEME;
+}
+
+.theme-red .hamburger:hover .hamburger-line {
+    background-color: #ffffff;
+}
+
+/* .isOpen is added to body with JavaScript when mobile nav is open */
+.isOpenNav .hamburger:hover {
+    background-color: #1a7aff;
+}
+
+.isOpenNav .hamburger:hover .hamburger-line,
+.isOpenNav .hamburger-line {
+    background-color: #ffffff;
+}
+
+.isOpenNav .hamburger-line_top {
+    transform: rotate(45deg) translateX(1px) translateY(-2px);
+    transform-origin: 0 0;
+}
+
+.isOpenNav .hamburger-line_middle {
+    visibility: hidden;
+}
+
+.isOpenNav .hamburger-line_bottom {
+    transform: rotate(-45deg) translateX(0) translateY(2px);
+    transform-origin: 0 0;
+}
+
+/* Theme for Red page */
+.theme-red .isOpenNav .hamburger:hover {
+    background-color: #e50000;
+}

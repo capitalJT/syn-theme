@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------------
+ field - input presentation helpers
+---------------------------------------------------------------------- */
+.field {
+    width: 100%;
+}
+
+.field_text {
+    border: 0;
+    box-sizing: border-box;
+    //font: 400 14px/normal $FONT_SECONDARY;
+    color: #000000;
+    -webkit-appearance: none;
+}
+
+.field_text:focus,
+.field_text:active {
+    border-style: dotted;
+    border-color: #a1a1a1;
+}
+
+.field_textBold {
+    border: 1px solid $COLOR_UI_MEDIUM;
+    border-radius: 2px;
+    padding: 8px 13px;
+    box-sizing: border-box;
+    font: normal 400 14px / normal $FONT;
+}
+
+//.field_file {}
+
+//.field_textarea {}
+
+.mix-field_textarea_terminal {
+    width: auto;
+    border: 0;
+    color: transparent; // hides the cursor
+    text-shadow: 0 0 0 #ffffff;
+    //font: 14px/normal $FONT_MONO;
+    resize: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    font: normal 400 14px / normal $FONT_SECONDARY;
+    text-transform: uppercase;
+}
+
+.field_textBold::placeholder {
+    color: $COLOR_UI_DARK;
+}

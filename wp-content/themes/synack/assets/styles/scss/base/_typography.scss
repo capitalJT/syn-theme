@@ -1,0 +1,168 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    font-weight: bold;
+}
+
+
+//h1, .h1,
+//h2, .h2{
+//    line-height: 1.25;
+//}
+//
+//
+//h3, .h3,
+//h4, .h4,
+//h5, .h5 {
+//    line-height: 1.5;
+//}
+
+h1, .h1 {
+    font-size: 48px;
+}
+
+h2, .h2 {
+    font-size: 36px;
+}
+
+h3, .h3 {
+    font-size: 24px;
+}
+
+h4, .h4 {
+    font-size: 20px;
+}
+
+h5, .h5 {
+    font-size: 18px;
+}
+
+
+p {
+    //font-size: 18px;
+    //line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+sub, sup {
+    /* Specified in % so that the sup/sup is the
+       right size relative to the surrounding text */
+    font-size: 75%;
+
+    /* Zero out the line-height so that it doesn't
+       interfere with the positioning that follows */
+    line-height: 0;
+
+    /* Where the magic happens: makes all browsers position
+       the sup/sup properly, relative to the surrounding text */
+    position: relative;
+
+    /* Note that if you're using Eric Meyer's reset.css, this
+       is already set and you can remove this rule */
+    vertical-align: baseline;
+}
+
+sup {
+    /* Move the superscripted text up */
+    top: -0.5em;
+}
+
+sub {
+    /* Move the subscripted text down, but only
+       half as far down as the superscript moved up */
+    bottom: -0.25em;
+}
+
+
+/* Type display classes */
+.display-1 {
+    font-size: $display1-size !important;
+    font-weight: $display1-weight;
+    line-height: $display-line-height;
+}
+.display-2 {
+    font-size: $display2-size !important;
+    font-weight: $display2-weight;
+    line-height: $display-line-height;
+}
+.display-3 {
+    font-size: $display3-size !important;
+    font-weight: $display3-weight;
+    line-height: $display-line-height;
+}
+.display-4 {
+    font-size: $display4-size !important;
+    font-weight: $display4-weight;
+    line-height: $display-line-height;
+}
+
+
+
+/* Text color */
+
+.text-white{
+    color: $white !important;
+}
+
+.text-black{
+    color: $black !important;
+}
+
+.text-light{
+    //color: map-get($theme-colors, light);
+    color: #8696ad !important;
+}
+
+.text-gray{
+    color: map-get($colors, gray);
+}
+
+.text-gray-dark{
+    color: $dark-gray !important;
+}
+
+.text-primary{
+    color: $primary-color;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+.text-tertiary{
+    color: $tertiary-color;
+}
+
+.text-quaternary{
+    color: $quaternary-color;
+}
+
+.text-quinary{
+    color: $quinary-color;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-underline,
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+
+/* Font Weight */
+.font-weight-bold {
+    font-weight: bold !important;
+}
+
+.text-align-left{
+    text-align: left;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-right{
+    text-align: right;
+}

@@ -1,0 +1,10 @@
+/* ----------------------------------------------------------------------
+ navInfo - List navigation used in footer with sub menus that are desktop only
+---------------------------------------------------------------------- */
+.navInfo-item + .navInfo-item {
+    margin-top: 14px;
+}
+
+.navInfo-item-hd {
+    font-size: 11px;
+}

@@ -1,0 +1,59 @@
+/* ----------------------------------------------------------------------
+ Modal - layout container
+---------------------------------------------------------------------- */
+.modal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $Z_INDEX_MODAL;
+}
+
+.modal_opaque {
+    background-color: #ffffff;
+}
+
+.modal_inline {
+    position: absolute;
+}
+
+.modal-underlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.modal-inner {
+    overflow: hidden;
+    position: relative;
+    z-index: 7; // @TODO
+}
+
+.modal-inner_isScrollable {
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+.modal-inner_sm {
+    width: 50vh;
+}
+
+.modal-inner_md {
+    width: 70vh;
+}
+
+.mix-modal_start {
+    align-items: flex-start;
+}

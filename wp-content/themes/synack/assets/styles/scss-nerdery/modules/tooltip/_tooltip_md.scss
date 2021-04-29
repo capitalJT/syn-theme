@@ -1,0 +1,49 @@
+.tooltip {
+    top: 0;
+    bottom: auto; /* Reset */
+}
+
+.tooltip_inline {
+    width: 320px;
+    padding: 30px;
+    margin-top: 0;
+    margin-left: -200px;
+    top: auto;
+    left: 50%;
+    bottom: 100%;
+}
+
+.tooltip_inline:before {
+    top: auto;
+    bottom: -6px;
+    transform: rotate(45deg);
+}
+
+.tooltip_inline:after {
+    top: 100%;
+    bottom: auto;
+    border-top: 10px solid $COLOR_BACKGROUND;
+    border-bottom: none;
+}
+
+.mix-tooltip_columns {
+    top: 5px;
+}
+
+.mix-tooltip_columns:before { // used on tooltips that live within a css column
+    width: 10px;
+    height: 10px;
+    margin-left: -6px;
+    top: 27px;
+    right: -7px;
+    bottom: auto;
+    left: 100%;
+    transform: rotate(-45deg);
+}
+
+.mix-tooltip_columns:after {
+    margin-left: -8px;
+    top: 16%;
+    left: 100%;
+    transform: rotate(-90deg);
+}

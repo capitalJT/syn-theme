@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------------------
+ moduleMediaLabel - Layout for media group that has graphics side by side with labels. Used on home page.
+---------------------------------------------------------------------- */
+.moduleMediaLabel-item {
+    padding: 0 40px;
+}
+
+.moduleMediaLabel-item_1 {
+    width: 47%;
+}
+
+.moduleMediaLabel-item_2 {
+    width: 24%;
+}
+
+.moduleMediaLabel-item_3 {
+    width: 28%;
+}
+
+.moduleMediaLabel-item-media {
+    margin-bottom: 20px;
+}

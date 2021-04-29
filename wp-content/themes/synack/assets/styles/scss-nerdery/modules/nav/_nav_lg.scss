@@ -1,0 +1,40 @@
+/* ----------------------------------------------------------------------
+ nav - Main navigation
+---------------------------------------------------------------------- */
+.nav-toggle {
+    display: none; /* Only used for mobile */
+}
+
+.nav-main {
+    display: flex; /* Puts children side by side */
+    justify-content: space-between; /* So children are side by side and fill space */
+    width: auto; /* Reset from mobile */
+    padding-top: 0; /* Rest from mobile */
+    padding-bottom: 0; /* Rest from mobile */
+    position: static; /* Reset from mobile */
+    background-color: transparent; /* Reset from mobile */
+    opacity: 1; // PLACEHOLDER
+    overflow: visible; /* So bottom border hover can display over the bottom border of parent */
+    clip-path: none;
+    -webkit-clip-path: none;
+}
+
+.nav-main-menu {
+    flex-grow: 1; /* So the nav section fills the space */
+    padding-right: 4%;
+    margin-bottom: 0; /* Reset from mobile */
+}
+
+.nav-main-menu:after {
+    display: none; /* Only needed for mobile */
+}
+
+/* .isOpen is added to body with JavaScript when mobile nav is open */
+.isOpenNav .nav-main {
+    display: flex; /* Overriding for desktop */
+}
+
+/* Theme for Red page */
+.theme-red .nav-main {
+    background-color: $COLOR_BACKGROUND_THEME; /* Reset from mobile */
+}

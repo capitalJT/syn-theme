@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------------------
+ nav - Main navigation
+---------------------------------------------------------------------- */
+.nav-toggle {
+    top: 8px;
+    right:15px;
+}
+
+.nav-main {
+    width: 0;
+    height: auto; /* Reset from mobile */
+    max-height: none; /* Reset from mobile */
+    padding-top: 68px;
+    position: absolute;
+}
+
+.isOpenNav .nav-main,
+.isTransitioningDisplay .nav-main {
+    width: 320px;
+    height: auto;
+}
+
+.nav-main-logo {
+    display: none; /* Only needed for mobile */
+}
+
+.isOpenNav .nav-toggle {
+    position: absolute;
+}

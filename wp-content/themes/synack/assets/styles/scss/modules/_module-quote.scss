@@ -1,0 +1,67 @@
+// Module Quote
+.module-quote{
+  background-color: lighten($primary-color, 40%);
+  blockquote{
+    line-height: 1.5;
+    .b-quote{
+      position: relative;
+      quotes: "\201C""\201D""\2018""\2019";
+      font-size: 24px;
+      font-weight: 500;
+      //&:before,
+      //&:after{
+      //  position: absolute;
+      //  font-size: 2em;
+      //  color: $primary-color;
+      //  font-family: Sans-serif;
+      //}
+      //&:before{
+      //  content: open-quote;
+      //  margin-left: -0.4em;
+      //  margin-top: -0.4em;
+      //}
+      //&:after{
+      //  content: close-quote;
+      //  bottom: 0;
+      //  right: 0;
+      //  margin-bottom: -0.8em;
+      //  margin-right: -0.4em;
+      //}
+      .quotes-open,
+      .quotes-closed{
+        font-size: 50px;
+        line-height: 0.2;
+        display: inline-block;
+        font-weight: 500;
+        font-family: Sans-serif;
+        color: $primary-color;
+        height: 10px;
+      }
+      .quotes-open{
+        margin-right: 5px;
+      }
+      .quotes-closed{
+        margin-left: 5px;
+      }
+    }
+    .quote-author-img{
+      max-width: 80px;
+    }
+    footer{
+      color: $primary-color;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    blockquote{
+      .b-quote{
+        font-size: 36px;
+        &:before{
+          margin-left: -0.6em;
+        }
+        &:after{
+          margin-right: -0.6em;
+        }
+      }
+    }
+  }
+}

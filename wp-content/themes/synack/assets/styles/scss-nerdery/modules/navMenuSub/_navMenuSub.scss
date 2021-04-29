@@ -1,0 +1,34 @@
+/* ----------------------------------------------------------------------
+ navMenuSub - Sub navigation for the main navigation
+---------------------------------------------------------------------- */
+.navMenuSub {
+    margin-top: -8px; /* Used so links have padding all around for hover style, but are closer together */
+    margin-bottom: 7px;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+.navMenuSub-item-link {
+    display: block;
+    padding: 9px 0;
+    white-space: nowrap;
+    color: $COLOR_TEXT_REVERSE;
+    transition: background-color $TRANSITION_DURATION;
+}
+
+.navMenuSub-item-link:active,
+.navMenuSub-item-link:hover {
+    background-color: #1a7aff;
+}
+
+/* Theme for Red page */
+.theme-red .navMenuSub-item-link:active,
+.theme-red .navMenuSub-item-link:hover {
+    background-color: #e50000;
+}
+
+/* .isOpenSubNav is added to body with JavaScript when mobile nav is open */
+.isOpenSubNav.navMenuSub {
+    display: block;
+}
+

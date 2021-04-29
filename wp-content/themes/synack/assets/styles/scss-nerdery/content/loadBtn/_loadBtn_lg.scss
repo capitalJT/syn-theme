@@ -1,0 +1,5 @@
+@supports (background-blend-mode: multiply) { // unsupported browsers will see a solid bg
+    .loadBtn {
+        background-image: url(../media/images/loadMoreBg_lg.png);
+    }
+}

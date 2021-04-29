@@ -1,0 +1,138 @@
+.img-innovation-process-wrapper {
+  // if image is inline as SVG like the rest of them this isn't needed
+  // this is fine though but we should stick to one methodology
+  height: 120px;
+}
+
+.title-learn-more {
+  text-align: center;
+  padding-bottom: 0.8em;
+}
+
+.wrapper-learn-more {
+  display: flex;
+  justify-content: space-around;
+  height: 550px;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .wrapper-learn-more {
+    flex-direction: column;
+    height: 700px;
+  }
+}
+
+.wrapper-learn-more p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: left;
+  bottom: 0;
+  position: absolute;
+  margin-right: 3em;
+  text-shadow: 0px 0px 10px #2d2d2d;
+}
+@media screen and (max-width: 768px) {
+  .wrapper-learn-more p {
+    margin-right: 1em;
+  }
+}
+
+.wrapper-learn-more a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.box-learn-more {
+  cursor: pointer;
+  background: #006bff;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+  margin: 0 5px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.big-learn-more {
+  flex: 1;
+  // TODO: there's got to be a better way to do this other inline style="background-image: <?php root url() ?>/whatever.jpg">
+  background-image: url(https://www.synack.com/#{$uploads_path_2016_12}/synack-csi-tile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .big-learn-more {
+    min-height: 200px;
+  }
+}
+
+.med-wrapper-learn-more {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  .med-wrapper-learn-more {
+    margin-top: 10px;
+    height: 200px;
+  }
+}
+
+.medium-learn-more {
+  flex: 0 0 auto;
+  width: calc(50% - 10px);
+  height: calc(50% - 5px);
+}
+
+.playButton-learn-more {
+  height: 120px;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+  top: 35%;
+  left: 42%;
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .playButton-learn-more {
+    top: 25%;
+    left: 33%;
+  }
+}
+
+.boxNews {
+  // background-image: url(#{$uploads_path_2016_06}resource-temp-thumb.jpg);
+  background-image: url(https://www.synack.com/#{$uploads_path_2016_07}/News.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxBlogs {
+  // background-image: url(#{$uploads_path_2016_07}temp-NewsOps.jpg);
+  background-image: url(https://www.synack.com/#{$uploads_path_2016_07}/Blogs-RD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxData {
+  // background-image: url(#{$uploads_path_2016_06}temp-res-02.jpg);
+  background-image: url(https://www.synack.com/#{$uploads_path_2016_06}/temp-res-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boxContact {
+  // background-image: url(#{$uploads_path_2016_06}temp-res-03.jpg);
+  background-image: url(https://www.synack.com/#{$uploads_path_2016_07}/Contact.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

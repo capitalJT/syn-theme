@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------------
+ moduleBlocksOverflow - Block items scroll horizontally on mobile.
+---------------------------------------------------------------------- */
+.moduleBlocksOverflow {
+    padding-top: 60px;
+    margin-bottom: 23px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fcfcfc;
+    overflow: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; /* So in some mobile browsers, content will scroll with touch instead of scroll bar. */
+    white-space: nowrap;
+}
+
+.moduleBlocksOverflow-inner {
+    display: flex; /* So children display in a row */
+    width: 400%;
+}
+
+.moduleBlocksOverflow-inner-item {
+    box-sizing: border-box;
+    width: 25%;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-bottom: 20px;
+    white-space: normal; /* Reset from parent */
+}

@@ -1,0 +1,52 @@
+/* ----------------------------------------------------------------------
+ comboBoxTabs - pseudo select menu component for small screens / tabs for medium and large screens
+---------------------------------------------------------------------- */
+// deconstruct combobox in order to convert to tabs
+
+.comboBoxTabs.isActive .comboBoxTabs-list {
+    display: flex;
+}
+
+.comboBoxTabs::after,
+.comboBoxTabs-value {
+    display: none;
+}
+
+.comboBoxTabs_blockOnSm {
+    width: auto;
+}
+
+.comboBoxTabs-list {
+    display: flex;
+    padding: 0 10%;
+    border: none;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: none;
+    position: static;
+}
+
+.comboBoxTabs-list-item {
+    margin-right: 13px;
+    margin-left: 13px;
+    border-bottom: 1px solid transparent;
+    padding: 22px 0;
+    box-sizing: border-box;
+    font-size: 11px;
+    transition: border-color 250ms;
+}
+
+.comboBoxTabs-list_centered {
+    justify-content: center;
+}
+
+.comboBoxTabs-list-item.isActive {
+    color: $COLOR_UI_DARK;
+}
+
+.comboBoxTabs-list-item.isActive,
+.comboBoxTabs-list-item:active,
+.comboBoxTabs-list-item:focus,
+.comboBoxTabs-list-item:hover {
+    border-bottom-color: $COLOR_BRAND;
+}

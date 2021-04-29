@@ -1,0 +1,41 @@
+/* ----------------------------------------------------------------------
+ tout
+---------------------------------------------------------------------- */
+.tout-md {
+    position: relative;
+    padding-right: 21%;
+    padding-left: 21%;
+    margin-bottom: 30px;
+}
+
+.tout-md_noBottom {
+    margin-bottom: 5px;
+}
+
+.tout-md_sm {
+    padding-bottom: 0;
+    height: 100%;
+    padding: 0 20%;
+}
+
+.tout-hr {
+    border-top: 1px solid $COLOR_BRAND;
+    margin-bottom: 15px;
+}
+
+.tout-hd {
+    text-align: center;
+    font: 400 16px / 1.7 $FONT;
+    color: #333333;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5px;
+}
+
+.tout-bd {
+    text-align: center;
+    font: 300 14px / 1.8 $FONT;
+    color: $COLOR_TEXT;
+    padding-left: 5%;
+    padding-right: 5%;
+}

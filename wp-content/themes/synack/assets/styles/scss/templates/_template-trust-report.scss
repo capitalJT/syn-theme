@@ -1,0 +1,126 @@
+// Hero
+.page-template-template-trust-report{
+  .header-hero-wrapper{
+    background-image: url(/wp-content/themes/synack/assets/media/images/lp/Synack-blueHero.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .hero{
+    h1 {
+      font-size: 42px;
+      color: $white;
+      font-family: "Crique Grotesk", Helvetica, Sans-serif;
+      font-weight: bold;
+      line-height: 1.2em;
+    }
+    .hero-sub-heading{
+      color: $teal;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .hero-thumbnail-wrapper{
+    padding: 15px;
+    background-color: $white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 240px;
+  }
+  @media only screen and (max-width: 768px) {
+    .header-hero-wrapper{
+      text-align: center;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .hero-thumbnail-wrapper{
+      max-width: 100%;
+    }
+    .hero h1{
+      font-size: 82px;
+    }
+    .hero .hero-sub-heading{
+      font-size: 36px;
+    }
+  }
+}
+
+// Marketo Form
+.page-template-template-trust-report,
+.page-template-template-modules{
+  .mktoModal .mktoModalContent{
+    padding: 20px;
+    border-radius: 10px;
+    //.mktoModalMain{
+    //  width: 400px !important;
+    //  form{
+    //    width: 400px !important;
+    //  }
+    //}
+  }
+  .mktoFormRow{
+    //border: solid thin red;
+    label,
+    input{
+      width: 100% !important;
+      display: block !important;
+    }
+    .mktoGutter,
+    .mktoOffset{
+      display: none !important;
+    }
+    .mktoFormCol{
+      float: none;
+    }
+    .mktoAsterix{
+      float: none;
+      display: inline-block !important;
+      padding-left: 0;
+      padding-right: 5px;
+    }
+    .mktoFieldWrap{
+      float: none;
+    }
+  }
+  .mktoButtonRow{
+    width: 100%;
+    .mktoButtonWrap.mktoInset{
+      margin: 0 !important;
+      button.mktoButton{
+        margin: 0 auto;
+        display: block;
+        background-color: $primary-color;
+        background-image: none;
+        border-radius: 50px;
+        color: $white;
+        font-weight: bold;
+        padding: 10px 15px;
+        border: none;
+      }
+    }
+  }
+}
+
+
+// Module Two Col Image Content - Specific to the Trust Report Template
+.page-template-template-trust-report{
+  .module-two-col-image-and-content{
+    ul{
+      padding-left: 40px;
+      margin-bottom: 20px;
+      list-style: none; /* Remove default bullets */
+      li{
+        margin-bottom: 10px;
+        &::before{
+          content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          color: $primary-color; /* Change the color */
+          font-weight: bold; /* If you want it to be bold */
+          display: inline-block; /* Needed to add space between the bullet and the text */
+          width: 1em; /* Also needed for space (tweak if needed) */
+          margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }
+      }
+    }
+  }
+}

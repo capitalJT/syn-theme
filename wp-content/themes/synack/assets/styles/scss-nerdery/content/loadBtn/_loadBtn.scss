@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------------------
+ loadBtn
+---------------------------------------------------------------------- */
+.loadBtn {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font: 700 12px/1.25 $FONT; //$FONT_STRONG
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $COLOR_BRAND_DARK;
+}
+
+.loadBtn_bright {
+    color: $COLOR_BRAND_DARK;
+    background-color: #ffffff;
+}
+
+@supports (background-blend-mode: multiply) { // unsupported browsers will see a solid bg
+    .loadBtn {
+        background: $COLOR_BRAND_DARK url(../media/images/loadMoreBg_sm.png) center center / cover no-repeat;
+        background-blend-mode: multiply;
+    }
+
+    .loadBtn_bright {
+        background-color: transparent;
+    }
+}

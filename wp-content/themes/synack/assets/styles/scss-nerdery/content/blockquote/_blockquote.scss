@@ -1,0 +1,45 @@
+/* ---------------------------------------------------------------------
+Blockquote - Standard blockquote style
+------------------------------------------------------------------------ */
+.blockquote {
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+    font: 300 18px/1.4 $FONT;
+}
+
+.blockquote-decoration {
+    margin-bottom: -40px;
+    font-size: 90px;
+    line-height: 1;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: $COLOR_BRAND;
+}
+
+.blockquote-bd {
+    margin-bottom: 16px;
+    color: $COLOR_TEXT;
+}
+
+.blockquote-cite {
+    font-size: 16px;
+    color: $COLOR_TEXT;
+}
+
+.mix-blockquote_space {
+    margin-bottom: 165px;
+}
+
+.mix-blockquote_space {
+    margin-bottom: 65px;
+}
+
+/* Theme for Red page */
+.theme-red .blockquote-decoration {
+    color: $COLOR_BRAND_THEME;
+}
+
+.theme-red .blockquote-cite {
+    color: $COLOR_TEXT_REVERSE;
+}

@@ -1,0 +1,21 @@
+/* ----------------------------------------------------------------------
+ moduleBlocksOverflow - Block items scroll horizontally on mobile.
+---------------------------------------------------------------------- */
+.moduleBlocksOverflow {
+    margin-bottom: 68px;
+    white-space: normal; /* Reset from mobile */
+    overflow: auto;/* Reset from mobile */
+}
+
+.moduleBlocksOverflow-inner {
+    flex-wrap: wrap;
+    width: auto; /* Reset */
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.moduleBlocksOverflow-inner-item {
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 20px;
+}

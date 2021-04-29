@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------------------
+ moduleProcess
+---------------------------------------------------------------------- */
+.moduleProcess {
+    text-align: center;
+    overflow: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; /* So in some mobile browsers, content will scroll with touch instead of scroll bar. */
+    white-space: nowrap;
+}
+
+.moduleProcess-bd {
+    display: flex;
+    width: 400%;
+}
+
+.moduleProcess-bd-item {
+    width: 25%;
+    margin-bottom: 20px;
+    white-space: normal; /* Reset */
+}
+
+.moduleProcess-bd-item-md {
+    margin-right: 27%;
+    margin-left: 27%;
+}
+
+.moduleProcess-bd-item-hd {
+    margin-right: 20%;
+    margin-left: 20%;
+}

@@ -1,0 +1,16 @@
+/* ----------------------------------------------------------------------
+ careerList
+---------------------------------------------------------------------- */
+.careerList {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.careerList-item + .careerList-item {
+    margin-top: 45px;
+}
+
+.careerList-item-category {
+    margin-bottom: 15px;
+    font: 700 14px/1.0 $FONT;
+}

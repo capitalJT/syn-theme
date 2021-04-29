@@ -1,0 +1,108 @@
+@import 'src/styles/vars';
+
+body {
+    font-family: $font-body;
+    margin: 0;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+// Resets
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-display;
+}
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+    font-family: $font-body;
+    font-size: inherit;
+    padding: 0;
+}
+
+// Utils
+.contained {
+    max-width: 1200px;
+    margin: auto;
+}
+.mobile-only {
+    display: none;
+}
+@media #{ $lt-phone } {
+    .mobile-only {
+        display: initial;
+    }
+    .desktop-only {
+        display: none;
+    }
+}
+
+// shortcode button
+.shortcode-button {
+    @include shortcode-button;
+}
+
+// When In View
+.wiv.in-view {
+    transition: opacity 700ms, transform 700ms $easeOutQuad;
+    transition-delay: 200ms;
+}
+.wiv.below-view {
+    transform: translateY(10%);
+    opacity: 0;
+}
+
+// simple fade
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.4s !important;
+}
+
+// Layering
+header {
+    z-index: 50;
+}
+
+// Glow animation
+@keyframes glow {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+// Simple fade-in
+@keyframes easy-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// Per Request from Keon on 12-2-2020
+button, button:focus {
+    outline: none;
+}

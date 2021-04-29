@@ -1,0 +1,61 @@
+/* ----------------------------------------------------------------------
+ navScroll - Nav to scroll to sections of the page.
+---------------------------------------------------------------------- */
+.navScroll {
+    display: block;
+    position: fixed;
+    top: 47vh;
+    right: 30px;
+    z-index: $Z_INDEX_NAVSCROLL; /* Needs to lay over content */
+}
+
+.navScroll-item {
+    position: relative; /* So pseudo element will be positioned relative to it */
+}
+
+.navScroll-item + .navScroll-item {
+    margin-top: 12px;
+}
+
+.navScroll-item + .navScroll-item:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: -12px;
+    left: 4.4px;
+    background-color: #d9d9d9;
+}
+
+.navScroll-item-link {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+    overflow: hidden; /* To hide text */
+    background-color: $COLOR_BACKGROUND;
+    transition: all 0.25s ease;
+}
+
+ /* To hide text */
+.navScroll-item-link:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+ /* isActive class is added with JS */
+.navScroll-item-link.isActive {
+    border-color: $COLOR_BRAND;
+    background-color: $COLOR_BRAND;
+}
+
+/* Theme for Red page */
+ /* isActive class is added with JS */
+.theme-red .navScroll-item-link.isActive {
+    border-color: $COLOR_BRAND_THEME;
+    background-color: $COLOR_BRAND_THEME;
+}

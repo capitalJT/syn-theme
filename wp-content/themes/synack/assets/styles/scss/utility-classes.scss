@@ -1,0 +1,326 @@
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
+@import "base/typography";
+
+// - Display
+.d-block {
+  display: block !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-flex{
+  display: flex;
+}
+.d-none {
+  display: none !important;
+}
+
+// - Position
+.pos-r{position:relative!important}
+.pos-a{position:absolute!important}
+.pos-f{position:fixed!important}
+
+// - Width
+.w-sm{width:25%!important}
+.w-md{width:50%!important}
+.w-lg{width:75%!important}
+.w-full{width:100%!important}
+
+// - Margin All
+.m-a-0{margin:0!important}
+.m-a{margin:20px!important}
+.m-a-md{margin:30px!important}
+.m-a-lg{margin:60px!important}
+
+// - Margin Top & Bottom
+.m-t-0{margin-top:0!important}
+.m-b-0{margin-bottom:0!important}
+.m-t,.m-y{margin-top: $global-margin !important}
+.m-b,.m-y{margin-bottom: $global-margin !important}
+.m-t-sm,.m-y-sm{margin-top: $global-margin / 2 !important}
+.m-b-sm,.m-y-sm{margin-bottom: $global-margin / 2 !important}
+.m-t-md,.m-y-md{margin-top: $global-margin * 1.5 !important}
+.m-b-md,.m-y-md{margin-bottom: $global-margin * 1.5 !important}
+.m-t-lg,.m-y-lg{margin-top: $global-margin * 2 !important}
+.m-b-lg,.m-y-lg{margin-bottom: $global-margin * 2 !important}
+
+// Margin Bottom for mobile breakpoints
+@media all and (max-width: map-get($grid-breakpoints, md)){
+  .mobile-m-b{
+    margin-bottom: $global-margin !important;
+  }
+  .mobile-m-b-0{
+    margin-bottom: 0 !important;
+  }
+  .mobile-m-b-sm{
+    margin-bottom: $global-margin / 2 !important;
+  }
+  .mobile-m-b{
+    margin-bottom: $global-margin !important;
+  }
+  .mobile-m-b-md{
+    margin-bottom: $global-margin * 1.5 !important;
+  }
+  .mobile-m-b-lg{
+    margin-bottom: $global-margin * 2 !important;
+  }
+  .mobile-m-x-0{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+// - Margin Left & Right
+.m-r-0{margin-right:0!important}
+.m-l-0{margin-left:0!important}
+.m-x-0{
+  margin-left:0!important;
+  margin-right:0!important;
+}
+.m-r-sm,.m-x-sm{margin-right: $global-margin / 2 !important}
+.m-l-sm,.m-x-sm{margin-left: $global-margin / 2 !important}
+.m-r,.m-x{margin-right: $global-margin !important}
+.m-l,.m-x{margin-left: $global-margin !important}
+.m-x-auto{margin-right:auto!important;margin-left:auto!important}
+.m-r-md,.m-x-md{margin-right: $global-margin * 1.5 !important}
+.m-l-md,.m-x-md{margin-left: $global-margin * 1.5 !important}
+.m-r-lg,.m-x-lg{margin-right: $global-margin * 2 !important}
+.m-l-lg,.m-x-lg{margin-left: $global-margin * 2 !important}
+
+// - Padding All
+.p-a-0{padding:0!important}
+.p-a-sm{padding:10px!important}
+.p-a{padding:20px!important}
+.p-a-md{padding:30px!important}
+.p-a-lg{padding:60px!important}
+
+// - Padding Top & Bottom
+.p-t-0{padding-top:0!important}
+.p-b-0{padding-bottom:0!important}
+.p-t-sm,.p-y-sm{padding-top: $global-padding / 2 !important}
+.p-b-sm,.p-y-sm{padding-bottom: $global-padding / 2 !important}
+.p-t,.p-y{padding-top: $global-padding !important}
+.p-b,.p-y{padding-bottom: $global-padding !important}
+.p-t-md,.p-y-md{padding-top: $global-padding * 1.5 !important}
+.p-b-md,.p-y-md{padding-bottom: $global-padding * 1.5 !important}
+.p-t-lg,.p-y-lg{padding-top: $global-padding * 2 !important}
+.p-b-lg,.p-y-lg{padding-bottom: $global-padding * 2 !important}
+
+// Padding and Margin for mobile breakpoints
+@media all and (max-width: map-get($grid-breakpoints, md)){
+  .mobile-p-t-0{padding-top:0!important}
+  .mobile-p-b-0{padding-bottom:0!important}
+  .mobile-p-t-sm,.mobile-p-y-sm{padding-top: $global-padding / 2 !important}
+  .mobile-p-b-sm,.mobile-p-y-sm{padding-bottom: $global-padding / 2 !important}
+  .mobile-p-t,.mobile-p-y{padding-top: $global-padding !important}
+  .mobile-p-b,.mobile-p-y{padding-bottom: $global-padding !important}
+  .mobile-p-t-md,.mobile-p-y-md{padding-top: $global-padding * 1.5 !important}
+  .mobile-p-b-md,.mobile-p-y-md{padding-bottom: $global-padding * 1.5 !important}
+  .mobile-p-t-lg,.mobile-p-y-lg{padding-top: $global-padding * 2 !important}
+  .mobile-p-b-lg,.mobile-p-y-lg{padding-bottom: $global-padding * 2 !important}
+
+  .mobile-m-t-0{margin-top:0!important}
+  .mobile-m-b-0{margin-bottom:0!important}
+  .mobile-m-t-sm,.mobile-m-y-sm{margin-top: $global-margin / 2 !important}
+  .mobile-m-b-sm,.mobile-m-y-sm{margin-bottom: $global-margin / 2 !important}
+  .mobile-m-t,.mobile-m-y{margin-top: $global-margin !important}
+  .mobile-m-b,.mobile-m-y{margin-bottom: $global-margin !important}
+  .mobile-m-t-md,.mobile-m-y-md{margin-top: $global-margin * 1.5 !important}
+  .mobile-m-b-md,.mobile-m-y-md{margin-bottom: $global-margin * 1.5 !important}
+  .mobile-m-t-lg,.mobile-m-y-lg{margin-top: $global-margin * 2 !important}
+  .mobile-m-b-lg,.mobile-m-y-lg{margin-bottom: $global-margin * 2 !important}
+}
+
+// - Padding Left & Right
+.p-x-0{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.p-r-0{padding-right:0!important}
+.p-r-sm,.p-x-sm{padding-right: $global-padding / 2 !important}
+.p-l-0{padding-left:0!important}
+.p-l-sm,.p-x-sm{padding-left: $global-padding / 2 !important}
+.p-r,.p-x{padding-right: $global-padding !important}
+.p-l,.p-x{padding-left: $global-padding !important}
+.p-r-md,.p-x-md{padding-right: $global-padding * 1.5 !important}
+.p-l-md,.p-x-md{padding-left: $global-padding * 1.5 !important}
+.p-r-lg,.p-x-lg{padding-right: $global-padding * 2 !important}
+.p-l-lg,.p-x-lg{padding-left: $global-padding * 2 !important}
+
+ul.list-bullet-style-primary{
+  padding-left: 20px;
+  margin-bottom: 20px;
+  li{
+    margin-bottom: 10px;
+    &:before{
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: $primary-color;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+  }
+}
+
+// Used on the Disclose Page
+ul.list-border-top-colors{
+  $border-size: 4px;
+  li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  li.list-item-border-top-green{
+    border-top: solid $border-size $green;
+  }
+  li.list-item-border-top-blue{
+    border-top: solid $border-size $blue;
+  }
+  li.list-item-border-top-orange{
+    border-top: solid $border-size $orange;
+  }
+  li.list-item-border-top-violet{
+    border-top: solid $border-size rgb(171,158,204);
+  }
+  li.list-item-border-top-red{
+    border-top: solid $border-size $red;
+  }
+}
+
+ol.list-numbered{
+  //list-style-type: decimal-leading-zero;
+  //li::marker{
+  //  font-size: 2em;
+  //  display: inline-block;
+  //  width: 50px;
+  //  height: 50px;
+  //}
+
+  padding-left:60px;
+  /* remove appended decimal to the li */
+  counter-reset: item;
+  list-style-type: none;
+  li {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    &:before{
+      content: counter(item, decimal-leading-zero) "";
+      counter-increment: item;
+      font-size: 40px;
+      line-height: 40px;
+      position: absolute;
+      top: 0;
+      left: -60px;
+      display: inline-block;
+      margin-right: 50px;
+    }
+  }
+  a{
+    color: $primary-color;
+  }
+}
+
+
+.has-boxshadow{
+  @include global-card-shadow;
+}
+
+// From Bootstrap 4
+// https://getbootstrap.com/docs/4.0/utilities/borders/
+.border         { border: $border-width solid $border-color !important; }
+.border-top     { border-top: $border-width solid $border-color !important; }
+.border-right   { border-right: $border-width solid $border-color !important; }
+.border-bottom  { border-bottom: $border-width solid $border-color !important; }
+.border-left    { border-left: $border-width solid $border-color !important; }
+
+.border-0        { border: 0 !important; }
+.border-top-0    { border-top: 0 !important; }
+.border-right-0  { border-right: 0 !important; }
+.border-bottom-0 { border-bottom: 0 !important; }
+.border-left-0   { border-left: 0 !important; }
+
+.border-white {
+  border-color: $white !important;
+}
+
+@each $color, $value in $theme-colors {
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+.clearfix {
+  clear: both;
+  &:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* BG Colors */
+.bg-white{
+  background-color: $white !important;
+}
+.bg-light-gray{
+  background-color: $light-gray !important;
+}
+
+.bg-gradient-light{
+  background-image: linear-gradient($white, #EDF4FF) !important;
+}
+
+
+/* Border-radius */
+.border-radius,
+.rounded-corners {
+  border-radius: $global-border-radius;
+}
+
+.rounded-circle{
+  border-radius: 50% !important;
+}
+
+// Responsive styles to add to util classes
+@media only screen and (min-width: 768px) {
+  .md-up-d-flex{
+    display: flex;
+  }
+  .md-up-align-items-center{
+    align-items: center;
+  }
+  .md-up-order-1{
+    order: 1;
+  }
+  .md-up-order-2{
+    order: 2;
+  }
+  span.tablet-up-br{
+    display: block;
+  }
+}
+
+.img-responsive{
+  //max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.dev-outline{
+  border: solid thin $red;
+  background-color: pink;
+}
+
+/* Utility - Fuzzco */
+.hidden {
+  display: none;
+}
+/* Utility - Fuzzco */
+.contained {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}

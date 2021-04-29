@@ -1,0 +1,100 @@
+/* ----------------------------------------------------------------------
+ splitter - transition effect between solutions pages
+---------------------------------------------------------------------- */
+.splitter {
+    width: 100%;
+    overflow: hidden;
+}
+
+.splitter-inner {
+    width: 300%;
+    margin-left: -100%;
+}
+
+.splitter-inner > * {
+    width: calc(100% / 3);
+    float: left;
+}
+
+.splitter_isLeft > .splitter-inner {
+    margin-left: 0;
+}
+
+.splitter_isRight > .splitter-inner {
+    margin-left: -200%;
+}
+
+.splitter-inner-left,
+.splitter-inner-right {
+    position: relative;
+    opacity: 0;
+}
+
+.splitter-inner-left-nav,
+.splitter-inner-right-nav {
+    position: fixed;
+    z-index: 25;
+    bottom: 50px;
+    color: #000000;
+}
+
+.splitter-inner-left-nav {
+    right: 25px;
+}
+
+.splitter-inner-right-nav {
+    left: 25px;
+}
+
+.splitter-inner-left-nav-label,
+.splitter-inner-right-nav-label {
+    display: block;
+    font: 24px/1.0 $FONT;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+    transition: opacity, transform 200ms;
+}
+
+.splitter-inner-left-nav,
+.splitter-inner-right-nav {
+    padding: 26px;
+}
+
+.splitter-inner-left-nav::before,
+.splitter-inner-right-nav::before {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: border-color 250ms;
+}
+
+.splitter-inner-right-nav::before {
+    border-right: 10px solid #cccccc;
+    left: 0;
+}
+
+.splitter-inner-left-nav::before {
+    border-left: 10px solid #cccccc;
+    right: 0;
+}
+
+.splitter-inner-left-nav:hover,
+.splitter-inner-right-nav:hover {
+    color: $COLOR_BRAND;
+}
+
+.splitter-inner-left-nav:hover > .splitter-inner-left-nav-label,
+.splitter-inner-right-nav:hover > .splitter-inner-right-nav-label {
+    opacity: 1;
+    transform: none;
+}
+
+.splitter-inner-right-nav:hover::before,
+.splitter-inner-left-nav:hover::before {
+    border-right-color: $COLOR_BRAND;
+}

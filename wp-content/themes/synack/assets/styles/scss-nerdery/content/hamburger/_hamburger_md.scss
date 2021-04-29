@@ -1,0 +1,15 @@
+/* ---------------------------------------------------------------------
+hamburger - Hamburger icon
+------------------------------------------------------------------------ */
+.hamburger-line + .hamburger-line {
+    margin-top: 4px;
+}
+
+/* .isOpen is added to body with JavaScript when mobile nav is open */
+.isOpenNav .hamburger-line_top {
+    transform: rotate(45deg) translateX(1px) translateY(-1px);
+}
+
+.isOpenNav .hamburger-line_bottom {
+    transform: rotate(-45deg) translateX(0) translateY(1px);
+}

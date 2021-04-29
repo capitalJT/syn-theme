@@ -1,0 +1,99 @@
+.section-tab-carousel {
+  &__button {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    border-bottom: 1px transparent solid;
+    padding: 0.3125em 0.625em;
+    margin: 0 1em;
+    font-size: 16px;
+  }
+
+  &__button.slick-current {
+    font-weight: 600;
+    border-color: $primary-color;
+  }
+}
+
+.section-tab-carousel-slider {
+  position: relative;
+  border-radius: 5px;
+
+  .slick-arrow {
+    height: 36px;
+  }
+
+  .slick-prev {
+    left: -35px;
+  }
+
+  .slick-prev:before {
+    content: url('/wp-content/themes/synack/assets/media/images/slick-chevron-left.svg');
+  }
+
+  .slick-next {
+    right: -35px;
+  }
+
+  .slick-next:before {
+    content: url('/wp-content/themes/synack/assets/media/images/slick-chevron-right.svg');
+  }
+}
+
+.tab-carousel-item {
+  position: relative;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  &__title {
+    line-height: 1.2;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+  }
+}
+.tab-carousel-item__content{
+  clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+}
+
+@media only screen and (max-width:767px) {
+  .section-tab-carousel__nav,
+  .section-tab-carousel-slider {
+    display: table !important;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .tab-carousel-item {
+    &__content {
+      box-shadow: none;
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .tab-carousel-item {
+
+    &__content {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      right: 0;
+      padding: 40px;
+      width: 70%;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+}

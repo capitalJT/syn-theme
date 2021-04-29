@@ -1,0 +1,70 @@
+/* ----------------------------------------------------------------------
+ moduleIconList - Module that has header, and list of icons with labels. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleIconList {
+    margin-bottom: 135px;
+    position: relative; /* So children can be positioned relative to it */
+    text-align: center;
+}
+
+.moduleIconList-bg {
+    width: 100%;
+    position: absolute; /* Set up for aspect ratio inner container */
+    top: 75px;
+    left: 0;
+    background-image: url("../media/images/sphere-d.jpg");
+    background-size: 108% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.moduleIconList-bg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 135%; /* For aspect ratio. */
+}
+
+.moduleIconList-bg-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* To move the container into place on top of the placeholder that forces aspect ratio */
+    top: 0;
+    left: 0;
+}
+
+.moduleIconList-hd {
+    margin-bottom: 55px;
+    position: relative; /* For z-index positioning */
+    z-index: $Z_INDEX_REORDER;
+}
+
+.moduleIconList-bd {
+    display: flex;
+    flex-wrap: wrap; /* So children wrap */
+    justify-content: space-between; /* Children are spread out evenly */
+    position: relative; /* For z-index positioning */
+    z-index: $Z_INDEX_REORDER;
+    font: 300 14px/1 $FONT;
+}
+
+.moduleIconList-bd-item {
+    box-sizing: border-box;
+    width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 43px;
+}
+
+.moduleIconList-bd-item-icon {
+    width: 70px;
+    height: 90px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.moduleIconList-bd-item-icon_wide,
+.moduleIconList-bd-item-icon_wide2,
+.moduleIconList-bd-item-icon_wide3 {
+    width: 90px;
+}

@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------------
+ field - input presentation helpers
+---------------------------------------------------------------------- */
+.mix-field_text_inset {
+    padding: 21px 15px 15px 25px;
+}
+
+.mix-field_text_insetSlim {
+    padding: 21px 15px 15px 8px;
+}
+
+.mix-field_text_insetLg {
+    padding: 21px 15px 15px 35px;
+}
+
+.field_textBold {
+    padding: 18px 20px;
+    font: normal 400 11px / normal $FONT_SECONDARY;
+}
+
+.field_submit {
+    padding: 16px 30px;
+}
+
+::placeholder {
+    font-size: 11px;
+}

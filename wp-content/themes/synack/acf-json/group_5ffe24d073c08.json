@@ -1,0 +1,138 @@
+{
+    "key": "group_5ffe24d073c08",
+    "title": "Content Gating",
+    "fields": [
+        {
+            "key": "field_6009f52c1b625",
+            "label": "Gated Content Type",
+            "name": "gated_content_type",
+            "type": "select",
+            "instructions": "This value can be passed to hidden form fields to be used for lead scoring and personalization.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "On Demand Video": "On Demand Video",
+                "Datasheet": "Datasheet"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_60107ad7f66e8",
+            "label": "Hard Ungating URL Parameter",
+            "name": "ungating_url_parameter",
+            "type": "text",
+            "instructions": "Use this URL Parameter to \"Hard Ungate\" the content. This will also set a cookie: synack-hard-ungated = True, for 7 days. You can use <a href=\"https:\/\/www.random.org\/strings\/?num=1&len=10&digits=on&loweralpha=on&unique=on&format=html&rnd=new\" target=\"_blank\">this tool <\/a> to generate random strings",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "?ung8=",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60806f0973939",
+            "label": "Content - Gated",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fffcad130bdb",
+            "label": "Gated Content",
+            "name": "gated_content",
+            "type": "wysiwyg",
+            "instructions": "This is the content the visitor will see BEFORE they submit the form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_60806f327393a",
+            "label": "Content - Ungated",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fffcb66584f2",
+            "label": "Ungated Content",
+            "name": "ungated_content",
+            "type": "wysiwyg",
+            "instructions": "This is the content the visitor will see AFTER they submit the form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "synack-lp"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1619045029
+}

@@ -1,0 +1,25 @@
+/* ----------------------------------------------------------------------
+ ruler
+---------------------------------------------------------------------- */
+.ruler {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.mix-ruler_tight,
+.mix-ruler_hero {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.ruler_startMd {
+    justify-content: flex-start;
+}
+
+.ruler_endMd {
+    justify-content: flex-end;
+}
+
+.ruler_centerMd {
+    justify-content: center;
+}

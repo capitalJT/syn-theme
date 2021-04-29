@@ -1,0 +1,24 @@
+/* ----------------------------------------------------------------------
+ timeline - company timeline of notable information
+---------------------------------------------------------------------- */
+$padding: 26%;
+
+.timeline-hd {
+    font-size: 22px;
+}
+
+.timeline-bd {
+    font-size: 16px;
+}
+
+.timeline-item {
+    padding-right: $padding;
+}
+
+.timeline-line {
+    width: $padding / 1.2;
+}
+
+.timeline-row:nth-child(odd) .timeline-item {
+    padding-left: $padding;
+}

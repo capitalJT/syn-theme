@@ -1,0 +1,192 @@
+.blockquote-wide {
+  margin-right: 2%;
+  margin-left: 2%;
+  text-align: center;
+  font: 300 18px/1.4 "criquegroteskdisplay", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+}
+
+.theme-red .blog-heading {
+  color: #fff;
+}
+
+.moduleImgTxtHero_IoT {
+    position: relative;
+    z-index: 10;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.mix-moduleTextList_blogContents {
+    margin-bottom: 0;
+}
+
+.moduleTxtHero-bd-margins {
+    margin-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font: 300 14px/1.7 "criquegroteskdisplay", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #7c7c7c;
+}
+
+@media screen and (max-width: 700px) {
+  .moduleDiagram-hd {
+      margin-bottom: 20px;
+      font-size: 16px;
+  }
+  .responsiveOutter {
+      width: 100%;
+      text-align: center;
+  }
+  .responsiveSpacer {
+      width: 40%;
+      height: 1px !important;
+      background-color: #dfdfdf;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+      align-content: center;
+      display: inline-block;
+  }
+}
+
+.heading-text_wide {
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+}
+
+.moduleColumn-hydra {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.moduleImgTxtHero_IoT {
+  margin-top: -130px;
+  margin-bottom: -63px;
+  padding-left: 15%;
+  padding-right: 15%
+}
+
+.moduleTxtHero-bd-margins {
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 16px;
+}
+
+
+@media screen and (min-width: 700px) {
+  .moduleTxtHero-bd {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 16px;
+  }
+}
+
+
+// Jabal Modifications
+
+// Making space for the admin bar, for logged-in users
+body.logged-in.admin-bar.next-site{
+  > .container header{
+    margin-top: 32px;
+  }
+}
+// Making space for the admin bar, for logged-in users: Single Blog Posts
+.single.single-post.logged-in.admin-bar.legacy-site{
+  .site-hd header{
+    margin-top: 32px;
+  }
+}
+
+// patch for Fuzzco buttons
+.shortcode-button{
+  font-weight: bold;
+  .text {
+    font-weight: bold !important;
+  }
+}
+.partner-program-two-column a:not(.primary){
+  font-weight: bold;
+}
+
+// patch for titles on Company page
+.company-page-image-grid{
+  .team-title .title{
+    line-height: 1.1;
+  }
+}
+.post-type-archive-synack-resources{
+  .resource-wrap{
+    a *{
+      text-decoration: none;
+    }
+    svg.icon{
+      display: inline;
+      width: initial;
+    }
+  }
+}
+
+// Partner Program
+section.partner-program-opportunities{
+  .ul-reset.grid{
+    &:before,
+    &:after{
+      content: unset;
+    }
+    .title{
+      font-weight: bold;
+      text-transform: unset;
+    }
+    .end-link{
+      font-weight: bold;
+    }
+  }
+}
+
+// Blog Archive
+main.blog{
+  .archive-featured{
+      .title{
+        line-height: 1.1;
+        text-transform: initial;
+        font-weight: bold;
+      }
+  }
+  .archive-post-block .title{
+    text-transform: initial;
+  }
+}
+
+// Full width video wrapper
+// implemented on: blog/exploits-explained-zero-day-remote-code-execution-in-file-upload-feature/
+.fluid-width-video-wrapper {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  padding-top: 56.25%;
+  iframe,
+  object,
+  embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// styles for custom shortcode created by Jabal
+@import "components/synack-ctas";
+
+@import "templates/single-blog-post";
+
+@import "pages/page-bali-photos-2018";
+@import "pages/page-srt-veterans";

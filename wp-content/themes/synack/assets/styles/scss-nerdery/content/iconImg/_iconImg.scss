@@ -1,0 +1,121 @@
+/*----------------------------------------------------------------------
+ iconImg - non-svg image icons w/ retina
+----------------------------------------------------------------------*/
+.iconImg {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 0;
+    background: transparent 0 0 no-repeat;
+}
+
+.iconImg_kpcb {
+    width: 78px;
+    height: 33px;
+    background-image: url(../media/images/investors/kpcb.png);
+}
+
+.iconImg_wing {
+    width: 100px;
+    height: 24px;
+    background-image: url(../media/images/investors/wing.png);
+}
+
+.iconImg_gVentures {
+    width: 96px;
+    height: 36px;
+    background-image: url(../media/images/investors/gVentures.png);
+}
+
+.iconImg_greylock {
+    width: 146px;
+    height: 19px;
+    background-image: url(../media/images/investors/greylock.png);
+}
+
+.iconImg_allegis {
+    width: 99px;
+    height: 30px;
+    background-image: url(../media/images/investors/allegis.png);
+}
+
+.iconImg_iconVentures {
+    width: 107px;
+    height: 40px;
+    background-image: url(../media/images/investors/icon.png);
+}
+
+.iconImg_ggv {
+    width: 154px;
+    height: 24px;
+    background-image: url(../media/images/investors/ggv.png);
+}
+
+.iconImg_siia {
+    width: 189px;
+    height: 43px;
+    background-image: url(../media/images/awards/siia.png);
+}
+
+.iconImg_infoSec {
+    width: 101px;
+    height: 137px;
+    background-image: url(../media/images/awards/infoSec.png);
+}
+
+.iconImg_cnbcDisruptor {
+    width: 164px;
+    height: 49px;
+    background-image: url(../media/images/awards/cnbcDisruptor.png);
+}
+
+@media (min-device-pixel-ratio: 2) {
+    .iconImg_kpcb {
+        background-image: url(../media/images/investors/kpcb@2x.png);
+        background-size: 155px 66px;
+    }
+
+    .iconImg_wing {
+        background-image: url(../media/images/investors/wing@2x.png);
+        background-size: 200px 48px;
+    }
+
+    .iconImg_gVentures {
+        background-image: url(../media/images/investors/gVentures@2x.png);
+        background-size: 192px 71px;
+    }
+
+    .iconImg_greylock {
+        background-image: url(../media/images/investors/greylock@2x.png);
+        background-size: 292px 38px
+    }
+
+    .iconImg_allegis {
+        background-image: url(../media/images/investors/allegis@2x.png);
+        background-size: 198px 60px;
+    }
+
+    .iconImg_iconVentures {
+        background-image: url(../media/images/investors/icon@2x.png);
+        background-size: 213px 80px;
+    }
+
+    .iconImg_ggv {
+        background-image: url(../media/images/investors/ggv@2x.png);
+        background-size: 308px 48px;
+    }
+
+    .iconImg_siia {
+        background-image: url(../media/images/awards/siia@2x.png);
+        background-size: 378px 85px;
+    }
+
+    .iconImg_infoSec {
+        background-image: url(../media/images/awards/infoSec@2x.png);
+        background-size: 202px 273px;
+    }
+
+    .iconImg_cnbcDisruptor {
+        background-image: url(../media/images/awards/cnbcDisruptor@2x.png);
+        background-size: 328px 97px;
+    }
+}

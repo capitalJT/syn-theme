@@ -1,0 +1,54 @@
+/* ----------------------------------------------------------------------
+ moduleArticle - Module that has header, media, article content, and cta. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleArticle {
+    padding-top: 110px;
+    margin-bottom: 300px;
+}
+
+.moduleArticle_solutions {
+    padding-top: 0; /* Reset from default */
+    margin-bottom: 20px;
+}
+
+.moduleArticle-hd {
+    margin-bottom: 20px;
+}
+
+.moduleArticle_solutions .moduleArticle-hd {
+    margin-right: 12%;
+    margin-left: 12%;
+}
+
+.moduleArticle-bg {
+    margin-top: 0; /* Reset from mobile */
+    margin-right: 27%;
+    margin-left: 19%;
+}
+
+.moduleArticle-bd {
+    margin-top: -116px;
+    margin-right: 9%;
+    margin-bottom: 40px;
+    margin-left: 9%;
+    text-align: left;
+    line-height: 1.6;
+    columns: 2;
+    column-gap: 20px;
+}
+
+.moduleArticle-bd > p {
+    padding-bottom: 23px; /* Margins not on top, because wrapped paragraphs would have gap at top. Using padding because they don't wrap with columns.*/
+    break-inside: avoid;
+}
+
+.moduleArticle_solutions .moduleArticle-bd {
+    margin-bottom: 0; /* Reset */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7c7c7c;
+}
+
+.moduleArticle_solutions .moduleArticle-bd > p {
+    break-inside: auto; /* Reset */
+}

@@ -1,0 +1,27 @@
+/* ---------------------------------------------------------------------
+Global Date Styles
+------------------------------------------------------------------------ */
+.date {
+    text-align: center;
+}
+
+.date-hd,
+.date-hd-blue {
+    font-size: 34px;
+    font-weight: 300;
+    font-family: $FONT;
+    color: $COLOR_BRAND_THEME;
+    line-height: 1.1;
+}
+
+.date-hd-blue {
+    color: $COLOR_BRAND;
+}
+
+.date-meta {
+    font-size: 11px;
+    font-weight: 600;
+    font-family: $FONT_SECONDARY;
+    text-transform: uppercase;
+    color: $COLOR_TEXT_LIGHT;
+}

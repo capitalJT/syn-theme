@@ -1,0 +1,43 @@
+/* ----------------------------------------------------------------------
+ navMenu - Main navigation menu
+---------------------------------------------------------------------- */
+.navMenu-item {
+    display: inline-block;
+}
+
+.navMenu-item-link {
+    padding: 13px 0 27px 0;
+    margin-right: 13px;
+    margin-left: 13px;
+    margin-bottom: -1px; /* So the link bottom border lays over the header bottom border */
+    border-bottom: 1px solid transparent;
+    color: #222222;
+    transition: border-color $TRANSITION_DURATION;
+}
+
+.current-menu-parent .navMenu-item-link, //CMS active state
+.current-menu-item .navMenu-item-link, //CMS active state
+.navMenu-item-link:active,
+.navMenu-item-link:focus,
+.navMenu-item-link:hover {
+    background-color: transparent; /* Reset from mobile */
+    border-bottom-color: $COLOR_BRAND;
+}
+
+.mix-navMenu-item_mobileOnly {
+    display: none; /* Not an accessibility concern */
+ }
+
+/* Theme for Red page */
+.theme-red .navMenu-item-link {
+    color: $COLOR_TEXT_THEME;
+}
+
+.theme-red .current-menu-parent .navMenu-item-link, //CMS active state
+.theme-red .current-menu-item .navMenu-item-link, //CMS active state
+.theme-red .navMenu-item-link:active,
+.theme-red .navMenu-item-link:focus,
+.theme-red .navMenu-item-link:hover {
+    background-color: $COLOR_BACKGROUND_THEME; /* Reset from mobile */
+    border-bottom-color: $COLOR_BRAND_THEME;
+}

@@ -1,0 +1,66 @@
+//@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
+@import "base/typography";
+@import "base/synack-grid";
+
+@import "components/buttons";
+
+@import "modules/modules";
+
+@import "layout/header";
+@import "layout/main-navigation";
+@import "layout/footer";
+
+@import "templates/template-trust-report";
+@import "templates/template-landing-page";
+
+@import "pages/page-diversity-report";
+@import "pages/page-srt";
+
+// Shared Marketo form styles
+.synack-lp-template,
+.page-template-template-trust-report,
+.page-template-template-modules{
+  form.mktoForm{
+    label,
+    input,
+    textarea,
+    select{
+      display: block;
+      width: 100% !important;
+    }
+
+    label{
+      margin-bottom: 5px;
+      font-weight: normal !important;
+    }
+
+    input,
+    textarea,
+    select{
+      padding: 10px;
+      border: solid thin #ccc;
+      border-radius: 4px;
+    }
+
+    textarea{
+      height: 70px;
+    }
+  }
+}
+
+.container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.symbol-plus{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: $teal;
+}

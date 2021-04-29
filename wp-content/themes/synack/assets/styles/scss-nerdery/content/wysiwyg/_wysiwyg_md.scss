@@ -1,0 +1,56 @@
+/* ----------------------------------------------------------------------
+ wysiwyg - User content styles
+---------------------------------------------------------------------- */
+.wysiwyg {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.wysiwyg h1 {
+    font-size: 46px;
+}
+
+.wysiwyg h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wysiwyg h3 {
+    font-size: 16px;
+}
+
+.wysiwyg h4 {
+    font-size: 16px;
+}
+
+.wysiwyg h5 {
+    font-size: 16px;
+}
+
+.wysiwyg h6 {
+    font-size: 16px;
+}
+
+.wysiwyg ul li + li,
+.wysiwyg ol li + li {
+    margin-top: 16px;
+}
+
+.wysiwyg ul li,
+.wysiwyg ol li {
+    padding-left: 50px;
+}
+
+.wysiwyg p.wp-caption-text {
+    font-size: 11px;
+}
+
+.wysiwyg ul li, .wysiwyg ol li {
+    padding: 0 0 0 30px;
+}
+
+.wysiwyg ul li:before {
+    top: 4px;
+    left: 0;
+}

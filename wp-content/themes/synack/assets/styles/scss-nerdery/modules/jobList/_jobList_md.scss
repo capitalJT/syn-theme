@@ -1,0 +1,36 @@
+/* ----------------------------------------------------------------------
+ jobList
+---------------------------------------------------------------------- */
+.jobList {
+    margin-left: 30px;
+    flex-grow: 1;
+}
+
+.jobList-item {
+    border-top: none;
+}
+
+.jobList-item:first-child {
+    padding-top: 0;
+}
+
+.jobList-item-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jobList-item-content-title {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.jobList-item-content-location {
+    font-size: 14px;
+}
+
+.jobList-item-cta {
+    margin-left: 70px;
+    font-size: 11px;
+}

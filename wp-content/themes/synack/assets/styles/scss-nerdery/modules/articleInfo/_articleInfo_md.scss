@@ -1,0 +1,67 @@
+/* ----------------------------------------------------------------------
+ articleInfo
+---------------------------------------------------------------------- */
+.articleInfo {
+    display: flex;
+    padding: 40px 0;
+    position: relative;
+    margin-top: 115px; /* To create room for the button that is out of order */
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.articleInfo > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.articleInfo-primary {
+    border-right: 1px solid #f9f9f9;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: transparent;
+}
+
+.articleInfo-primary-img {
+    width: 60px;
+    height: 60px;
+    padding-right: 17px;
+}
+
+.articleInfo-primary-hdg {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.articleInfo-primary-bd {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.articleInfo-primary-link {
+    font-size: 11px;
+}
+
+.articleInfo-secondary {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.articleInfo-secondary-cta {
+    width: 100%;
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+
+.articleInfo-secondary-hdg {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.articleInfo-secondary-bd {
+    font-size: 11px;
+}

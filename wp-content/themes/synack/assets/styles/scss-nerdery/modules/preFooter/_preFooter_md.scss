@@ -1,0 +1,87 @@
+/* ----------------------------------------------------------------------
+ preFooter
+---------------------------------------------------------------------- */
+.preFooter-inner {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    @include wrapper();
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mix-preFooter-inner_full {
+    display: block;
+    padding: 0 350px;
+    text-align: center;
+}
+
+.preFooter-inner-section {
+    flex-basis: 48%;
+    padding: 65px 0 40px 0;
+}
+
+.mix-preFooter-inner-section_space {
+    padding: 45px 0;
+}
+
+.mix-preFooter-inner-section_notMobile {
+    display: block;
+}
+
+.mix-preFooter_split .preFooter-inner-section {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-top: 40px;
+}
+
+.mix-preFooter_split .preFooter-inner-section:first-child {
+    padding-left: 7.5%;
+    padding-right: 50px;
+}
+
+.mix-preFooter_split .preFooter-inner-section:last-child {
+    padding-right: 7.5%;
+    padding-left: 50px;
+}
+
+.mix-preFooter-inner-section-subHd_space {
+    margin-bottom: 15px;
+}
+
+.preFooter-inner-section-hr_simple {
+    width: 4%;
+}
+
+.mix-preFooter-inner-section-hd_sm {
+    font-size: 16px;
+}
+
+.preFooter-inner-section-bd {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.mix-preFooter-inner-section-bd_spacedOut {
+    line-height: 1.7;
+}
+
+.mix-preFooter-inner-section-bd_tight {
+    margin-bottom: 0;
+}
+
+.preFooter-inner-section-bd-vR {
+    margin-bottom: 25px;
+}
+
+.preFooter-inner-section-icon {
+    width: 40px;
+    height: 40px;
+    padding-top: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+}

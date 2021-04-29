@@ -1,0 +1,23 @@
+/* ----------------------------------------------------------------------
+ Box - Content containers
+---------------------------------------------------------------------- */
+.box {
+    padding: 6%;
+}
+
+.box + .box {
+    padding-top: 0;
+}
+
+.box_thin {
+    padding: 2%;
+}
+
+.box_clipped {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.box_md {
+    padding-bottom: 5%;
+}

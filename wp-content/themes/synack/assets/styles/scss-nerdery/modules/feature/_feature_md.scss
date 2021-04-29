@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------------------
+ feature - Feature with photo, heading, body, and cta.
+---------------------------------------------------------------------- */
+.feature {
+    display: flex;
+}
+
+.feature > * {
+    box-sizing: border-box;
+}
+
+.feature-media {
+    display: block;
+    flex-grow: 0; /* So it doesn't grow based on sibling */
+    flex-shrink: 0; /* So it doesn't shrink based on sibling */
+    width: 240px;
+    padding-right: 48px;
+}
+
+.feature-media > * {
+    display: block;
+    width: 100%;
+}
+
+.feature-bd-detail {
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.feature-bd-hd {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.feature-bd-content {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.feature-bd-cta {
+    font-size: 10px;
+    padding-right: 124px;
+}
+
+.feature-bd-cta:after {
+    right: 11px;
+}

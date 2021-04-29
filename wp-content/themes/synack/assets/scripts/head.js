@@ -1,0 +1,1 @@
+!function(a){"use strict";a.className=a.className.replace(/\bno-js\b/,"js")}(document.documentElement);

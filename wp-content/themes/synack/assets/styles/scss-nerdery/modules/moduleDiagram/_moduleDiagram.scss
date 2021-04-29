@@ -1,0 +1,128 @@
+/* ----------------------------------------------------------------------
+ moduleDiagram - Module that has a diagram and list of labels. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleDiagram {
+    margin-bottom: 55px;
+    position: relative; /* So children can be positioned relative to it */
+    text-align: center;
+    overflow: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; /* So in some mobile browsers, content will scroll with touch instead of scroll bar. */
+    white-space: nowrap;
+}
+
+.moduleDiagram-hd {
+    margin-right: 15%;
+    margin-bottom: 58px;
+    margin-left: 15%;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #7c7c7c;
+    white-space: normal; /* Reset from parent */
+}
+
+.moduleDiagram-diagram {
+    width: 207%;
+    padding-right: 30%;
+    padding-left: 30%;
+    margin-bottom: 45px;
+}
+
+.moduleDiagram-diagram-bg {
+    display: block;
+    width: 100%;
+    position: relative; /* So inner elements can be positioned relative to this container */
+}
+
+.moduleDiagram-diagram-bg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 100%; /* For aspect ratio. The default is a square. */
+}
+
+.moduleDiagram-diagram-bg-inner {
+    width: 107%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -7%;
+}
+
+.moduleDiagram_solutions {
+    overflow: visible;
+    white-space: inherit;
+}
+
+.moduleDiagram_scrollWrap {
+    overflow: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; /* So in some mobile browsers, content will scroll with touch instead of scroll bar. */
+    white-space: nowrap;
+}
+
+.moduleDiagram_solutions .moduleDiagram-diagram {
+    width: 315%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 35px;
+}
+
+.moduleDiagram_solutions .moduleDiagram-diagram-bg:before {
+    padding-bottom: (576 / 2000) * 100%; /* height/width */
+}
+
+.moduleDiagram-info {
+    display: flex;
+    justify-content: space-between; /* So children are spread out evenly. */
+    width: 210%;
+    padding-right: 25%;
+    padding-left: 25%;
+    font: 300 14px/1 $FONT;
+}
+
+.moduleDiagram_solutions .moduleDiagram-info {
+    width: 315%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.moduleDiagram-info-item {
+    box-sizing: border-box;
+    width: 25%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 40px;
+    white-space: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.mix-moduleDiagram-info-item_tight {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mix-moduleDiagram-info-item_3up {
+    width: 33%;
+}
+
+.moduleDiagram-info-item-hd {
+    font-size: 16px;
+    color: $COLOR_TEXT;
+}
+
+.mix-moduleDiagram-info-item-hd_red {
+    color: $COLOR_BRAND_THEME;
+}
+
+.mix-moduleDiagram-info-item-hd_brand {
+    color: $COLOR_BRAND;
+}
+
+.mix-moduleDiagram-info-item-hd_secondary {
+    font-size: 14px;
+}
+
+/* Theme for Red page */
+.theme-red .moduleDiagram-info-item-hd {
+    color: $COLOR_TEXT_REVERSE;
+}

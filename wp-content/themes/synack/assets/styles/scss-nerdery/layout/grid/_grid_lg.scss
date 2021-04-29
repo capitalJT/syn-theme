@@ -1,0 +1,17 @@
+/* ----------------------------------------------------------------------
+ Grid
+---------------------------------------------------------------------- */
+.mix-grid-col_10to8 {
+    width: calc((8 / 10) * 100%); // 8col
+    margin-right: calc((1 / 10) * 100%); // suffix1col
+    margin-left: calc((1 / 10) * 100%); // prefix1col
+}
+
+
+.mix-grid-col_prefix1of10Lg {
+    margin-left: calc((1 / 10) * 100%);
+}
+
+.mix-grid-col_suffix1of10Lg {
+    margin-right: calc((1 / 10) * 100%);
+}

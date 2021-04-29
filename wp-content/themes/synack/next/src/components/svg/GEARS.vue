@@ -1,0 +1,39 @@
+<template functional>
+    <svg
+        class="svg-gears"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100px"
+        height="100px"
+        viewBox="0 0 100 100"
+        overflow="visible"
+        xml:space="preserve"
+    >
+        <image
+            width="101"
+            height="101"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAYAAABUfC3PAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+    GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5dJREFUeNrsnU1uE0EQhdMtL8KS
+    HWzDFfAZEHfhfogzmCuQLbkB7ECDZNRpTY/L3fXX1a8kK4kzHsf1zatX/eM4PQjGu6ePfx4Cxsvz
+    9yR5/gQI/iAlgPAHKAGGPzgJQPzBSYDhD0wCEH9gEoD4g5MAxB+YBCD+wGQA8RcJQPypJSM1dtG6
+    +DNU4i+gFIdqyVAJlIIgqCVDJVAKgqCW00oq+f358urnx69nl3/nKToAauJLYNawUjSl1Gq4Jnnv
+    /qPfWYHZRvlLeEoLyK3f3XMMjL5KmETSruesv6qUr5lLl/YVrFHWlilfs8VplRd6dIVbKG5ZKNRS
+    Ux53C5BG6zyVp1CvaI5kaT5XeE/hStJ2HouxyiaSHEUlUkm0AJNXU0AZv75d/t28gQlRvkaS9ubT
+    eeg5JDq36ctXLxCKQqxmFfIMMLivxl4gWmVs6vLldT0EnjKgEqqfaF8IeSWVcPqIJKwcMfkoXxOW
+    rd7SpdWQuJ+Q5Hihe2VrBNLR8nJ4pXibUkf5UhyTcJcyQAkwuzCdp4xGrQIpw1+mJZZe0+AsW0vN
+    fWn7iwcwU0xISiTAm7kvb/QjQDTa9Kmh3JMg6dLFafYmUH7+uPy/lfdJdzVSKuFuSFS2GJUJf//h
+    3ARQHsM9PtiUMuojWrvzsyaQI0W01ERJgEadl2o41AaP1MRTHr9931JOJHOf1uhvvc9E8i0RmiHi
+    KaNKacXbL3pdkNW2VVYoUiBaYChrGj0Jo8CQXg1Vh3LkD5Rz1I/nuKLvKVEay9Nqs8QUs6a0y9be
+    sJ1HGkz2AoR67F6rrBlTbDG6laSednakBeZM2nWkfj2n1s4at4tc1FK2lyiJjQ2aW52ydGJnCKs3
+    CIlBkUw857kpiS/LlCWk4Za4VWK4EsrtV3Un5nEH5jJv2bbyB7ctMcIJFOmxxCxNRDijt4Q+NRTJ
+    5EROvJmnSCY1cvlimSXuXXO3bLXDK4UyicgFOXpJU/3fLJRkWs8ALzl4rLca9Vz5K5Qv1jV6GDtT
+    +eL8iNUtcaskb9qWGOHIUzjW2ldWnJjR10lFV0XzE7PyVQMrvQi+VHx6HT4/ZXGlINpAXkHhbI0R
+    aIlDqQRQvBs9DN+HSnaVAm+Bp0AllPKFMmYL5FApKGOOjB6KsVUJCQrA6AIhQwEYPSB3QQEYeRhd
+    UABHHkg3FICRgTEMBXDkhhKsY5GVAXGO68QGiNEBSQ6uzUft3uB5mMn4K8AAIeAAzmcodqcAAAAA
+    SUVORK5CYII="
+            transform="matrix(1 0 0 1 -0.244 -6.625107e-02)"
+        ></image>
+    </svg>
+</template>

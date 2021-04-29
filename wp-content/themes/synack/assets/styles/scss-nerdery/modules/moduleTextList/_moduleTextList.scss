@@ -1,0 +1,56 @@
+/* ----------------------------------------------------------------------
+ moduleTextList - Module that has header and list of text with header and body content. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleTextList {
+    margin-bottom: 180px;
+    position: relative; /* So children can be positioned relative to it */
+    text-align: center;
+}
+
+.moduleTextList-hd {
+    position: relative; /* For z-index positioning */
+    z-index: $Z_INDEX_REORDER;
+}
+
+.moduleTextList-bd {
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.moduleTextList-bd-hdg {
+    margin-bottom: 6px;
+    font: 300 16px/1 $FONT;
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.moduleTextList-bd-content {
+    margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.moduleTextList-bd-content_secondary {
+    text-align: left;
+}
+
+.mix-moduleTextList_tight {
+    margin-bottom: 115px;
+}
+
+.mix-moduleTextList_xTight {
+    margin-bottom: 0;
+}
+
+.mix-moduleTextList-bd-content_tight {
+    margin-bottom: 20px;
+}
+
+.mix-moduleTextList-bd-content_small {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Theme for Red page */
+.theme-red .moduleTextList-bd-content_secondary {
+    color: $COLOR_TEXT_REVERSE;
+}

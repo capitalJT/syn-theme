@@ -1,0 +1,47 @@
+/* ----------------------------------------------------------------------
+ navIcon - List of social links with icons
+---------------------------------------------------------------------- */
+$navIcon-ICON_WIDTH: 15px;
+$navIcon-ICON_HEIGHT: 15px;
+
+.navIcon > li {
+    display: block;
+    width: $navIcon-ICON_WIDTH;
+    height: $navIcon-ICON_HEIGHT;
+    margin-right: 0; /* Reset from mobile */
+    margin-left: 0; /* Reset from mobile */
+    margin-bottom: 0; /* Reset from mobile */
+}
+
+.navIcon > li + li {
+    margin-top: 15px;
+}
+
+.navIcon > li > a {
+    width: auto; /* Reset from mobile */
+    height: auto; /* Reset from mobile */
+    text-indent: 0; /* Reset from mobile */
+    white-space: normal; /* Reset from mobile */
+    overflow: visible; /* Reset from mobile */
+    padding-left: $navIcon-ICON_HEIGHT + 15px
+}
+
+.navIcon > li > a:active,
+.navIcon > li > a:hover {
+    color: $COLOR_BRAND;
+}
+
+.navIcon > li > a:before {
+    width: $navIcon-ICON_WIDTH;
+    height: $navIcon-ICON_HEIGHT;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Theme for Red page */
+.theme-red .navIcon > li > a:active,
+.theme-red .navIcon > li > a:hover {
+    color: $COLOR_BRAND_THEME;
+}
+

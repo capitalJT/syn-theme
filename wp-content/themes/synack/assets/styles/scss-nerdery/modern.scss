@@ -1,0 +1,29 @@
+// Styles for Modern Browsers
+// =================
+// This file should only be used
+// to import screen partials
+@import "screen";
+
+//----------------------------------------------------------------------
+// SMALL SIZED SCREENS
+//----------------------------------------------------------------------
+@media screen and (min-width: $WIDTH_SM) {
+    @import "screen_sm";
+}
+
+//----------------------------------------------------------------------
+// MEDIUM SIZED SCREENS
+//----------------------------------------------------------------------
+@media screen and (min-width: $WIDTH_MD) {
+    @import "screen_md";
+}
+
+//----------------------------------------------------------------------
+// LARGE SIZED SCREENS
+//----------------------------------------------------------------------
+@media screen and (min-width: $WIDTH_LG) {
+    @import "screen_lg";
+}
+
+// Custom CSS that should be better organized and placed in appropriate places
+@import "synack_custom";

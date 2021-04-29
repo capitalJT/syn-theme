@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------------
+ moduleProcess
+---------------------------------------------------------------------- */
+.moduleProcess {
+    white-space: normal;
+    overflow: auto;
+}
+
+.moduleImgTxtHero-hd {
+    margin-bottom: 40px;
+}
+
+.moduleProcess-bd {
+    display: flex;
+    width: auto; /* Reset */
+}
+
+.moduleProcess-bd-item {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.moduleProcess-bd-item-md {
+    margin-right: 37%;
+    margin-left: 37%;
+}
+
+.moduleProcess-bd-item-hd {
+    margin-right: 20%;
+    margin-left: 20%;
+}

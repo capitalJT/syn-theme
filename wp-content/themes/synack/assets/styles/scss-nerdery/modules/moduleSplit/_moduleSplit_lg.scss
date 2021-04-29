@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------------------
+ moduleSplit - Module that has media section betwee title and body that is moved aside on larger screens. Used on home page.
+---------------------------------------------------------------------- */
+.moduleSplit-hd {
+    padding-left: 57%;
+}
+
+.moduleSplit-media {
+    width: 50%;
+    background-image: none; /* Replaced by animation */
+}
+
+.moduleSplit-bd {
+    padding-right: 12%;
+    padding-left: 57%;
+}
+
+@media screen and (min-width: 1200px) {
+    .moduleSplit {
+        margin-top: -75px;
+    }
+}

@@ -1,0 +1,33 @@
+/* ----------------------------------------------------------------------
+ navInfo - List navigation used in footer with sub menus that are desktop only
+---------------------------------------------------------------------- */
+.navInfo {
+    display: flex;
+    flex-direction: row; /* Puts children side by side */
+    flex-wrap: nowrap; /* Keeps children on one row */
+    margin-left: -20px;
+}
+
+.navInfo-item {
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 16.7%;
+    padding-left: 20px;
+}
+
+.navInfo-item + .navInfo-item {
+    margin-top: 0; /* Reset from mobile */
+}
+
+.navInfo-item-hd {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.navInfo-item-sub {
+    display: block; /* Not an accessibility concern */
+}
+
+.navInfo-item-sub-item + .navInfo-item-sub-item {
+    margin-top: 10px;
+}

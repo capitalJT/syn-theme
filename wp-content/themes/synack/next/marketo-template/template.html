@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+\`-.                /\                .-'/
+ \   `-.           /  \           .-'   /
+  `-.    `-,      /____\      .-'    .-'
+      `-.   \                /   .-'
+    \`-. \   \              /   / .-'/
+     \   `    \            /    '   /
+      `-.      \          /      .-'
+          `-.   \        /   .-'
+              `-.\      /.-'
+         \`-.                .-'/
+          \   `-.        .-'   /
+           `-.    `-,,-'    .-'
+               `-,      ,-'
+               /'  .-–.  `\
+              /.-'      `-.\
+
+
+             S  Y  N  A  C  K
+-->
+
+	<!-- Marketo Variables -->
+	<meta class="mktoString" mktoName="Page: Headline One" id="headline1" default="Go Beyond">
+	<meta class="mktoString" mktoName="Page: Headline Two" id="headline2" default="The Bounty">
+	<meta class="mktoString" mktoName="Page: Content Title" id="contentTitle" default="Are you a CISO or security decision-maker with bug bounty on your mind?">
+
+	<meta class="mktoString" mktoName="Page: About Title One" id="aboutTitleOne" default="About">
+	<meta class="mktoString" mktoName="Page: About Title Two" id="aboutTitleTwo" default="Synack">
+	<meta class="mktoBoolean" mktoName="Page: Has Image" id="hasImage" default="true" true_value="initial" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+	<meta class="mktoString" mktoName="Page: Form Title" id="formTitle" default="Download Now">
+	<meta class="mktoString" mktoName="Page: Form Subtitle" id="formSubtitle" default="The Complete Guide to Crowdsourced Security Testing">
+
+	<meta class="mktoString" mktoName="Page: About Link One" id="aboutlink1" default="#aboutlink1">
+	<meta class="mktoString" mktoName="Page: About Link Two" id="aboutlink2" default="#aboutlink2">
+	<meta class="mktoString" mktoName="Page: About Link Text One" id="aboutlinktext1" default="Start Your Trial">
+	<meta class="mktoString" mktoName="Page: About Link Text Two" id="aboutlinktext2" default="See What We Do">
+
+	<meta class="mktoString" mktoName="Meta: Title" id="metaTitle" default="Synack">
+	<meta class="mktoString" mktoName="Meta: Canonical URL" id="metaCanonicalUrl" default="synack.com">
+	<meta class="mktoString" mktoName="Meta: Thumbnail URL" id="metaThumbnailUrl" default="">
+
+	<meta class="mktoString" mktoName="Company: Company Name" id="companyName" default="Synack">
+	<meta class="mktoString" mktoName="Company: Home URL" id="companyHomeUrl" default="https://www.synack.com">
+	<meta class="mktoString" mktoName="Company: Logo URL" id="companyLogoUrl" default="https://go.synack.com/rs/738-OEX-476/images/Synack-Logo-200px.png">
+	<!-- /Marketo Variables -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W82WNBG');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Synack">
+    <link rel="canonical" href="${metaCanonicalUrl}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>${metaTitle}</title>
+	<link rel="stylesheet" href="https://go.synack.com/rs/738-OEX-476/images/fonts.css">
+
+	<!-- Social Metadata -->
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="${metaTitle}">
+	<meta name="twitter:title" content="@Synack">
+	<meta property="og:url" content="${metaCanonicalUrl}">
+	<meta name="twitter:description" content="${metaCanonicalUrl}">
+	<meta property="og:description" content="${metaCanonicalUrl}">
+	<meta property="og:image" content="${metaThumbnailUrl}">
+	<meta name="twitter:image:src" content="${metaThumbnailUrl}">
+
+	<!-- Tokenized Head Meta Tags, just in case {{my.Universal - Dev_Comment Close}}
+	{{my.Universal - Dev_Head Meta Tags}}
+	{{my.Folder - Dev_Head Meta Tags}}
+	{{my.Content - Dev_Head Meta Tags}}
+	{{my.Universal - Dev_Comment Open}} /Tokenized Head Meta Tags -->
+
+	<!-- Marketo Template Stylings -->
+    <link rel="SHORTCUT ICON" HREF="https://go.synack.com/rs/738-OEX-476/images/favicon.png">
+    <style type="text/css">
+        /*
+         * COLORS
+         *   Blue: #106BFF
+		 *   Navy: #061225
+		 *   Text Color: #535F75
+		 *   Border Color: #D6DDEA
+         */
+
+		/* Structure */
+		body {
+			font-family: 'Graphik';
+			font-size: 20px;
+			margin: 0;
+			-webkit-font-smoothing: antialiased !important;
+		    text-rendering: optimizeLegibility !important;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Crique Grotesk';
+		}
+        .contained {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+		/* Globals */
+
+		/* Buttons */
+		.button {
+		    text-decoration: none;
+		    padding: 15px 30px 18px;
+		    font-size: 16px;
+		    color: #061225;
+		    background: #FFFFFF;
+		    border-radius: 30px;
+		    display: inline-block;
+		}
+		.button + .button {
+			margin-left: 20px;
+		}
+		.button:not(.primary) {
+			background: transparent;
+			color: #FFFFFF;
+			border: 3px solid rgba(255, 255, 255, 0.3);
+		}
+
+		/* When in View */
+		.wiv {
+			transition: opacity 500ms ease, transform 750ms ease;
+			transform: translateY(20px);
+			opacity: 0;
+		}
+		.wiv.element-in-view {
+			transform: none;
+			opacity: 1;
+		}
+
+		/* Header */
+		header {
+			position: absolute;
+			padding: 30px;
+			z-index: 50;
+			right: 0;
+			left: 0;
+			top: 0;
+		}
+        .svg-logo .badge {
+            fill: #106BFF;
+        }
+        .svg-logo .text {
+            fill: #FFFFFF;
+        }
+
+		/* Hero */
+		.hero {
+			position: relative;
+			-webkit-clip-path: polygon(100% 0, 110% 80%, 18% 100%, -10% 92%, 0 0);
+			clip-path: polygon(100% 0, 110% 80%, 18% 100%, -10% 92%, 0 0);
+			overflow: hidden;
+			color: #FFFFFF;
+			background-color: #061225;
+			background: linear-gradient(
+				59deg,
+				rgba(6, 17, 35, 1) 0%,
+				rgba(15, 39, 72, 1) 100%
+			);
+		}
+		.hero .contained {
+			padding-bottom: 210px;
+			padding-top: 160px;
+			position: relative;
+		}
+		.hero .shadow {
+			transform-origin: bottom left;
+			transform: rotate(-25deg);
+			position: absolute;
+			height: 40px;
+			height: 200vh;
+			width: 200vw;
+			bottom: 0;
+			left: 0;
+			box-shadow: 0px 0px 50px #000000;
+		}
+		.hero .shadow-2 {
+			bottom: -400px;
+		}
+		.hero .pattern {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			top: 0;
+	        background-image: url('https://go.synack.com/rs/738-OEX-476/images/pattern-triangles.png');
+	        background-size: 50px;
+	        opacity: 0.07;
+	        bottom: -100vh;
+	    }
+		.hero .title {
+	        text-transform: uppercase;
+	        font-size: 160px;
+			transform: none;
+			padding: 0 30px;
+			line-height: 1;
+	        margin: 0;
+	    }
+		.hero .line {
+	        display: block;
+			white-space: nowrap;
+	    }
+	    .hero .line-2 {
+	    	padding-left: 8%;
+	        margin-top: -0.43em;
+	        color: rgba(255, 255, 255, 0.7);
+	        text-shadow: 0 6px 24px rgba(6, 18, 37, 0.6);
+	    }
+
+		/* Primary Content */
+		section.primary-content {
+			padding-top: 100px;
+			overflow: hidden;
+			background: linear-gradient(
+				180deg,
+				rgba(255, 255, 255, 1) 0%,
+				rgba(238, 244, 255, 1) 100%
+			);
+		}
+		.primary-content h3 {
+			line-height: 1;
+			text-align: center;
+			max-width: 760px;
+			font-size: 60px;
+			margin: 0 auto;
+		}
+		.primary-content .contained {
+			padding: 0 30px;
+		}
+		.primary-content .content {
+			margin-bottom: 120px;
+			margin-top: 60px;
+			color: #535F75;
+			display: flex;
+		}
+		.primary-content .col {
+			margin: 0 30px;
+			flex: 1;
+		}
+		.primary-content .col > *:first-child {
+			margin-top: 0;
+		}
+		.primary-content .col > *:last-child {
+			margin-bottom: 0;
+		}
+		.primary-content .col:first-child {
+			margin-left: 0;
+		}
+		.primary-content .col:last-child {
+			margin-right: 0;
+		}
+		.primary-content .content h5 {
+			font-weight: 500;
+			font-size: 18px;
+			margin: 30px 0;
+		}
+		.primary-content .content ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		.primary-content .content li {
+			position: relative;
+			padding-left: 50px;
+			margin: 25px 0;
+		}
+		.primary-content .content li::before {
+			background-image: url('https://go.synack.com/rs/738-OEX-476/images/checkmark-blue.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			position: absolute;
+			height: 24px;
+			width: 24px;
+			content: '';
+			left: 0;
+			top: 2px;
+		}
+
+		/* Form Area */
+		.form-area-row {
+			padding-right: 8%;
+			padding-left: 8%;
+			position: relative;
+			overflow: hidden;
+			justify-content: center;
+			display: flex;
+		}
+		.form-area-row .top-fill {
+			background-color: rgba(238, 244, 255, 1);
+			position: absolute;
+			bottom: 50%;
+			right: 0;
+			left: 0;
+			top: 0;
+		}
+		.form-area-row .bottom-fill {
+			background-color: #061225;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			top: 50%;
+		}
+		.form-area {
+			min-width: 700px;
+			position: relative;
+			background-color: #FFFFFF;
+			text-align: left;
+			display: flex;
+			padding: 80px;
+		}
+		.form-area .form-wrap {
+			flex: 1;
+		}
+		.form-area .image-wrap {
+			position: relative;
+			display: ${hasImage};
+			width: 50%;
+		}
+		.form-area .image-wrap img {
+			height: auto;
+			width: 100%;
+		}
+		.form-area .image-wrap img:last-child {
+			transform: translate(25%, 0) rotate(5deg);
+			box-shadow: 0 12px 34px 0 rgba(0, 25, 62, 0.5);
+			right: 0;
+		}
+		.form-area h3 {
+			max-width: initial;
+			text-align: left;
+			font-size: 48px;
+			margin: 0;
+		}
+		.form-area .form-subtitle {
+			color: #535F75;
+			margin: 30px 0 60px;
+		}
+		.form-area .divider {
+			max-width: 100%;
+			display: block;
+			margin: auto;
+			width: 550px;
+			height: auto;
+		}
+
+		/* Form Overrides */
+		.mktoForm {
+			width: initial !important;
+		}
+		.mktoForm .mktoFieldWrap {
+			width: 100%;
+			float: none;
+		}
+		.mktoFormRow {
+			display: flex;
+		}
+		.mktoFormRow > * {
+			margin-left: 10px;
+			margin-right: 10px;
+			flex: 1;
+		}
+		.mktoFormRow > *:first-child {
+			margin-left: 0;
+		}
+		.mktoFormRow > *:last-child {
+			margin-right: 0;
+		}
+		.mktoFormRow input,
+		.mktoFormRow select,
+		.mktoFormRow textarea {
+			box-sizing: border-box;
+			width: 100% !important;
+			border: none !important;
+			border-bottom: 1px solid #D6DDEA !important;
+			font-family: 'Graphik' !important;
+			border-radius: 0 !important;
+			padding: 15px !important;
+			padding-left: 0 !important;
+			font-size: 20px !important;
+			text-indent: 0 !important;
+			color: #061225 !important;
+			box-shadow: none !important;
+			height: auto !important;
+		}
+		.mktoFormRow input::placeholder,
+		.mktoFormRow select::placeholder,
+		.mktoFormRow textarea::placeholder {
+			font-family: 'Graphik' !important;
+			color: #8695AE;
+		}
+		.mktoFormRow select {
+			background-image: url('https://go.synack.com/rs/738-OEX-476/images/form-arrow-down.svg') !important;
+			background-position: 98% 50%;
+			background-repeat: no-repeat;
+			color: $formtext_color;
+			position: relative;
+			cursor: pointer;
+		}
+		.mktoButtonRow {
+			margin-right: 0 !important;
+			text-align: right !important;
+			width: 100%;
+		}
+		.mktoButtonRow button {
+			transition: border 250ms;
+			border-color: #D6DDEA !important;
+			padding: 18px 30px 13px !important;
+			color: #8695AE !important;
+			border-width: 2px !important;
+			background-color: transparent !important;
+			font-weight: 500;
+			font-size: 16px !important;
+			border-radius: 50px !important;
+			height: initial !important;
+			box-shadow: none !important;
+			background-image: none !important;
+			margin-top: 30px !important;
+			display: inline-block;
+		}
+		.mktoButtonRow button:hover {
+			border-color: $formtext_color !important;
+			background-color: transparent !important;
+		}
+		.mktoButtonRow button::after {
+			transition: transform 250ms;
+			background-image: url('https://go.synack.com/rs/738-OEX-476/images/form-arrow-right.svg');
+			content: '';
+			position: relative;
+			display: inline-block;
+			margin-left: 10px;
+			height: 15px;
+			width: 15px;
+			top: 2px;
+		}
+		.mktoButtonRow button:hover::after {
+			transform: translateX(3px);
+		}
+		.mktoOffset,
+		.mktoLabel,
+		.mktoGutter,
+		.mktoClear {
+			display: none;
+		}
+
+		/* About Section */
+		section.about {
+			background-color: #061225;
+			background-image: linear-gradient(
+				0deg,
+				#0E2648 0%,
+				#061225 100%
+			);
+			padding-bottom: 180px;
+			padding-top: 80px;
+			color: #FFFFFF;
+		}
+		section.about .flex-row {
+			display: flex;
+		}
+		section.about .col {
+			box-sizing: border-box;
+		}
+		section.about .col-1 {
+			flex-direction: column;
+			padding-left: 30px;
+			display: flex;
+			width: 40%;
+		}
+		section.about .col-2 {
+			padding-right: 30px;
+			padding-left: 25px;
+			color: #B8C2DC;
+			width: 60%;
+		}
+		section.about .col-2 > * {
+			margin-right: auto;
+			max-width: 650px;
+		}
+		section.about .about-title {
+			overflow: hidden;
+			text-align: right;
+			max-width: 480px;
+			font-size: 9vw;
+			line-height: 1;
+			width: 100%;
+			margin: 0;
+			margin-bottom: 20px;
+			margin-left: auto;
+		}
+		section.about .about-content {
+			line-height: 1.6;
+		}
+		section.about .about-content p {
+			margin: 40px 0;
+		}
+		section.about .about-content strong {
+			font-weight: 400;
+			color: #FFFFFF;
+		}
+		section.about .about-title .line-2 {
+			color: #106BFF;
+		}
+		section.about .pattern {
+			background-image: url('https://go.synack.com/rs/738-OEX-476/images/pattern-dots.png');
+			background-size: 7px;
+			opacity: 0.25;
+			flex: 1;
+		}
+
+		/* Footer */
+		footer {
+			background-color: #061225;
+			padding: 80px 0;
+		}
+		footer .contained {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+
+		/* Tablet */
+		@media only screen and (max-width: 1100px) {
+			.hero .title {
+				text-align: center;
+				font-size: 12vw;
+			}
+			.form-area-row {
+				padding-right: 0;
+				padding-left: 0;
+			}
+			.form-area {
+				min-width: initial;
+			}
+			.form-area .image-wrap {
+				display: none;
+			}
+		}
+
+		/* Above Desktop */
+		@media only screen and (min-width: 1400px) {
+			section.about .about-title {
+				font-size: 120px;
+			}
+		}
+
+		/* Mobile */
+		@media only screen and (max-width: 750px) {
+			body {
+				font-size: 16px;
+			}
+
+			header {
+				padding-right: 15px;
+				padding-left: 15px;
+				padding-top: 20px;
+			}
+
+			/* Hero */
+			.hero {
+				-webkit-clip-path: polygon(100% 0, 110% 90%, 35% 100%, -10% 92%, 0 0);
+				clip-path: polygon(100% 0, 110% 90%, 35% 100%, -10% 92%, 0 0);
+			}
+			.hero .contained {
+				padding-bottom: 70px;
+		        padding-top: 70px;
+			}
+			.hero .title {
+				padding-right: 15px;
+				padding-left: 15px;
+				font-size: 40px;
+			}
+
+			/* Main Content */
+			section.primary-content {
+				padding-top: 60px;
+			}
+			.primary-content .contained {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			.primary-content h3 {
+				font-size: 28px;
+			}
+			.primary-content .content {
+				flex-direction: column;
+				margin-bottom: 60px;
+				margin-top: 30px;
+			}
+			.primary-content .col-1 {
+				margin-bottom: 30px;
+				margin-right: 0;
+			}
+			.primary-content .col-2 {
+				margin-left: 0;
+			}
+			.form-area {
+				padding-right: 15px;
+				padding-left: 15px;
+				padding-bottom: 60px;
+				padding-top: 60px;
+			}
+			.form-area h3 {
+				text-align: center;
+				font-size: 32px;
+			}
+			.form-area .form-subtitle {
+				margin: 10px 0 30px;
+				text-align: center;
+			}
+
+			/* Form Overrides */
+			.mktoFormRow input,
+			.mktoFormRow select,
+			.mktoFormRow textarea {
+				font-size: 16px !important;
+			}
+			.mktoButtonRow button {
+				width: 100%;
+			}
+
+			/* About */
+			section.about {
+				padding-bottom: 60px;
+			}
+			section.about .flex-row {
+				flex-direction: column;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			section.about .flex-row .col {
+				padding: 0;
+				width: 100%;
+			}
+			section.about .about-title {
+				max-width: initial;
+				text-align: center;
+			}
+			section.about .about-title span {
+				display: inline-block;
+			}
+			section.about .about-content > *:first-child {
+				margin-top: 0;
+			}
+			section.about .about-content > *:last-child {
+				margin-bottom: 0;
+			}
+			section.about .controls {
+				margin-top: 30px;
+			}
+			section.about .button {
+				box-sizing: border-box;
+				text-align: center;
+				margin-right: 0;
+				margin-left: 0;
+				width: 100%;
+			}
+			section.about .button + .button {
+				margin-top: 20px;
+			}
+
+			footer {
+				padding-bottom: 35px;
+				padding-top: 35px;
+			}
+		}
+    </style>
+    <!-- /Marketo Template Stylings -->
+
+    <!-- Tokenized Head CSS, just in case {{my.Universal - Dev_Comment Close}}
+	{{my.Universal - Dev_Head CSS}}
+	{{my.Folder - Dev_Head CSS}}
+	{{my.Content - Dev_Head CSS}}
+	{{my.Universal - Dev_Comment Open}} /Tokenized Head CSS-->
+
+	<!-- Tokenized Head JS, just in case {{my.Universal - Dev_Comment Close}}
+	{{my.Universal - Dev_Head JS}}
+	{{my.Folder - Dev_Head JS}}
+	{{my.Content - Dev_Head JS}}
+	{{my.Universal - Dev_Comment Open}} /Tokenized Head JS, just in case -->
+</head>
+<body class="etu25-landing-page {{my.Universal - Dev_Body Class}} {{my.Folder - Dev_Body Class}} {{my.Content - Dev_Body Class}} {{lead.Z - Dev_Classes}}">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W82WNBG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google Tag Manager Token {{my.Universal - Dev_Comment Close}}
+    	{{my.Universal - Dev_GTM JS}}
+    	{{my.Universal - Dev_Comment Open}} /Google Tag Manager Token
+    -->
+
+	<header>
+	    <div class="contained">
+			<a href="${metaCanonicalUrl}">
+	            <svg
+	                class="svg-logo"
+	                width="100px"
+	                height="26px"
+	                viewBox="0 0 100 26"
+	                version="1.1"
+	                xmlns="http://www.w3.org/2000/svg"
+	                xmlns:xlink="http://www.w3.org/1999/xlink"
+	            >
+	                <path class="text" d="M75.1217756,9.36694085 L75.1217756,7.82413397 L77.6617861,7.82413397 L77.6617861,18.4125749 L75.1217756,18.4125749 L75.1217756,16.8888539 C74.4431286,18.1232887 73.0276424,18.7403483 71.5344606,18.7403483 C68.1223569,18.7403483 66.1254225,16.0982856 66.1254225,13.1087326 C66.1254225,9.77200455 68.5490483,7.49620273 71.5344606,7.49620273 C73.4738368,7.49620273 74.6567122,8.51848382 75.1217756,9.36694085 Z M75.1414373,13.2051087 C75.1606233,12.7035111 75.0639003,12.1828276 74.8503168,11.7200329 C74.4047565,10.7171532 73.4154859,9.84913701 71.8837734,9.84913701 C69.8284881,9.84913701 68.6652745,11.5077214 68.6652745,13.1472199 L68.6652745,13.1666213 C68.6652745,14.4780308 69.6153802,16.3875718 71.9032766,16.3875718 C73.3186043,16.3875718 74.249524,15.6545768 74.7342491,14.6901845 C74.9860461,14.2273898 75.1025895,13.7259499 75.1414373,13.2051087 Z M84.21834,9.84913701 C83.2874203,9.83005106 82.5700842,10.1579823 81.9496297,10.7557983 C81.4067122,11.3342128 81.0775367,12.1828276 81.0775367,13.1087326 C81.0775367,15.017958 82.4153274,16.3683281 84.21834,16.3683281 C85.8077692,16.3683281 86.6999997,15.4230217 87.0876847,14.5551633 L89.6857291,14.5551633 C89.0846191,16.9082553 86.9714584,18.7403483 84.21834,18.7403483 C80.844767,18.7403483 78.5181815,16.1367731 78.5181815,13.1087326 C78.5181815,9.98431597 80.9414901,7.49620273 84.1212999,7.49620273 C86.7968813,7.49620273 89.0652745,9.17418857 89.6857291,11.7585202 L87.0876847,11.7585202 C86.6416488,10.6400207 85.6141645,9.84913701 84.21834,9.84913701 Z M53.0522724,7.82413397 L55.7300736,7.82413397 C55.7300736,7.82413397 51.7354119,18.1955314 51.242283,19.4381684 C50.6370503,20.9639398 49.9152745,22.5786739 48.0548623,22.5786739 C47.2642702,22.5786739 46.6236783,22.477408 46.1833506,22.3778771 L46.1833506,20.2637537 C47.4900631,20.4306376 48.1113105,20.5684979 48.8968284,18.4125749 L44.6636889,7.82413397 L47.5251053,7.82413397 L50.1875261,15.1203281 L53.0522724,7.82413397 Z M41.0020081,10.0267467 C43.8290166,10.8398711 45.1073464,11.8566314 45.1073464,14.3639884 C45.1073464,16.8716608 43.4884246,18.5998064 40.0482555,18.5998064 C37.6917016,18.5998064 36.1506339,18.1389044 35.347357,17.8374727 L35.347357,15.3356365 C35.347357,15.3356365 37.663636,16.3293675 39.8438686,16.3293675 C41.9216699,16.3293675 42.2963527,15.0755314 42.2963527,14.4994828 C42.2963527,13.923592 42.1133718,13.0098327 39.8808136,12.4396203 C36.4715641,11.5689226 35.0573464,10.5010561 35.0573464,7.85804701 C35.0573464,5.41835843 36.846247,3.88801263 40.014006,3.88801263 C41.9192914,3.88801263 43.3848834,4.28471637 44.2011624,4.57400252 L44.2011624,7.08419868 C44.2011624,7.08419868 41.9556022,6.16381445 40.2524838,6.16381445 C38.549524,6.16381445 37.7946085,7.04492264 37.7946085,7.8242917 C37.7946085,8.60350303 38.1748411,9.2134646 41.0020081,10.0267467 Z M60.369767,7.3504555 C63.0486783,7.3504555 65.4038051,9.51032204 65.4038051,12.1750986 L65.4038051,18.4125749 L62.8750525,18.4125749 L62.8750525,12.1063261 C62.8750525,10.8310379 61.6519024,9.79724216 60.369767,9.79724216 C59.0881075,9.79724216 57.8649574,10.8310379 57.8649574,12.1063261 L57.8649574,18.4125749 L55.3358876,18.4125749 L55.3358876,12.1750986 C55.3358876,9.51032204 57.6913316,7.3504555 60.369767,7.3504555 Z M90.4758453,3.36969514 L93.0153802,3.36969514 L93.0153802,12.3883564 L96.5322935,7.82508038 L99.7232026,7.82508038 L95.6570292,12.8167649 L99.7427058,18.4125749 L96.724154,18.4125749 L94.0577692,14.5706213 L93.0153802,15.8892866 L93.0153802,18.4125749 L90.4758453,18.4125749 L90.4758453,3.36969514 Z"></path>
+	                <path class="badge" d="M15.4940803,1.76063903 L18.3453489,6.67329829 L12.6429705,6.67329829 L15.4940803,1.76063903 Z M7.51775899,4.47210515 C12.607611,6.98703337 14.0471987,13.0767119 14.4160148,17.2286148 L3.37024313,10.7499616 L2.12854123,6.81825682 L10.3184461,11.623183 C9.377537,9.36268149 8.01326639,7.78580384 6.2486258,6.92583215 L6.20169133,6.90296057 L1.23932347,4.00363195 L1.77635684e-15,0.0798139535 L7.51775899,4.47210515 Z M4.19413319,13.3577957 L15.4942389,19.9779373 L26.794186,13.3577957 L25.552167,17.2895005 L18.2327695,21.5822609 L20.0608351,22.6532821 L20.0638477,25.8685541 L15.4942389,23.1884772 L10.9244715,25.8685541 L10.9274841,22.6532821 L12.7555497,21.5822609 L5.43615222,17.2895005 L4.19413319,13.3577957 Z M24.7393764,6.92583215 C22.9750528,7.78580384 21.6106236,9.36268149 20.6698732,11.623183 L28.8599366,6.81825682 L27.617759,10.7499616 L16.5723044,17.2286148 C16.9408034,13.0767119 18.3803911,6.98703337 23.4707189,4.47210515 L30.9880022,0.0798139535 L29.7486786,4.00363195 L24.7864693,6.90296057 L24.7393764,6.92583215 Z"></path>
+	            </svg>
+			</a>
+        </div>
+	</header>
+
+	<section class="hero">
+		<div class="pattern"></div>
+        <div class="shadow shadow-1"></div>
+        <div class="shadow shadow-2"></div>
+
+	    <div class="contained">
+			<h2 class="title wiv">
+				<span class="line line-1">${headline1}</span>
+				<span class="line line-2">${headline2}</span>
+			</h2>
+	    </div>
+	</section>
+
+	<section class="primary-content">
+		<div class="contained wiv">
+			<h3>${contentTitle}</h3>
+			<div class="content">
+				<div class="col col-1 mktoText" id="columnOneText" mktoName="Page: Column One Text">
+					<p>We wrote a comprehensive guide just for you that outlines the differences between programs that incentivize crowdsourced researchers with bounties to find unknown vulnerabilities.</p>
+					<p>From Responsible Disclosure and Open Bug Bounty, Invite-Only Bug Bounty, to Managed Crowdsourced Vulnerability Discovery, and Managed Crowdsourced Penetration Testing --- solutions vary considerably across the Crowdsourced Security Testing Landscape. Choose what’s best for you.</p>
+				</div>
+				<div class="col col-2 mktoText" id="columnTwoText" mktoName="Page: Column Two Text">
+					<h5>The complete guide covers</h5>
+					<ul>
+						<li>Why crowdsourcing hackers and bug bounty is trending</li>
+						<li>Where crowdsourced security programs differ</li>
+						<li>How to decide what crowdsourced program best fits your organization</li>
+						<li>Where the future of crowdsourced security is heading</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="form-spacer"></div>
+	</section>
+
+	<section class="form-area-row">
+		<div class="top-fill"></div>
+		<div class="bottom-fill"></div>
+		<div class="form-area">
+			<div class="form-wrap">
+				<h3>${formTitle}</h3>
+				<div class="form-subtitle">${formSubtitle}</div>
+				<img class="divider" src="https://go.synack.com/rs/738-OEX-476/images/carousel-shadow.png" />
+				<div class="mktoForm" id="contentForm" mktoName="Page: Form">
+					<script src="//app-ab15.marketo.com/js/forms2/js/forms2.min.js"></script>
+					<form id="mktoForm_1002"></form>
+					<script>MktoForms2.loadForm("//app-ab15.marketo.com", "738-OEX-476", 1002);</script>
+				</div>
+			</div>
+			<div class="image-wrap">
+				<img class="mktoImg" id="formImage" mktoName="Page: Form Image" src="https://via.placeholder.com/540x720.jpg"/>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="form-spacer"></div>
+
+		<div class="flex-row">
+			<div class="col col-1">
+				<h3 class="about-title">
+					<span class="line line-1">${aboutTitleOne}</span>
+					<span class="line line-2">${aboutTitleTwo}</span>
+				</h3>
+				<div class="pattern"></div>
+			</div>
+			<div class="col col-2">
+				<div class="about-content mktoText wiv" id="aboutContent" mktoName="Page: About Content">
+					<p><strong>Co-founders Jay Kaplan and Mark Kuhr</strong> launched their careers with the US Government at the DoD and NSA as technical cybersecurity experts who protected the country from cyber attacks. After a few years at the NSA, the two decided to pursue a new idea that would revolutionize cybersecurity and how technical experts worked in the modern economy. Synack crowdsourced security was born.</p>
+					<p>Synack protects some of the largest organizations in the world by effectively and efficiently reducing their true security risk and increasing their resistance to cyber attack. This is Security Without Compromise. With headquarters in Redwood City, California, Synack is a global organization with regional presence in cities around the US and EMEA. Our Synack Red team researchers represent over 55 countries around the world.</p>
+					<p>Interested in learning more, or want to get in touch?</p>
+				</div>
+				<div class="controls wiv">
+					<a href="${aboutlink1}" class="button primary">${aboutlinktext1}</a>
+					<a href="${aboutlink2}" class="button">${aboutlinktext2}</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="footer">
+	    <div class="contained">
+			<svg
+				class="svg-logo"
+				width="100px"
+				height="26px"
+				viewBox="0 0 100 26"
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+			>
+				<path class="badge" d="M15.4940803,1.76063903 L18.3453489,6.67329829 L12.6429705,6.67329829 L15.4940803,1.76063903 Z M7.51775899,4.47210515 C12.607611,6.98703337 14.0471987,13.0767119 14.4160148,17.2286148 L3.37024313,10.7499616 L2.12854123,6.81825682 L10.3184461,11.623183 C9.377537,9.36268149 8.01326639,7.78580384 6.2486258,6.92583215 L6.20169133,6.90296057 L1.23932347,4.00363195 L1.77635684e-15,0.0798139535 L7.51775899,4.47210515 Z M4.19413319,13.3577957 L15.4942389,19.9779373 L26.794186,13.3577957 L25.552167,17.2895005 L18.2327695,21.5822609 L20.0608351,22.6532821 L20.0638477,25.8685541 L15.4942389,23.1884772 L10.9244715,25.8685541 L10.9274841,22.6532821 L12.7555497,21.5822609 L5.43615222,17.2895005 L4.19413319,13.3577957 Z M24.7393764,6.92583215 C22.9750528,7.78580384 21.6106236,9.36268149 20.6698732,11.623183 L28.8599366,6.81825682 L27.617759,10.7499616 L16.5723044,17.2286148 C16.9408034,13.0767119 18.3803911,6.98703337 23.4707189,4.47210515 L30.9880022,0.0798139535 L29.7486786,4.00363195 L24.7864693,6.90296057 L24.7393764,6.92583215 Z"></path>
+			</svg>
+	    </div>
+	</footer>
+
+	<!-- Tokenized Foot JS, just in case {{my.Universal - Dev_Comment Close}}
+	{{my.Universal - Dev_Foot JS}}
+	{{my.Folder - Dev_Foot JS}}
+	{{my.Content - Dev_Foot JS}}
+	{{my.Universal - Dev_Comment Open}} /Tokenized Foot JS, just in case -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://go.synack.com/rs/738-OEX-476/images/jquery.wheninview.min.js"></script>
+	<script>
+		$(window).ready(function(){
+
+			// duplicate image
+			// var $formImage = $('#formImage');
+			// var $clone = $('#formImage').clone();
+			// $clone.attr('id', '').addClass('wiv');
+			// $formImage.after($clone);
+
+			// init WIV
+			$('.wiv').whenInView();
+		});
+	</script>
+</body>
+</html>

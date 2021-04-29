@@ -1,0 +1,46 @@
+/* ----------------------------------------------------------------------
+ tile - themed content containers
+---------------------------------------------------------------------- */
+.tile {
+    display: flex;
+    border-radius: 4px;
+    padding: 6%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 400 20px / 1.2 $FONT;
+    color: #ffffff;
+}
+
+.tile-ft {
+    margin-top: 15px;
+}
+
+.tile:focus {
+    outline-color: inherit;
+}
+
+//.tile-hd {}
+
+.tile-bd {
+    font-weight: 700;
+    //font-family: $FONT_STRONG;
+}
+
+.tile_redTeam {
+    background-color: $COLOR_TEXT_REVERSE;
+    border: 1px solid $COLOR_BRAND_THEME;
+    color: $COLOR_BRAND_THEME;
+}
+
+.tile_twitter {
+    background-color: $COLOR_TWITTER;
+}
+
+.tile_facebook {
+    background-color: $COLOR_FACEBOOK;
+}
+
+.tile_linkedIn {
+    background-color: $COLOR_LINKEDIN;
+}

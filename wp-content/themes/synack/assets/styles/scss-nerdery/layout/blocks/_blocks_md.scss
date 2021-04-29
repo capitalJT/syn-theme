@@ -1,0 +1,59 @@
+/* ----------------------------------------------------------------------
+ Blocks
+---------------------------------------------------------------------- */
+.mix-blocks_1to3to4 > *,
+.mix-blocks_1to3to3 > * {
+    width: calc(100% / 3 - 1px); // 1px to accomodate ie subpixel rendering problem
+}
+
+.mix-blocks_1to2 > * {
+    width: 50%;
+}
+
+.mix-blocks_2to4 > * {
+    width: 25%;
+}
+
+.mix-blocks_2to4to5 > * {
+    width: 25%;
+}
+
+.mix-blocks_2to3 > * {
+    width: calc((100% / 3) - 1px); // 1px to accomodate ie subpixel rendering problem
+}
+
+.mix-blocks_1to4 > * {
+    width: 25%;
+}
+
+.mix-blocks_delimited {
+    margin-left: 0;
+}
+
+.mix-blocks_delimited > * {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.mix-blocks_delimited > *:nth-child(3n+2) {
+    border-right: 1px solid $COLOR_UI_ACCENT;
+    border-left: 1px solid $COLOR_UI_ACCENT;
+}
+
+.mix-blocks_collapse > * {
+    padding-top: 0;
+}
+
+.mix-blocks_piped {
+    display: table;
+    table-layout: fixed; /* force the width declared on children */
+    width: 100%; /* overwrites table display default fro child objects */
+}
+
+.mix-blocks_piped > * {
+    display: table-cell;
+}
+
+.mix-blocks_piped > * + * {
+    border-left: 1px solid $COLOR_BRAND;
+}

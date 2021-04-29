@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "dev-scss-compiler.css",
+	"sources": [
+		"scss/dev-scss-compiler.scss",
+		"scss/base/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,oBAAoB,AAAA,CAClB,gBAAgB,CCUH,OAAO,CDCrB,AAZD,AAEE,oBAFkB,CAElB,eAAe,CAFjB,oBAAoB,CAGlB,kBAAkB,AAAA,CAChB,KAAK,CCkBA,IAAI,CDjBV,AALH,AAME,oBANkB,CAMlB,6BAA6B,AAAA,CAC3B,KAAK,CAAE,OAAO,CACf,AARH,AASE,oBATkB,CASlB,6BAA6B,AAAA,cAAc,AAAA,CACzC,KAAK,CCYA,IAAI,CDXV"
+}

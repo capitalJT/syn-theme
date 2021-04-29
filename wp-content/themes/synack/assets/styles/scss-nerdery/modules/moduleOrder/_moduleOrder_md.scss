@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------------------
+ moduleOrder - Module that has has title, body, and media. It changes order at breakpoints. Used on home page.
+---------------------------------------------------------------------- */
+.moduleOrder {
+    padding-bottom: 70px;
+}
+
+.moduleOrder-hd {
+    margin: 0 26% 30px 26%;
+    font-size: 28px;
+}
+
+.moduleOrder-bd {
+    order: 2;
+    margin-bottom: 25px;
+    font-size: 10px;
+}
+
+.moduleOrder-bd-title {
+    display: none; /* Not an accessibility concern. Only used in mobile. */
+}
+
+.moduleOrder-media {
+    order: 3;
+    margin-bottom: 5px;
+}

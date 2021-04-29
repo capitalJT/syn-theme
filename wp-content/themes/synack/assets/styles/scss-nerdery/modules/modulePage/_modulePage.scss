@@ -1,0 +1,46 @@
+/* ----------------------------------------------------------------------
+ modulePage - Module that has header, bg, text
+---------------------------------------------------------------------- */
+.modulePage-hd {
+    position: relative;
+    z-index: 5;
+}
+
+.modulePage-bd {
+    margin-bottom: 130px;
+    font: 400 16px/1.5 $FONT;
+    text-align: center;
+    z-index: 5; // position set in js
+    position: relative;
+}
+
+.modulePage-bg {
+    text-align: center;
+}
+
+.modulePage-bd-md {
+    z-index: 1;
+    position: relative;
+}
+
+.modulePage-ft {
+    margin-right: 9%;
+    margin-bottom: 40px;
+    margin-left: 9%;
+    font: 300 14px/1.7 $FONT;
+    color: $COLOR_TEXT;
+    text-align: center;
+}
+
+.modulePage-ft > p {
+    margin-bottom: 23px; /* Margins not on top, because wrapped paragraphs would have gap at top */
+    break-inside: avoid;
+}
+
+.modulePage-ft > p + p {
+    margin-top: 15px;
+}
+
+.modulePage-bg_stretch {
+    margin-top: -275px;
+}

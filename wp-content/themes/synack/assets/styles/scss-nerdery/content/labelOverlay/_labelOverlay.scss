@@ -1,0 +1,37 @@
+/* ---------------------------------------------------------------------
+labelOverlay - Label and graphic character that stack.
+------------------------------------------------------------------------ */
+.labelOverlay {
+    position: relative;
+}
+
+.labelOverlay-number {
+    font-size: 105px;
+    color: #f6f6f6;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.labelOverlay-label {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $COLOR_TEXT;
+}
+
+.mix-labelOverlay-label_sm {
+    top: 35px;
+    font-size: 14px;
+}
+
+/* Theme for Red page */
+.theme-red .labelOverlay-number {
+    color: #2c2c2c;
+}
+
+.theme-red .labelOverlay-label {
+    color: $COLOR_TEXT_REVERSE;
+}

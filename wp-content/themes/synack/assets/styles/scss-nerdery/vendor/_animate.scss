@@ -1,0 +1,101 @@
+/* ----------------------------------------------------------------------
+ wowJs css & triggered animations
+---------------------------------------------------------------------- */
+.isAnimated {
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
+
+.isAnimated_quick {
+    animation-duration: 200ms;
+}
+
+.isAnimated.infinite {
+    animation-iteration-count: infinite;
+}
+
+/**
+  fadeIn keyframe animation
+*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/**
+  fadeOut keyframe animation
+*/
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+}
+
+/**
+  fadeInUp in keyframe animation
+*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/**
+  fadeInLeft in keyframe animation
+*/
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+/**
+  fadeInRight in keyframe animation
+*/
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}

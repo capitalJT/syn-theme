@@ -1,0 +1,12 @@
+.synack-module{
+  &.hero{
+    .hero-thumbnail-wrapper{
+      padding: 15px;
+      background-color: $white;
+      border-radius: 10px;
+    }
+    button{
+      border: solid thin #ddd;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/* ----------------------------------------------------------------------
+ navTitle - Navigation with a title
+---------------------------------------------------------------------- */
+.navTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navTitle-hdg {
+    padding-top: 5px;
+    font: 400 10px / 1 $FONT_SECONDARY;
+    color: #cbccce;
+    text-transform: uppercase;
+}

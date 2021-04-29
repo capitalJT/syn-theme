@@ -1,0 +1,17 @@
+/* ----------------------------------------------------------------------
+ headingMarquee
+---------------------------------------------------------------------- */
+.headingMarquee {}
+
+.headingMarquee-hd {
+    margin-bottom: 10px;
+    font: 300 24px/1.0 $FONT;
+    color: $COLOR_BACKGROUND_REVERSE;
+    text-align: center;
+}
+
+.headingMarquee-bd {
+    font: 300 14px/1.7 $FONT;
+    color: $COLOR_TEXT;
+    text-align: center;
+}

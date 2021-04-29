@@ -1,0 +1,30 @@
+/* -------------------------------------------------------------------------------
+ Horizontal List
+-------------------------------------------------------------------------------- */
+.listH {
+    font-size: 0;
+}
+
+.listH > * {
+    font-size: $FONT_SIZE;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.listH_spaced > * + * {
+    margin-left: 30px;
+}
+
+.listH_divided > * + * {
+    border-left: 1px solid $COLOR_UI_DARK;
+    padding-left: 12px;
+    margin-left: 12px;
+}
+
+.mix-listH_dividedLight > * + * {
+    border-color: $COLOR_BACKGROUND;
+}
+
+.mix-listH_small > * {
+    font-size: 14px;
+}

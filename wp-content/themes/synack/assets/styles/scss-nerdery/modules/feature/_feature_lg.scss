@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------------
+ feature - Feature with photo, heading, body, and cta.
+---------------------------------------------------------------------- */
+.feature-media {
+    width: 248px;
+    padding-right: 40px;
+}
+
+.feature-bd-detail {
+    margin-bottom: 16px;
+}
+
+.feature-bd-hd {
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.feature-bd-content {
+    margin-bottom: 38px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.feature-bd-cta {
+    font-size: 11px;
+    padding-right: 141px;
+}
+
+.feature-bd-cta:after {
+    right: 14px;
+}

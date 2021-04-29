@@ -1,0 +1,55 @@
+/* ----------------------------------------------------------------------
+ moduleDiagram - Module that has a diagram and list of labels. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleDiagram_scrollWrap,
+.moduleDiagram {
+    overflow: auto; /* Reset from mobile */
+    white-space: normal; /* Reset from mobile */
+}
+
+.moduleDiagram_solutions {
+    margin-bottom: 80px;
+}
+
+.moduleDiagram-hd {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.moduleDiagram-diagram {
+    width: auto; /* Reset */
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.moduleDiagram_solutions .moduleDiagram-diagram {
+    width: auto; /* Reset */
+    padding-right: 14%;
+    padding-left: 14%;
+    margin-bottom: 20px;
+}
+
+.moduleDiagram-info,
+.moduleDiagram_solutions .moduleDiagram-info {
+    width: auto; /* Reset */
+    padding-right: 4%;
+    padding-left: 4%;
+    margin-bottom: 40px;
+}
+
+.moduleDiagram_solutions .moduleDiagram-info {
+    margin-bottom: 0;
+}
+
+.moduleDiagram-info-item {
+    margin-bottom: 0; /* Reset from mobile */
+    line-height: 1.5;
+}
+
+.mix-moduleDiagram-info-item_3up {
+    width: 33%;
+}
+
+.moduleDiagram-info-item-hd {
+    line-height: 1.1;
+}

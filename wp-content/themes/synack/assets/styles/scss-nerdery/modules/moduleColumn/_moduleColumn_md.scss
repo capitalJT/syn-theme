@@ -1,0 +1,38 @@
+/* ----------------------------------------------------------------------
+ moduleColumn - Module that has header and list of text with header and body content. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleColumn {
+    display: flex;
+    justify-content: space-between; /* So children go to opposite sides */
+    margin-right: 9.5%;
+    margin-left: 9.5%;
+}
+
+.mix-moduleColumn_wide {
+    margin-right: 6.5%;
+}
+
+.moduleColumn-item {
+    width: 45%;
+}
+
+.moduleColumn-item_space {
+    padding-top: 88px;
+}
+
+.moduleColumn-item_spaceSm {
+    padding-top: 40px;
+}
+
+.mix-moduleColumn-item_wide {
+    width: 48%;
+}
+
+.moduleColumn_narrow {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.mix-moduleColumn-item_hiddenMobile {
+    display: block;
+}

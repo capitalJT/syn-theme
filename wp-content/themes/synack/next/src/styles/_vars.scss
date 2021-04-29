@@ -1,0 +1,142 @@
+@import 'src/styles/easings';
+
+// Sass constants
+$white: #ffffff;
+$black: #000000;
+$navy: #0b1221;
+$blue: #0f61ff;
+$red: #ff2f4b;
+$indigo: #071124;
+$red: #e70040;
+$blue-gray: #3f4c67;
+$sky: #8696ad;
+$yellow: #ffad39;
+$green: #48d895;
+$purple: #b39cff;
+$light-gray: #edeff3;
+$date-gray: #d0d3d8;
+
+// Grid
+$grid-border: #e8ebf0;
+$grid-toggle: #f9fafd;
+$grid-text-heavy: #535f75;
+$grid-text: $sky;
+
+$font-body: 'Graphik';
+$font-display: 'Crique Grotesk';
+
+$max-width: 1200px;
+
+$desktop-padding: 30px;
+$mobile-padding: 16px;
+$header-height: 80px;
+
+// Breakpoints
+$gt-cinema: 'only screen and (min-width: 1800px)';
+$lt-desktop: 'only screen and (max-width: 1100px)';
+$lt-phone: 'only screen and (max-width: 790px)';
+$lt-phone-landscape: 'only screen and (max-width: 750px) and (orientation: landscape)';
+$ipad: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px)';
+
+// mixins
+@mixin fill($position: absolute) {
+    position: $position;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+@mixin cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@mixin contain {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+@mixin game-legend {
+    // font-family: CriqueGrotesk-Medium;
+    font-size: 10px;
+    color: #64778f;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+@mixin featured-block-shadow {
+    box-shadow: rgba(#00193e, 0.14) 0 12px 34px;
+}
+@mixin products-solutions-titles {
+    // title info
+    .meta {
+        text-align: center;
+        max-width: 720px;
+        margin: auto;
+    }
+    .meta h5 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: $blue;
+        font-size: 18px;
+    }
+    .meta h3 {
+        font-size: 60px;
+        margin: 0;
+    }
+}
+@mixin background-pattern-decoration {
+    // background
+    .pattern {
+        @include fill;
+        background-image: url('images/patterns/blue-triangles.png');
+        background-size: 100px;
+    }
+    .gradient {
+        @include fill;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 100%
+        );
+    }
+}
+@mixin shortcode-button(
+    $background: transparent,
+    $border: $white,
+    $color: $white
+) {
+    text-decoration: none;
+    padding: 24px 50px 25px;
+    font-size: 16px;
+    color: $navy;
+    background: $white;
+    border-radius: 45px;
+    display: inline-block;
+    font-weight: 500;
+    transition: border 0.3s;
+    white-space: nowrap;
+
+    &:not(.primary) {
+        background: $background;
+        color: $color;
+        border: 3px solid rgba($border, 0.3);
+        padding-bottom: 23px;
+        padding-top: 22px;
+
+        .not-mobile &:hover,
+        .not-mobile &:focus {
+            border-color: transparent;
+        }
+    }
+    & + .shortcode-button {
+        margin-left: 20px;
+    }
+
+    @media #{$lt-phone} {
+        font-size: 14px;
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+}

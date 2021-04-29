@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------------------
+ blocksScroll - Blocks that scroll on mobile.
+---------------------------------------------------------------------- */
+.blocksScroll {
+    overflow: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; /* So in some mobile browsers, content will scroll with touch instead of scroll bar. */
+    white-space: nowrap;
+}
+
+.blocksScroll-item {
+    display: inline-block;
+    width: 195px;
+    margin-bottom: 20px;
+}
+
+.blocksScroll-item:first-child {
+    margin-left: 60px;
+}
+
+.blocksScroll-item:last-child {
+    margin-right: 60px;
+}

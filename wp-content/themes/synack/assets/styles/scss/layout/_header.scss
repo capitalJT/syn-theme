@@ -1,0 +1,26 @@
+header .header-wrapper {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  #header-image {
+    width: 50%;
+    display: block;
+    a{
+      display: inline-block;
+    }
+    img{
+      height: 30px;
+      display: block;
+    }
+  }
+  .button-wrapper {
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.header-hero-wrapper{
+  position: relative;
+  // random number. Don't know if it needs to be this high.
+  z-index: 100;
+}

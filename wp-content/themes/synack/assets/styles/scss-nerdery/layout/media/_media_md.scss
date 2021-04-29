@@ -1,0 +1,20 @@
+/* ----------------------------------------------------------------------
+ media - media object / stacked on small screens
+---------------------------------------------------------------------- */
+.media {
+    @include clearfix();
+}
+
+.media-figure {
+    margin-right: 20px;
+    float: left;
+}
+
+.media-figure,
+.media-figure > * {
+    width: auto; // reset fluid figure
+}
+
+.media-bd {
+    overflow: hidden;
+}

@@ -1,0 +1,46 @@
+/* ----------------------------------------------------------------------
+ footer - Main footer
+---------------------------------------------------------------------- */
+.footer {
+    padding: 0; /* Reset */
+    text-align: left;
+    font-size: 11px;
+}
+
+.footer-bd {
+    display: flex;
+    justify-content: space-between; /* So children are positioned on opposite sides */
+    padding: 41px 56px 43px 71px;
+    margin-bottom: 0; /* Reset */
+    border-bottom: 1px solid #1a2a3e;
+}
+
+.footer-bd > * {
+    box-sizing: border-box; /* So padding doesn't effect dimensions */
+}
+
+.footer-bd-nav {
+    width: 30%;
+    padding-right: 20px;
+    margin-bottom: 0; /* Reset */
+}
+
+.footer-bd-navSecondary {
+    flex-grow: 1; /* So it fills the remaining space */
+    padding-bottom: 0; /* Reset */
+    margin-bottom: 0; /* Reset */
+    border-bottom: 0; /* Reset */
+    padding-right: 20px;
+}
+
+.footer-ft {
+    display: flex;
+    justify-content: space-between; /* So children are positioned on opposite sides */
+    align-items: center; /* So content in children is vertically centered */
+    padding: 16px 71px 22px 71px;
+}
+
+.footer-ft-logo {
+    width: 105px;
+    margin: 0; /* reset from mobile */
+}

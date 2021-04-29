@@ -1,0 +1,18 @@
+/* ----------------------------------------------------------------------
+ median - centering utility
+---------------------------------------------------------------------- */
+.median > * {
+    display: inline-block;
+}
+
+.median_center {
+    text-align: center;
+}
+
+.median_center > * {
+    text-align: left; /* Reset */
+}
+
+.median_middle > * {
+    vertical-align: middle;
+}

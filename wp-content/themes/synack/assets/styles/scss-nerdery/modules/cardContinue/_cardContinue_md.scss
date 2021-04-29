@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------------------
+ cardContinue - featured content container with CTA
+---------------------------------------------------------------------- */
+.cardContinue {
+    min-height: 268px;
+}
+
+.cardContinue-main {
+    padding: 35px 25px 23px 25px;
+}
+
+.cardContinue-main-bd-detail {
+    margin-bottom: 17px;
+}
+
+.cardContinue-main-bd-content {
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cardContinue-main-cta {
+    padding: 14px 16px 14px 16px;
+}
+
+.cardContinue-main-cta:after {
+    right: 19px;
+}

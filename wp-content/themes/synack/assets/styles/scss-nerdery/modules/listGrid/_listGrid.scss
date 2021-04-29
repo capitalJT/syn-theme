@@ -1,0 +1,12 @@
+/* ----------------------------------------------------------------------
+ listGrid - list of items on small screens and 3col grid on larger screens
+---------------------------------------------------------------------- */
+.listGrid {
+    text-align: center;
+}
+
+.listGrid-item {
+    border-bottom: 1px solid $COLOR_UI_ACCENT;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

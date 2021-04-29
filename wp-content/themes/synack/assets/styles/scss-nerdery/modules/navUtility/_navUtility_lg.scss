@@ -1,0 +1,62 @@
+/* ----------------------------------------------------------------------
+ navUtility - Header utility menu
+---------------------------------------------------------------------- */
+.navUtility {
+    padding: 0; /* Reset from mobile */
+    font-size: 11px;
+}
+
+.navUtility-item {
+    display: inline-block;
+}
+
+.navUtility-item_unique {
+    position: static; /* Reset from mobile */
+    top: 0; /* Reset from mobile */
+    left: 0; /* Reset from mobile */
+}
+
+.navUtility-item + .navUtility-item {
+    margin-left: 19px;
+}
+
+.navUtility-item-link {
+    color: $COLOR_BRAND;
+}
+
+.navUtility-item-link:hover {
+    color: $COLOR_ACTIVE;
+    background-color: transparent; /* Reset from mobile */
+}
+
+.mix-navUtility-item-link_defined {
+    padding: 12px 30px;
+    border: 1px solid $COLOR_BRAND;
+}
+
+.mix-navUtility-item-link_defined:active,
+.mix-navUtility-item-link_defined:hover {
+    background-color: $COLOR_BRAND;
+    color: $COLOR_TEXT_REVERSE;
+}
+
+/* Theme for Red page */
+.theme-red .navUtility-item-link {
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.theme-red .navUtility-item-link:hover {
+    color: #ffffff;
+    background-color: $COLOR_BACKGROUND_THEME; /* Reset from mobile */
+}
+
+.theme-red .mix-navUtility-item-link_defined {
+    border-color: $COLOR_BRAND_THEME;
+    color: $COLOR_BRAND_THEME;
+}
+
+.theme-red .mix-navUtility-item-link_defined:active,
+.theme-red .mix-navUtility-item-link_defined:hover {
+    background-color: $COLOR_BRAND_THEME;
+    color: #000000;
+}

@@ -1,0 +1,114 @@
+/* ----------------------------------------------------------------------
+ cardContinue - featured content container with CTA
+---------------------------------------------------------------------- */
+.cardContinue {
+    display: block; /* For when element is a link */
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 295px;
+    border-radius: 3px;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    z-index: $Z_INDEX_REORDER;
+    white-space: normal; /* Reset in case module is in .blocksScroll */
+    text-align: center;
+    background-color: $COLOR_BACKGROUND;
+}
+
+.cardContinue-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background-size: 0 0;  /* Hiding background image initially */
+}
+
+.cardContinue-main {
+    display: flex;
+    flex-direction: column; /* So children are arranged vertically */
+    justify-content: space-between; /* So children are positioned opposite each other */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    padding: 30px 20px 18px 20px;
+    z-index: $Z_INDEX_REORDER;
+}
+
+.cardContinue-main-bd-detail {
+    margin-bottom: 29px;
+    text-transform: uppercase;
+    font: 400 12px / 1 $FONT_SECONDARY;
+    color: #cbccce;
+}
+
+.cardContinue-main-bd-content {
+    line-height: 1.6;
+}
+
+.cardContinue-main-cta {
+    display: block;
+    padding: 17px 16px 17px 16px;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    position: relative; /* So arrow is positioned relative to container */
+    text-align: left;
+    text-transform: uppercase;
+    font: 400 12px / 1 $FONT_SECONDARY;
+    color: $COLOR_BRAND;
+}
+
+.cardContinue_red .cardContinue-main-cta {
+    color: $COLOR_BRAND_THEME;
+}
+
+.cardContinue-main-cta:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 5px solid transparent; /* Creates arrow shape */
+    border-left-color: $COLOR_BRAND;
+    position: absolute;
+    right: 15px;
+    top: 40%;
+}
+
+.cardContinue_red .cardContinue-main-cta:after {
+    border-left-color: $COLOR_BRAND_THEME;
+}
+
+/* Hover Styles */
+.cardContinue:hover {
+    background-color: $COLOR_BRAND;
+}
+
+.cardContinue_red:hover {
+    background-color: $COLOR_BRAND_THEME;
+}
+
+.cardContinue:hover .cardContinue-bg {
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(1);
+    opacity: 0.2;
+}
+
+.cardContinue:hover .cardContinue-main {
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.cardContinue:hover .cardContinue-main-bd-detail {
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.cardContinue:hover .cardContinue-main-cta {
+    border-color: #ffffff;
+    color: $COLOR_TEXT_REVERSE;
+}
+
+.cardContinue:hover .cardContinue-main-cta:after {
+    border-left-color: #ffffff;
+}

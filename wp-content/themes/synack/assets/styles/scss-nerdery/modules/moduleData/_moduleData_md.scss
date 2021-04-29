@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------------
+ moduleData - Module that has header, media, and data sections. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleData {
+    margin-bottom: 415px;
+}
+
+.moduleData-bg {
+    top: -15px;
+    background-size: 65% auto;
+}
+
+.moduleData-hd {
+    margin-bottom: 0; /* Reset from mobile */
+}
+
+.moduleData-bd {
+    display: flex;
+    justify-content: space-between; /* Arranges children with space between */
+}
+
+.moduleData-bd-item {
+    width: 30%;
+}
+
+.moduleData-bd-item + .moduleData-bd-item {
+    margin-top: 0; /* Reset from mobile */
+}
+
+.moduleData-bd-item-number {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,46 @@
+/* ----------------------------------------------------------------------
+ footer - Main footer
+---------------------------------------------------------------------- */
+.footer {
+    font-size: 11px;
+}
+
+.footer-bd {
+    display: flex;
+    padding: 57px 14.58% 160px 14.58%;
+    margin-bottom: 0; /* Reset */
+    border-bottom: 1px solid #1a2a3e;
+}
+
+.footer-bd > * {
+    box-sizing: border-box; /* So padding doesn't effect dimensions */
+}
+
+.footer-bd-nav {
+    width: 76.47%;
+}
+
+.footer-bd-navSecondary {
+    width: 12.74%;
+}
+
+.footer-bd-navTertiary {
+    width: 10.78%;
+}
+
+.footer-ft {
+    display: flex;
+    justify-content: space-between; /* So children are positioned on opposite sides */
+    align-items: center; /* So content in children is vertically centered */
+    padding: 24px 14.58% 23px 14.58%;
+}
+
+.footer-ft-logo {
+    width: 105px;
+    margin: 0; /* Reset */
+}
+
+/* Theme for Red page */
+.theme-red .footer-bd {
+    border-bottom-color: #292929;
+}

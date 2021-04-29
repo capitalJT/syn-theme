@@ -1,0 +1,70 @@
+/* ----------------------------------------------------------------------
+ brain - hover interactions
+---------------------------------------------------------------------- */
+.brain {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 82.332761578%;
+}
+
+.brain_large {
+    padding-top: 49.255319148%;
+}
+
+.brain-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-image: url("../media/images/brain.png");
+    background-size: 100% auto;
+}
+
+.brain_large .brain-bg {
+    background-image: url("../media/images/brain_large.png");
+}
+
+.brain-fg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.brain-fg-left,
+.brain-fg-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    background-image: url("../media/images/brain_highlight.png");
+    background-size: 200% 100%;
+    transition: opacity 0.5s ease-out;
+}
+
+.brain_large .brain-fg-left,
+.brain_large .brain-fg-right {
+    background-image: url("../media/images/brain_large_highlight.png");
+}
+
+.brain-fg-left:hover,
+.brain-fg-right:hover {
+    opacity: 1;
+}
+
+.brain-fg-left {
+    left: 0;
+    right: 50%;
+    background-position: center left;
+}
+
+.brain-fg-right {
+    left: 50%;
+    right: 0;
+    background-position: center right;
+}

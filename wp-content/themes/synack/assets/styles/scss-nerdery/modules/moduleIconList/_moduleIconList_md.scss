@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------------------
+ moduleIconList - Module that has header, and list of icons with labels. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleIconList {
+    margin-bottom: 400px;
+}
+
+.moduleIconList-hd {
+    margin-bottom: 45px;
+}
+
+.moduleIconList-bd {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.moduleIconList-bd-item {
+    width: 33%;
+    margin-bottom: 73px;
+}
+
+.moduleIconList-bd-item-label {
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.moduleIconList-bd-item-label_narrow {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.moduleIconList-cta {
+    display: block;
+    margin-top: -15px;
+}

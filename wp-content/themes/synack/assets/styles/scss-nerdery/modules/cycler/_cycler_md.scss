@@ -1,0 +1,34 @@
+/* ----------------------------------------------------------------------
+ cycler - media cycler component
+---------------------------------------------------------------------- */
+.cycler-indicator {
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.cycler-indicator > * {
+    border-bottom: 2px solid #ffffff;
+    flex-grow: 1;
+}
+
+.cycler-indicator > *.isActive {
+    border-color: $COLOR_BRAND;
+}
+
+.cycler-indicator > * + * {
+    margin-left: 12px;
+}
+
+.cycler-indicator > *:only-child {
+    display: none; // no reason to show if there's a single slide
+}
+
+.cycler-list-item-caption {
+    display: none; // mobile only
+}

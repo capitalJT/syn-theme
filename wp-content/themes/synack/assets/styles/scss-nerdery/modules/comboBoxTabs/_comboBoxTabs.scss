@@ -1,0 +1,86 @@
+/* ----------------------------------------------------------------------
+ comboBoxTabs - pseudo select menu component for small screens / tabs for medium and large screens
+---------------------------------------------------------------------- */
+.comboBoxTabs {
+    position: relative;
+    cursor: pointer;
+    border-top: 1px solid $COLOR_UI_ACCENT;
+    border-bottom: 1px solid $COLOR_UI_ACCENT;
+}
+
+.comboBoxTabs_noBorders {
+    border:none;
+}
+
+.comboBoxTabs_blockOnSm {
+    width: 100%;
+}
+
+.comboBoxTabs:focus {
+    outline: 1px dotted;
+}
+
+.comboBoxTabs::after {
+    width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-top: 6px solid gray;
+    border-left: 6px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    content: "";
+    transform: translateY(-50%);
+}
+
+.comboBoxTabs:focus::after {
+    border-top: 0;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid gray;
+    border-left: 6px solid transparent;
+}
+
+.comboBoxTabs-value {
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.comboBoxTabs-value,
+.comboBoxTabs-list {
+    font: 400 10px/1.0 $FONT_SECONDARY;
+    color: $COLOR_TEXT_LIGHT;
+    text-transform: uppercase;
+}
+
+.comboBoxTabs-list {
+    display: none;
+    width: 100%;
+    border: 1px solid $COLOR_UI_ACCENT;
+    border-top-style: dotted;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.02);
+    position: absolute;
+    z-index: 2; // ensure dropdown on mobile layouts is shown above content
+    background-color: #ffffff;
+}
+
+.comboBoxTabs-list-item {
+    cursor: pointer;
+}
+
+.comboBoxTabs.isActive .comboBoxTabs-list {
+    display: block;
+}
+
+.comboBoxTabs-list > * {
+    display: block;
+    padding: 3% 6%;
+}
+
+.comboBoxTabs-list > *:hover,
+.comboBoxTabs-list > *:focus {
+    color: $COLOR_UI_DARK;
+}

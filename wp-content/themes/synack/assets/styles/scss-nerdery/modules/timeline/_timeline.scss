@@ -1,0 +1,80 @@
+/* ----------------------------------------------------------------------
+ timeline - company timeline of notable information
+---------------------------------------------------------------------- */
+$padding: 15%;
+
+.timeline {
+    position: relative;
+    border-left: 1px solid $COLOR_UI_MEDIUM;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.timeline:before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border: 1px solid $COLOR_UI_MEDIUM;
+    background: #ffffff;
+    position: absolute;
+    top: -5px;
+    left: -6px;
+    border-radius: 10px;
+}
+
+.timeline-hd {
+    font-size: 16px;
+    color: $COLOR_BRAND;
+    font-weight: 300;
+}
+
+.timeline-bd {
+    color: $COLOR_TEXT;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.timeline-row {
+    position: relative;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 60px;
+    content: '';
+    border-top: 1px dashed $COLOR_UI_MEDIUM;
+    width: $padding / 1.5;
+    display: block;
+    left: 0;
+}
+
+.timeline-line:before {
+    content: '';
+    height: 4px;
+    width: 4px;
+    border-radius: 4px;
+    background: $COLOR_UI_DARK;
+    display: inline-block;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+}
+
+.timeline-line:after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: $COLOR_UI_MEDIUM;
+    display: inline-block;
+    position: absolute;
+    right: -2px;
+    top: -6px;
+}
+
+.timeline-item {
+    padding-left: $padding;
+}

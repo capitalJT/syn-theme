@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------------------
+ header - Main header
+---------------------------------------------------------------------- */
+.header {
+    display: flex;
+    justify-content: space-between; /* So children are positioned on opposite sides */
+    padding: 13px 22px 13px 20px;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    z-index: $Z_INDEX_HEADER;
+    background-color: $COLOR_BACKGROUND;
+}
+
+.header-logo {
+    width: 105px;
+}
+
+.header-title {
+    display: none; /* Not an accessibility concern. Only needed for desktop. */
+}
+
+.header-nav {
+    flex-grow: 1; /* So the nav section fills the space */
+}
+
+/* Theme for Red page */
+.theme-red .header {
+    background-color: $COLOR_BACKGROUND_THEME;
+    border-bottom-color: $COLOR_UI_ACCENT_THEME;
+}

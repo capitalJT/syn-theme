@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------------
+ link
+---------------------------------------------------------------------- */
+.link {
+    text-decoration: underline;
+    font-family: $FONT_SECONDARY;
+    font-weight: 400;
+    color: $COLOR_BRAND;
+    cursor: pointer;
+}
+
+.mix-link_uppercase {
+    text-transform: uppercase;
+}
+
+.mix-link_noDecor {
+    text-decoration: none;
+}
+
+.mix-link_tooltip {
+    position: relative;
+}
+
+/* Theme for Red page */
+.theme-red .link {
+    color: $COLOR_BRAND_THEME;
+}
+
+.link_light {
+    font-weight: 300;
+    font-family: "criquegroteskdisplay", "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+}

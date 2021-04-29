@@ -1,0 +1,21 @@
+/* ----------------------------------------------------------------------
+ listV - Vertical list
+---------------------------------------------------------------------- */
+.mix-listV_spaceLg > * + * {
+    margin-top: 24px;
+}
+
+.mix-vList_defineSpace > * + * {
+    padding-top: 40px;
+    margin-top: 38px;
+}
+
+.mix-listV_bullet li {
+    padding-left: 49px;
+}
+
+.mix-listV_bullet li:before {
+    left: 12px;
+    top: 8px;
+}
+

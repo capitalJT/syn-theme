@@ -1,0 +1,36 @@
+/* ----------------------------------------------------------------------
+ pageFloat - floating animation effect
+---------------------------------------------------------------------- */
+.pageFloat {
+    width: 640px;
+    height: 400px;
+    position: relative;
+    top: 150px;
+    perspective: 1200px;
+}
+
+.pageFloat-page {
+    margin: 0 auto;
+    position: absolute;
+    transform: rotate3d(0, 0, 0, 0) translate3d(-40px, -180px, -200px);
+    animation: pageFlip 20s infinite;
+}
+
+.pageFloat-book {
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@keyframes pageFlip {0%,
+    100% {
+        transform: rotate3d(0, 0, 0, 0) translate3d(-40px, -180px, -200px);
+    }
+    50% {
+        transform: rotate3d(40, 70, -100, -78deg) translate3d(-80px, 100px, -240px);
+    }
+}

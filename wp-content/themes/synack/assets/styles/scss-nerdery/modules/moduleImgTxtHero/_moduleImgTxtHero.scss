@@ -1,0 +1,54 @@
+/* ----------------------------------------------------------------------
+ moduleImgTxtHero
+---------------------------------------------------------------------- */
+.moduleImgTxtHero {
+    padding-top: 67px;
+    margin-bottom: 60px;
+}
+
+.moduleImgTxtHero-hd {
+    padding-right: 9%;
+    padding-left: 9%;
+    position: relative;
+    z-index: 20;
+}
+
+.moduleImgTxtHero-media {
+    position: relative;
+    z-index: $Z_INDEX_BG;
+    margin-top: -110px;
+    margin-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.moduleImgTxtHero-media_alt {
+    margin-top: -143px;
+    margin-bottom: 80px;
+    padding-left: 12%;
+    padding-right: 11%;
+}
+
+.moduleImgTxtHero-bd {
+    margin-bottom: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.moduleImgTxtHero-bd-article {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $COLOR_TEXT;
+}
+
+.moduleImgTxtHero-bd-article > p {
+    margin-bottom: 23px; /* Margins not on top, because wrapped paragraphs would have gap at top */
+    break-inside: avoid;
+}
+
+.moduleImgTxtHero-ft {
+    text-align: center;
+}

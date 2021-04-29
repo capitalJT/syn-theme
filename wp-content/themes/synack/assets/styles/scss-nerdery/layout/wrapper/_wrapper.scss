@@ -1,0 +1,18 @@
+/* ----------------------------------------------------------------------
+ Wrapper - Content wrapper util
+---------------------------------------------------------------------- */
+.wrapper {
+    @include wrapper();
+}
+
+.wrapper_fixed {
+    max-width: $CONTAINER_MAX_WIDTH_MD;
+}
+
+.wrapper_tight {
+    max-width: $CONTAINER_MAX_WIDTH_SM;
+}
+
+.mix-wrapper_contain {
+    overflow: hidden; /* So elements that are positioned off-screen don't cause scrolling */
+}

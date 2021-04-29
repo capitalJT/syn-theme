@@ -1,0 +1,78 @@
+/* ---------------------------------------------------------------------
+Triangle - Decorative triangles.
+------------------------------------------------------------------------ */
+.triangle {
+    position: relative;
+}
+
+.triangle-shape {
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    z-index: $Z_INDEX_TRIANGLE;
+    background-image: url("../media/images/triangle.png");
+    background-size: 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    pointer-events: none; /* So triangles don't block content */
+}
+
+/*
+Numbers are to identify triangles, not for heirarchy. Triangles don't follow a pattern.
+Triangles with "r" in the name are for the Red page.
+Triangles with "c" in the name are for the Career page.
+*/
+
+/* Mobile triangles */
+.triangle-shape_1 {
+    right: -200px;
+    top: -250px;
+}
+
+.triangle-shape_2 {
+    top: -320px;
+    left: -125px;
+}
+
+.triangle-shape_3 {
+    top: -255px;
+    right: -140px;
+}
+
+.triangle-shape_4 {
+    bottom: -396px;
+    left: -140px;
+}
+
+.triangle-shape_12 {
+    top: 450px;
+    right: -100px;
+    z-index: 1;
+}
+
+/* Tablet and desktop only triangles */
+.triangle-shape_5,
+.triangle-shape_6,
+.triangle-shape_7,
+.triangle-shape_8,
+.triangle-shape_9,
+.triangle-shape_10,
+.triangle-shape_11,
+.triangle-shape_1r,
+.triangle-shape_2r,
+.triangle-shape_3r,
+.triangle-shape_4r,
+.triangle-shape_4c {
+    display: none;
+}
+
+.mix-triangle-shape_rev {
+    background-image: url("../media/images/triangle_rev.png");
+    background-position: right center;
+}
+
+/* Theme for Red page */
+.theme-red .triangle-shape {
+    opacity: 0.05;
+}

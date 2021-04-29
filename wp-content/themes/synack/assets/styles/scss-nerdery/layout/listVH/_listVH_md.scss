@@ -1,0 +1,13 @@
+/* ----------------------------------------------------------------------
+ listVH - Vertical list on mobile and horizontal on larger screens
+---------------------------------------------------------------------- */
+.listVH > * {
+    display: inline-block;
+}
+
+.mix-listVH_space > * + * {
+    margin-top: 0; /* Reset */
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left: 1px solid #dddddd;
+}

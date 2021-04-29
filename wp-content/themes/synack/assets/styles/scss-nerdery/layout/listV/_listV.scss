@@ -1,0 +1,74 @@
+/* ----------------------------------------------------------------------
+ listV - Vertical list
+---------------------------------------------------------------------- */
+.listV_divided > * {
+    border-top: 1px solid $COLOR_UI_MEDIUM;
+    padding-top: 10px;
+}
+
+.mix-listV_space > * + * {
+    margin-top: 12px;
+}
+
+.mix-listV_spaceLg > * + * {
+    margin-top: 28px;
+}
+
+.mix-listV_spaceXlg > * + * {
+    margin-top: 35px;
+}
+
+.mix-listV_defineSpace > *:not(.u-isHidden) + * { // filtered list in js
+    padding-top: 26px;
+    margin-top: 31px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.mix-listV_bullet li {
+    position: relative;
+    padding-left: 28px;
+}
+
+.mix-listV_bullet li:before {
+    box-sizing: border-box;
+    background: url("../media/images/icon-unorderedList.svg") no-repeat;
+    background-size: contain;
+    padding-right: 15px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    content: "";
+    height: 16px;
+    width: 16px;
+}
+
+.listV_bulletRed li {
+    position: relative;
+    padding-left: 28px;
+}
+
+.listV_bulletRed li:before {
+    box-sizing: border-box;
+    background: url("../media/images/icon-unorderedList-theme.svg") no-repeat;
+    background-size: contain;
+    padding-right: 15px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    content: "";
+    height: 16px;
+    width: 16px;
+}
+
+.mix-vList_defineSpace > * + * {
+    padding-top: 35px;
+}
+
+/* Theme for Red page */
+.theme-red .mix-listV_bullet li:before {
+    background-image: url("../media/images/icon-unorderedList-theme.svg");
+}
+
+.theme-red .listV_divided > * {
+    border-color: $COLOR_UI_ACCENT_THEME;
+}

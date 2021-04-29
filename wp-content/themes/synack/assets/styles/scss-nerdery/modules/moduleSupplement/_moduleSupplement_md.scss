@@ -1,0 +1,25 @@
+/* ----------------------------------------------------------------------
+ moduleSupplement - Container is full width and holds secondary body content.
+---------------------------------------------------------------------- */
+.moduleSupplement:before {
+    left: 247px;
+}
+
+.moduleSupplement-inner {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.moduleSupplement-inner-hd {
+    font-size: 36px;
+}
+
+.moduleSupplement_secondary {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mix-moduleSupplement_release {
+    padding-right: 0;
+    padding-left: 0;
+}

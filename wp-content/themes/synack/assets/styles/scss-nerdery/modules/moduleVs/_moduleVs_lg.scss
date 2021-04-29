@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------------
+ moduleVs - Module that has title and 2 sections that are compared. Used on the home page.
+---------------------------------------------------------------------- */
+.moduleVs {
+    margin-bottom: 0;
+}
+
+.moduleVs-hd {
+    margin-bottom: 75px;
+}
+
+.moduleVs-bd {
+    width: 40%;
+    padding-top: 45%;
+}
+
+.moduleVs-bd-inner-1-fg {
+    padding: 95px 115% 0 0;
+    text-align: right;
+    left: -125%;
+}
+
+.moduleVs-bd-inner-2-fg {
+    padding: 95px 0 0 115%;
+    text-align: left;
+    right: -125%;
+}

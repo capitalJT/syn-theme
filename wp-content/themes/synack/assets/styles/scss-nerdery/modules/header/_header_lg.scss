@@ -1,0 +1,18 @@
+/* ----------------------------------------------------------------------
+ header - Main header
+---------------------------------------------------------------------- */
+.header {
+    padding: 16px 20px 0 30px;
+    font-size: 11px;
+}
+
+.header-logo {
+    padding-top: 7px;
+    margin-right: 19px;
+}
+
+.header-title {
+    padding-top: 4px;
+    padding-left: 20px;
+    margin-bottom: 18px; /* So the side border doesn't touch the bottom */
+}

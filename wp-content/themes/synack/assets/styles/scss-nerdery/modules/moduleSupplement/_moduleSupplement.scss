@@ -1,0 +1,36 @@
+/* ----------------------------------------------------------------------
+ moduleSupplement - Container is full width and holds secondary body content.
+---------------------------------------------------------------------- */
+.moduleSupplement {
+    border-top: 1px solid #e8e8e8;
+    position: relative;
+    background-color: #fcfcfc;
+}
+
+.moduleSupplement:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: -1px;
+    left: 107px;
+    background-color: #000000;
+}
+
+.moduleSupplement-inner {
+    padding-top: 33px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    @include wrapper();
+}
+
+.moduleSupplement-inner-hd {
+    margin-bottom: 23px;
+    text-align: center;
+    font: 300 24px / 1.33 $FONT;
+}
+
+.moduleSupplement_secondary:before {
+    display: none;
+}

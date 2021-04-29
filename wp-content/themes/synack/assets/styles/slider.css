@@ -1,0 +1,303 @@
+html, body {
+  height: 100%;
+  margin: auto 0;
+  padding: auto 0;
+  background: #FFF;
+  left: 0; right: 0; top: 0;
+  font-family: helvetica;
+}
+
+.homeWrapper {
+  max-width:1400px;
+  height: 80vh;
+  border: 0px solid #ff0000;
+  text-align: center;
+  background-color: #FFFFFF;
+  background-image:url("https://www.synack.com/wp-content/uploads/2016/06/homeWorld-v3.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right -75px;
+  margin: 0 auto;
+  position: relative;
+  display: table;
+  left: 0; right: 0; top: 0;
+}
+
+.homeWrapper .homeContainer {
+  text-align: center;
+  position: relative;
+  height: 92%;
+}
+
+.homeWrapper .homeContainer .homeTitle {
+  margin-top: 0px;
+  position: relative;
+}
+
+.homeWrapper .homeContainer .homeTitle h2 {
+  color:#006BFF;
+  font-size: 48px;
+  font-weight: 100;
+  margin-top: 35px;
+}
+@media only screen and (min-width : 320px) {
+  .homeWrapper .homeContainer .homeTitle h2 {
+    font-size: 38px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .homeWrapper .homeContainer .homeTitle h2 {
+    font-size: 48px;
+    margin-top: 45px;
+  }
+}
+@media only screen and (min-width : 1920px) {
+  .homeWrapper .homeContainer .homeTitle h2 {
+    font-size: 58px;
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width : 1980px) {
+  .homeWrapper .homeContainer .homeTitle h2 {
+    font-size: 68px;
+    margin-top: 100px;
+  }
+}
+
+.homeWrapper .homeContainer .homeBreak a img {
+  max-width: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-repeat: none;
+}
+@media only screen and (min-width : 1920px) {
+  .homeWrapper .homeContainer .homeBreak a img {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+}
+
+.homeWrapper .homeContainer .homeMessage p {
+  color: #555555;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 0 16px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.7em;
+}
+@media only screen and (min-width : 320px) {
+  .homeWrapper .homeContainer .homeMessage p {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .homeWrapper .homeContainer .homeMessage p {
+    font-size: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media only screen and (min-width : 1920px) {
+  .homeWrapper .homeContainer .homeMessage p {
+    font-size: 26px;
+    padding: 0 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.homeBtn {
+  padding-top: 2em;
+}
+
+.homeBtnPrimary {
+  border:1px solid #006bff;
+  color:#006bff
+}
+
+.homeBtnPrimary:hover {
+  color:#fff;
+  background:#006bff
+}
+
+.homeWrapper .homeContainer .homeBottomThree {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+  display: table;
+}
+@media only screen and (min-width : 320px) {
+  .homeWrapper .homeContainer .homeBottomThree {
+    margin-top: 65px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .homeWrapper .homeContainer .homeBottomThree {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width : 1680px) {
+  .homeWrapper .homeContainer .homeBottomThree {
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width : 1920px) {
+  .homeWrapper .homeContainer .homeBottomThree {
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width : 2200px) {
+  .homeWrapper .homeContainer .homeBottomThree {
+    margin-top: 180px;
+  }
+}
+
+.homeWrapper .homeContainer .homeBottomThree div img {
+  height: 60px;
+}
+@media only screen and (min-width : 1920px) {
+  .homeWrapper .homeContainer .homeBottomThree div img {
+    height: 80px;
+  }
+}
+
+.homeWrapper .homeContainer .homeBottomThree p {
+  font-size: 18px;
+  height: 100%;
+  color: #999999;
+  padding: 25px 45px 10px 45px;
+  line-height: 1.6em;
+}
+@media only screen and (min-width : 320px) {
+  .homeWrapper .homeContainer .homeBottomThree p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .homeWrapper .homeContainer .homeBottomThree p {
+    font-size: 18px;
+    padding: 25px 45px 10px 45px;
+  }
+}
+@media only screen and (min-width : 1920px) {
+  .homeWrapper .homeContainer .homeBottomThree p {
+    font-size: 21px;
+  }
+}
+
+.homeWrapper .homeContainer .homeBottomThree .homeThreeLeft {
+  float: left;
+  width: 33%;
+  height: 100%;
+  display: table-cell;
+}
+@media only screen and (max-width : 768px) {
+  .homeWrapper .homeContainer .homeBottomThree .homeThreeLeft {
+    clear: both;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+.homeWrapper .homeContainer .homeBottomThree .homeThreeCenter {
+  float: left;
+  width: 33%;
+  height: 100%;
+  display: table-cell;
+  border-right: 2px solid #006bff;
+  border-left: 2px solid #006bff;
+}
+@media only screen and (max-width : 768px) {
+  .homeWrapper .homeContainer .homeBottomThree .homeThreeCenter {
+    clear: both;
+    width: 100%;
+    padding-bottom: 40px;
+    border: 0px solid #ffffff;
+  }
+}
+
+.homeWrapper .homeContainer .homeBottomThree .homeThreeRight {
+  float: left;
+  width: 33%;
+  height: 100%;
+  display: table-cell;
+}
+@media only screen and (max-width : 768px) {
+  .homeWrapper .homeContainer .homeBottomThree .homeThreeRight {
+    clear: both;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+.homeWrapper .homeContainer .homeBottomThree .homeLine {
+  float: left;
+  width: 2px;
+  height: 100%;
+  overflow: overlay;
+  background-color: #006bff;
+  position: relative;
+  display: table-cell;
+}
+@media only screen and (max-width : 768px) {
+  .homeWrapper .homeContainer .homeBottomThree .homeLine {
+    display: none;
+  }
+}
+
+.homeWrapper .homeBottomCircle {
+  height: 8%;
+  width: 100%;
+  clear: both;
+  position: relative;
+  bottom: 0px;
+}
+
+.homeWrapper .homeBottomCircle .innerCircle {
+  position: absolute;
+  left: 49%;
+  bottom: 0px;
+  clear: both;
+}
+
+.homeWrapper .homeBottomCircle .innerCircle a img {
+  bottom: 0;
+  max-height: 25px;
+  position: relative;
+}
+@media only screen and (max-width : 768px) {
+  .homeWrapper .homeBottomCircle .innerCircle a img {
+    display: none;
+  }
+}
+@media only screen and (min-width : 1920px) {
+  .homeWrapper .homeBottomCircle .innerCircle a img {
+    max-height: 35px;
+  }
+}
+
+.homeSpacer {
+  height: 150px;
+}
+@media only screen and (max-width : 320px) {
+  .homeSpacer {
+    display: none;
+  }
+}
+
+@-moz-document url-prefix() {
+    #circleSpacing {
+        margin-top: 4em;
+    }
+    @media only screen and (min-width : 1920px) {
+      #circleSpacing {
+        margin-top: 10em;
+      }
+    }

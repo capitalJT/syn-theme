@@ -1,0 +1,72 @@
+/* ---------------------------------------------------------------------
+infoBox - content box w/ profile info
+------------------------------------------------------------------------ */
+.infoBox {}
+
+.infoBox-hd {
+    margin-bottom: 15px;
+    color: $COLOR_UI_DARK;
+}
+
+.infoBox-hd-hdg {
+    margin-bottom: 10px;
+    font: 400 24px/1.0 $FONT;
+    letter-spacing: -0.5px;
+}
+
+.infoBox-hd-subHdg {
+    font: 400 12px/1.0 $FONT_SECONDARY;
+    letter-spacing: -0.5px;
+}
+
+.infoBox-bd {
+    margin-bottom: 35px;
+    font: 300 14px/1.7 $FONT;
+    color: $COLOR_TEXT;
+}
+
+.infoBox-bd {
+    width: calc((8 / 10) * 100%); // grid-col_8of10
+}
+
+.infoBox-ft {
+    font-size: 0;
+    border-top: 1px solid $COLOR_UI_ACCENT;
+}
+
+.infoBox-ft-cta {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.infoBox-ft-cta + .infoBox-ft-cta {
+    border-left: 1px solid $COLOR_UI_ACCENT;
+    box-sizing: border-box;
+}
+
+.infoBox-ft-cta-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $FONT_SIZE;
+    padding: 10px;
+}
+
+.infoBox-ft-cta-link > * {
+    display: block;
+}
+
+.infoBox-ft-cta-link-label {
+    margin-left: 10px;
+    font: 400 11px/1.0 $FONT_SECONDARY;
+    text-transform: uppercase;
+}
+
+.mix-infoBox-ft-cta-link-label_twitter {
+    color: $COLOR_TWITTER;
+}
+
+.mix-infoBox-ft-cta-link-label_linkedin {
+    color: $COLOR_LINKEDIN;
+}

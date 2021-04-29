@@ -1,0 +1,41 @@
+/* ----------------------------------------------------------------------
+ synack
+---------------------------------------------------------------------- */
+.synack {
+    text-align: center;
+}
+
+.synack-figure {
+    margin-bottom: 20px;
+}
+
+.synack-figure-hd,
+.synack-figure-ft {
+    font: 200 45px/1.0 $FONT;
+    text-transform: uppercase;
+}
+
+.synack-figure-hd-blue,
+.synack-figure-ft-blue {
+    color: $COLOR_BRAND;
+}
+
+.synack-figure-hd-gray,
+.synack-figure-ft-gray {
+    color: #e5e6e7;
+}
+
+.synack-figure-bd {
+    max-width: 65px;
+    margin: 0 auto;
+}
+
+.synack-bd {
+    font: 300 14px/1.71 $FONT;
+    letter-spacing: -0.14px;
+    color: $COLOR_TEXT;
+}
+
+.synack-bd > p {
+    margin-top: 15px;
+}

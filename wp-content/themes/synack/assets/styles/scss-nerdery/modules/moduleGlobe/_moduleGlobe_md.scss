@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------------------
+ moduleGlobe - Container for the hero layout that has graphic or animation that is sometimes behind content.
+---------------------------------------------------------------------- */
+.moduleGlobe {
+    margin-bottom: 150px;
+}
+
+.moduleGlobe-bd {
+    margin-right: 75px;
+    margin-bottom: 95px;
+    margin-left: 75px;
+    position: relative; /* Not under content in tablet */
+}
+
+.moduleGlobe-bg {
+    background-image: url("../media/images/globe-t.jpg");
+    background-position: center 0;
+}
+
+.moduleGlobe-bg:before {
+    padding-bottom: 50%; /* For aspect ratio. */
+}

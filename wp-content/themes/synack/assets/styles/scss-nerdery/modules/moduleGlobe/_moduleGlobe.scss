@@ -1,0 +1,38 @@
+/* ----------------------------------------------------------------------
+ moduleGlobe - Container for the hero layout that has graphic or animation that is sometimes behind content.
+---------------------------------------------------------------------- */
+.moduleGlobe {
+    position: relative; /* So children can be positioned relative to it */
+}
+
+.moduleGlobe-bd {
+    position: absolute; /* To position it over the background layer */
+    top: 0;
+    left: 0;
+    z-index: $Z_INDEX_REORDER;
+}
+
+.moduleGlobe-bg {
+    position: relative; /* Set up for aspect ratio inner container */
+    top: 0;
+    left: 0;
+    background-image: url("../media/images/globe-m.jpg");
+    background-size: 100% auto;
+    background-position: center 70px;
+    background-repeat: no-repeat;
+}
+
+.moduleGlobe-bg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 278%; /* For aspect ratio. */
+}
+
+.moduleGlobe-bg-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* To move the container into place on top of the placeholder that forces aspect ratio */
+    top: 0;
+    left: 0;
+}

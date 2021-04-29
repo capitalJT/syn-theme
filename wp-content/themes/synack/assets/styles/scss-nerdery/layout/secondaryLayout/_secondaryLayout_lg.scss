@@ -1,0 +1,40 @@
+/* ----------------------------------------------------------------------
+ secondaryLayout - layout for pages that breaks into columns for desktop
+---------------------------------------------------------------------- */
+.secondaryLayout {
+    padding: 100px 14.5% 40px 14.5%;
+}
+
+.secondaryLayout-hd {
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-bottom: 55px;
+}
+
+.secondaryLayout-bd {
+    font-size: 0;
+}
+
+.secondaryLayout-bd > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.secondaryLayout-bd-primary {
+    box-sizing: border-box;
+    width: 75%;
+    padding-right: 30px;
+    border-right: 1px solid #f2f2f2;
+}
+
+.secondaryLayout-bd-secondary {
+    width: 25%;
+}
+
+.secondaryLayout-bd_single .secondaryLayout-bd-primary {
+    width: 100%;
+    border-right: none;
+    padding-left: 15%;
+    padding-right: 15%;
+}

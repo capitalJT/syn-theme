@@ -1,0 +1,80 @@
+/* ----------------------------------------------------------------------
+ tout
+---------------------------------------------------------------------- */
+.tout-md {
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-bottom: 60px;
+}
+
+.tout-md_noBottom {
+    margin-bottom: 5px;
+}
+
+.tout-md_wide {
+    padding-right: 11%;
+    padding-left: 11%;
+}
+
+.mix-tout-hd_small {
+    font-size: 16px;
+}
+
+.mix-tout-bd_small {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.tout-hr {
+    display: block;
+    border-color: #d9d9d9;
+    margin-bottom: 35px;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item:first-of-type .tout-hr {
+    border-color: $COLOR_BRAND;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner:hover .tout-hr {
+    border-color: #d9d9d9;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item:hover .tout-hr,
+.moduleBlocksOverflow-inner-item:active .tout-hr,
+.moduleBlocksOverflow-inner-item:focus .tout-hr,
+.tout:hover .tout-hr,
+.tout:active .tout-hr,
+.tout:focus .tout-hr {
+    border-color: $COLOR_BRAND;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item .tout-bd {
+    // opacity: 0; // override _md layout to ensure only the first element is shown without hover
+    // TODO: remove js changing opacity of this.
+    opacity: 1;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item:first-of-type .tout-bd {
+    opacity: 1;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner:hover .tout-bd {
+    // opacity: 0;
+    opacity: 1;
+}
+
+//TODO - separate out this module into a hybrid of the two so we are't combining modules
+.moduleBlocksOverflow-inner-item:hover .tout-bd,
+.moduleBlocksOverflow-inner-item:active .tout-bd,
+.moduleBlocksOverflow-inner-item:focus .tout-bd,
+.tout:hover .tout-bd,
+.tout:active .tout-bd,
+.tout:focus .tout-bd {
+    opacity: 1;
+}

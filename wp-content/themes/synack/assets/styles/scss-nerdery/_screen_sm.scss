@@ -1,0 +1,14 @@
+// ------------------------------------------------------------------
+// BrowserUtil
+// ------------------------------------------------------------------
+body:after {
+    @include isVisuallyHidden();
+    content: "sm";
+}
+
+// ------------------------------------------------------------------
+// Modules
+// ------------------------------------------------------------------
+@import "modules/timeline/timeline_sm";
+@import "modules/learnMore/learnMore_sm";
+@import "modules/moduleGlobe/moduleGlobe_sm";

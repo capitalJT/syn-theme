@@ -1,0 +1,22 @@
+/* ----------------------------------------------------------------------
+ moduleSidebySide - Module that has text content and media content side by side in larger screens.
+---------------------------------------------------------------------- */
+.moduleSidebySide {
+    display: flex; /* So children are side by side and we can change order */
+}
+
+.moduleSidebySide-media {
+    width: 41%;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    order: 2;
+    background: none;
+}
+
+.moduleSidebySide-bd {
+    box-sizing: border-box; /* So padding doesn't effect the dimensions */
+    width: 40%;
+    margin: 0;
+    padding-left: 12%;
+    order: 1;
+}

@@ -1,0 +1,103 @@
+/* ----------------------------------------------------------------------
+ moduleVs - Module that has title and 2 sections that are compared. Used on the home page.
+---------------------------------------------------------------------- */
+.moduleVs {
+    margin-bottom: 290px;
+    background-image: url("../media/images/grid-d.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.moduleVs-hd {
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.moduleVs-bd {
+    width: 70%;
+    height: 0;
+    padding-top: 65%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.moduleVs-bd-inner {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.moduleVs-bd-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../media/images/brain.png");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.moduleVs-bd-inner-1,
+.moduleVs-bd-inner-2 {
+    flex-basis: 50%;
+    background-image: none; /* Reset */
+    position: relative;
+}
+
+.moduleVs-bd-inner-1:focus,
+.moduleVs-bd-inner-2:focus {
+    outline: 0;
+}
+
+.moduleVs-bd-inner-1-bg,
+.moduleVs-bd-inner-2-bg {
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.moduleVs-bd-inner-1-bg {
+    background-image: url("../media/images/brain_highlight.png");
+    background-position: left top;
+}
+
+.moduleVs-bd-inner-2-bg {
+    background-image: url("../media/images/brain_highlight.png");
+    background-position: right top;
+}
+
+.moduleVs-bd-inner-1-fg {
+    padding: 450px 100px 0 0;
+    margin-top: 0;
+    background: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -75px;
+    right: 0;
+    z-index: 5;
+}
+
+.moduleVs-bd-inner-2-fg {
+    padding: 420px 0 0 100px;
+    text-align: right;
+    background: none;
+    position: absolute;
+    right: -75px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}

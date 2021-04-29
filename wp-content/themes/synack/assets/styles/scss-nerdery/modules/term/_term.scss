@@ -1,0 +1,43 @@
+.term {
+    width: 800px;
+    height: 500px;
+    padding: 35px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.42);
+    background-color: rgba(3, 3, 3, 0.90);
+    font: 14px/1.0 $FONT_MONO;
+    color: #ffffff;
+    text-shadow: 1px 0px 0px $COLOR_BRAND_THEME;
+    -webkit-font-smoothing: auto;
+}
+
+.term-divider {
+    margin-bottom: 25px;
+}
+
+.term-hd-login {
+    margin-bottom: 15px;
+}
+
+.term-hd-asciiArt {
+    width: 705px;
+    margin-bottom: 15px;
+}
+
+.term-bd-form {
+    margin-bottom: 20px;
+}
+
+.term-divider-content {
+    text-transform: uppercase;
+}
+
+.term-hd-login,
+.term-hd-asciiArt,
+.term-divider,
+.term-bd, {
+    display: none;
+    opacity: 0;
+}

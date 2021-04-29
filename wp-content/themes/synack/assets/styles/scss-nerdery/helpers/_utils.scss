@@ -1,0 +1,77 @@
+//----------------------------------------------------------------------
+// Utility mixins
+//----------------------------------------------------------------------
+@mixin isVisuallyHidden() {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@mixin isHidden() {
+    display: none !important;
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin wrapper() {
+    max-width: $CONTAINER_MAX_WIDTH_LG;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------
+ Utility classes
+---------------------------------------------------------------------- */
+.u-isHidden,
+.u-isHiddenSm {
+    @include isHidden();
+}
+
+.u-isVisuallyHidden {
+    @include isVisuallyHidden();
+}
+
+.u-noScrolling {
+    width: 100%;
+    position: fixed;
+}
+
+.u-hasError {
+    border: 1px solid $COLOR_BRAND_THEME !important;;
+}
+
+@media screen and (min-width: $WIDTH_MD) {
+    .u-isHiddenMd {
+        @include isHidden();
+    }
+
+    .u-isHiddenSm {
+        display: block !important;
+    }
+
+}
+
+@media screen and (min-width: $WIDTH_LG) {
+    .u-isVisibleLg {
+        display: block !important;
+    }
+}
+
+.u-onTopOfParticles {
+    z-index: 20;
+    position: relative;
+}

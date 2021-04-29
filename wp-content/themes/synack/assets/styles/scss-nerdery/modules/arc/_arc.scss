@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------------------
+ arc
+---------------------------------------------------------------------- */
+.arc {
+    display: none;
+    fill: red;
+    stroke: red;
+    background: transparent;
+    width: 20%;
+    right: 17%;
+    bottom: 6%;
+    position: absolute;
+}
+
+.arc svg {
+    background: transparent;
+    width: 100%;
+    height: auto;
+}
+
+.arc_alt {
+    fill: blue;
+    stroke: blue;
+    width: 20%;
+    top: 22%;
+    left: 20%;
+    transform: scaleX(-1);
+}

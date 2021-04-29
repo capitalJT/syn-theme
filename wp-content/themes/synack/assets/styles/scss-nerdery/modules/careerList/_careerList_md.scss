@@ -1,0 +1,20 @@
+/* ----------------------------------------------------------------------
+ careerList
+---------------------------------------------------------------------- */
+.careerList-item-category {
+    width: 100px;
+    overflow: hidden;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.careerList-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.careerList-item:not(:last-child) {
+    border-bottom: 1px solid $COLOR_UI_ACCENT;
+    padding-bottom: 60px;
+}

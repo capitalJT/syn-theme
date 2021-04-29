@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------------
+ navUtility - Header utility menu
+---------------------------------------------------------------------- */
+.navUtility {
+    padding: 0 28%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.navUtility-item_unique {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+}
+
+.navUtility-item-link {
+    display: block;
+    padding: 10px; /* Increases hit area and prepares for hover effect */
+    color: $COLOR_TEXT_REVERSE;
+    transition: background-color $TRANSITION_DURATION, color $TRANSITION_DURATION;
+}
+
+.navUtility-item-link:active,
+.navUtility-item-link:hover {
+    background-color: #1a7aff;
+}
+
+.mix-navUtility-item-link_defined {
+    display: block;
+    padding: 16px;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+}
+
+.mix-navUtility-item-link_defined:active,
+.mix-navUtility-item-link_defined:hover {
+    background-color: #ffffff;
+    color: $COLOR_BRAND;
+}
+
+/* Theme for Red page */
+.theme-red .navUtility-item-link:active,
+.theme-red .navUtility-item-link:hover {
+    background-color: #e50000;
+}
+
+.theme-red .mix-navUtility-item-link_defined:active,
+.theme-red .mix-navUtility-item-link_defined:hover {
+    background-color: #ffffff;
+    color: $COLOR_BRAND_THEME;
+}

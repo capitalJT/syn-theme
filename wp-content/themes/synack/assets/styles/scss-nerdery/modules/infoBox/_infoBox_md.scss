@@ -1,0 +1,24 @@
+/* ---------------------------------------------------------------------
+infoBox - content box w/ profile info
+------------------------------------------------------------------------ */
+.infoBox-hd-hdg {
+    font-size: 28px;
+}
+
+.infoBox-hd-subHdg {
+    font-size: 11px;
+}
+
+.infoBox-bd {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.16px;
+}
+
+.infoBox-ft {
+    width: calc((8 / 10) * 100%); // grid-col_8of10
+}
+
+.infoBox-ft-cta-link {
+    padding: 20px;
+}

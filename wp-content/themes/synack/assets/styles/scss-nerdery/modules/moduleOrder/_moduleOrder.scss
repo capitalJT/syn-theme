@@ -1,0 +1,33 @@
+/* ----------------------------------------------------------------------
+ moduleOrder - Module that has has title, body, and media. It changes order at breakpoints. Used on home page.
+---------------------------------------------------------------------- */
+.moduleOrder {
+    display: flex; /* Using flexbox to set order */
+    flex-direction: column; /* So children are arranged vertically */
+    margin-bottom: 145px;
+    text-align: center;
+}
+
+.moduleOrder-hd {
+    order: 1;
+    margin: 0 30px 10px 30px;
+    font: 300 24px/1.33 $FONT;
+}
+
+.moduleOrder-bd {
+    order: 3;
+    font-size: 14px;
+}
+
+.moduleOrder-bd-title {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font: 400 10px/1.0 $FONT_SECONDARY;
+    color: #cbccce;
+}
+
+
+.moduleOrder-media {
+    order: 2;
+    margin: 0 30px 20px 30px;
+}

@@ -1,0 +1,32 @@
+/* ---------------------------------------------------------------------
+logo - Main company logo
+------------------------------------------------------------------------ */
+.logo {
+    display: block;
+    font-size: 0; /* To remove horizontal space between inline elements */
+}
+
+.logo > * {
+    box-sizing: border-box; /* So padding doesn't affect dimensions */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo-icon {
+    width: 100%;
+    fill: $COLOR_BRAND;
+    color: #000000;
+}
+
+.logo-icon_nav {
+    fill: #ffffff;
+}
+
+.logo-icon_footer {
+    color: #ffffff;
+}
+
+.theme-red .logo-icon {
+    fill: $COLOR_BRAND_THEME;
+    color: #ffffff;
+}

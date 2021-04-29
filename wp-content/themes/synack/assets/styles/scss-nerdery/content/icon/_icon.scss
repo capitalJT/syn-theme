@@ -1,0 +1,158 @@
+/* ---------------------------------------------------------------------
+Icons - Responsive SVG icon containers that set aspect ratio and fill styles
+------------------------------------------------------------------------ */
+.icon {
+    display: block;
+    width: 100%;
+    position: relative; /* So inner elements can be positioned relative to this container */
+}
+
+.icon:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 100%; /* For aspect ratio. The default is a square. */
+}
+
+.icon_logo:before {
+    padding-bottom: (163.5 / 644.4) * 100%; /* height/width */
+}
+
+.icon_imgScalable:before {
+    padding-bottom: (230.6 / 200) * 100%; /* height/width */
+}
+
+.icon_imgContinuous:before {
+    padding-bottom: (90 / 200) * 100%; /* height/width */
+}
+
+.icon_imgDesktop:before {
+    padding-bottom: (138 / 200) * 100%; /* height/width */
+}
+
+.icon_imgDocument:before {
+    padding-bottom: (1016.4 / 1000) * 100%; /* height/width */
+}
+
+.icon_imgClipboard:before {
+    padding-bottom: (1050.8 / 1000) * 100%; /* height/width */
+}
+
+.icon_imgPeople:before {
+    padding-bottom: (625 / 1000) * 100%; /* height/width */
+}
+
+.icon_imgBrowser:before {
+    padding-bottom: (694.4 / 1000) * 100%; /* height/width */
+}
+
+.icon_imgId:before {
+    padding-bottom: (656.25 / 1000) * 100%; /* height/width */
+}
+
+.icon_imgVideo:before {
+    padding-bottom: (750 / 1000) * 100%; /* height/width */
+}
+
+.icon_imgMobile:before {
+    padding-bottom: (378 / 200) * 100%; /* height/width */
+}
+
+.icon_imgInfrastructure:before {
+    padding-bottom: (378 / 200) * 100%; /* height/width */
+}
+
+.icon_ruler:before {
+    padding-bottom: (8 / 34) * 100%; /* height/width */
+}
+
+.icon_lt:before,
+.icon_gt:before {
+    padding-bottom: (15 / 8) * 100%; /* height/width */
+}
+
+.icon_x:before {
+    padding-bottom: (15.28 / 14.8) * 100%; /* height/width */
+}
+
+.icon_handshake:before {
+    padding-bottom: (24.5 / 63) * 100%; /* height/width */
+}
+
+.icon-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* To move the icon into place on top of the placeholder that forces aspect ratio */
+    top: 0;
+    left: 0;
+}
+
+.icon_ruler > svg,
+.icon_handshake > svg,
+.icon_logoRSS > svg {
+    fill: $COLOR_BRAND;
+}
+
+a:hover .icon_logoRSS > svg {
+    fill: #ffffff;
+}
+
+.icon_x {
+    width: 14px;
+}
+
+.icon_lt,
+.icon_gt {
+    width: 8px;
+}
+
+.icon_x > svg,
+.icon_lt > svg,
+.icon_gt > svg {
+    fill: transparent;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke: #ffffff;
+}
+
+.icon_facebook,
+.icon_twitter,
+.icon_linkedin {
+    width: 18px;
+}
+
+.icon_facebook > svg,
+.icon_twitter > svg,
+.icon_linkedin > svg {
+    fill: #e5e6e7;
+}
+
+.mix-icon_twitter_colorized > svg {
+    fill: $COLOR_TWITTER;
+}
+
+.mix-icon_linkedin_colorized > svg {
+    fill: $COLOR_LINKEDIN;
+}
+
+.mix-icon_ruler-red > svg {
+    fill: $COLOR_BRAND_THEME;
+}
+
+.theme-red .icon_ruler > svg {
+    fill: $COLOR_BRAND_THEME;
+}
+
+.mix-icon_reverse > svg {
+    fill: #ffffff;
+}
+
+/* SVG fallback */
+.icon-fallback {
+    @include isVisuallyHidden();
+}
+
+.no-svg .icon-fallback {
+    display: block;
+    width: 100%;
+}

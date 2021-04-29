@@ -1,0 +1,44 @@
+/* ----------------------------------------------------------------------
+ Site - Main site structure
+---------------------------------------------------------------------- */
+$site-HD_HEIGHT: 50px;
+
+.site {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: space-between; /* Spreads out children to fill space */
+    min-height: 100%;
+    min-width: 300px;
+}
+
+.site-hd {
+    width: 100%;
+    height: $site-HD_HEIGHT;
+    position: fixed;
+    z-index: 25;
+}
+
+.site-bd {
+    margin-top: $site-HD_HEIGHT;
+    flex-grow: 1; /* So this element fills the space */
+}
+
+.site-ft {
+    position: relative;
+    z-index: $Z_INDEX_REORDER;
+    background-color: $COLOR_BACKGROUND_REVERSE;
+}
+
+/* Theme for Red page */
+.theme-red .site {
+    background-color: $COLOR_BACKGROUND_THEME;
+}
+
+.theme-red .site-bd {
+    color: #7c7c7c;
+}
+
+.theme-red .site-ft {
+    background-color: #111111;
+}

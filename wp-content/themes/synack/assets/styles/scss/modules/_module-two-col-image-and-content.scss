@@ -1,0 +1,8 @@
+.module-two-col-image-and-content{
+  .content-wrapper{
+    //color: map-get($colors, gray);
+    font-weight: bold;
+    color: $global-font-color-light-gray;
+    line-height: 1.5;
+  }
+}

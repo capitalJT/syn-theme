@@ -1,0 +1,102 @@
+/* ----------------------------------------------------------------------
+ Blocks
+---------------------------------------------------------------------- */
+$blocks-GUTTER: 2%;
+$blocks-GUTTER_TIGHT: 2px;
+$blocks-BLOCKS_COUNT_MIN: 2;
+$blocks-BLOCKS_COUNT_MAX: 6;
+$blocks-GUTTER_WIDE: 40px;
+
+.blocks {
+    margin-left: -#{$blocks-GUTTER};
+    font-size: 0;
+}
+
+.blocks > * {
+    display: inline-block;
+    width: 100%;
+    padding-top: $blocks-GUTTER;
+    padding-left: $blocks-GUTTER;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: $FONT_SIZE;
+}
+
+.blocks_md {
+    margin-left: -3%;
+}
+
+.blocks_md > * {
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.blocks_lg {
+    margin-left: -5%;
+}
+
+.blocks_lg > * {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+/* Loop through block options */
+@for $i from $blocks-BLOCKS_COUNT_MIN through $blocks-BLOCKS_COUNT_MAX {
+    .blocks_#{$i}up > * {
+        width: calc((100% / #{$i}) - 1px); // 1px to accomodate ie subpixel rendering problem
+    }
+}
+
+.mix-blocks_1to3to4 > * {
+    width: 100%;
+}
+
+.mix-blocks_1to3to3 > * {
+    width: 100%;
+}
+
+.mix-blocks_1to2 > * {
+    width: 100%;
+}
+
+.mix-blocks_2to4 > * {
+    width: 50%;
+}
+
+.mix-blocks_2to4to5 > * {
+    width: 50%;
+}
+
+.mix-blocks_2to3 > * {
+    width: 50%;
+}
+
+.mix-blocks_1to4 > * {
+    width: 100%;
+}
+
+.mix-blocks_tight {
+    margin-left: -#{$blocks-GUTTER_TIGHT};
+}
+
+.mix-blocks_tight > * {
+    padding-top: $blocks-GUTTER_TIGHT;
+    padding-left: $blocks-GUTTER_TIGHT;
+}
+
+.mix-blocks_wide {
+    margin-left: -#{$blocks-GUTTER_WIDE};
+}
+
+.mix-blocks_wide > * {
+    padding-top: $blocks-GUTTER_WIDE;
+    padding-left: $blocks-GUTTER_WIDE;
+}
+
+.mix-blocks_stacked > * {
+    padding-top: 45px;
+}
+
+.mix-blocks_median > * {
+    text-align: center;
+}

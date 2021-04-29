@@ -1,0 +1,43 @@
+/* ----------------------------------------------------------------------
+ jobList
+---------------------------------------------------------------------- */
+.jobList {}
+
+.jobList-item {
+    display: flex;
+    border-top: 1px solid $COLOR_UI_ACCENT;
+    border-bottom: 1px solid $COLOR_UI_ACCENT;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jobList-item + .jobList-item {
+    border-top: none;
+}
+
+.jobList-item-content {
+    font: 300 14px/1.0 $FONT;
+}
+.jobList-item-content-title {
+    margin-bottom: 10px;
+    letter-spacing: -0.3px;
+    color: $COLOR_TEXT_WYSIWYG;
+}
+
+.jobList-item-content-title-link {
+    color: $COLOR_TEXT_WYSIWYG;
+}
+
+.jobList-item-content-title-link:hover {
+    color: $COLOR_BRAND;
+}
+
+.jobList-item-content-location {
+    color: $COLOR_TEXT;
+}
+
+.jobList-item-cta {
+    font: 400 12px/1.0 $FONT_SECONDARY;
+}

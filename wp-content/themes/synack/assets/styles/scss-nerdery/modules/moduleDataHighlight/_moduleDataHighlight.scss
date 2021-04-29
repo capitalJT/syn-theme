@@ -1,0 +1,25 @@
+/* ----------------------------------------------------------------------
+ moduleDataHighlight
+---------------------------------------------------------------------- */
+.moduleDataHighlight {
+    margin-bottom: 58px;
+}
+
+.moduleDataHighlight-ft {
+    background: $COLOR_UI_LIGHT;
+    border-top: 1px solid $COLOR_UI_ACCENT;
+    border-bottom: 1px solid $COLOR_UI_ACCENT;
+    text-align: center;
+    padding: 13px 20px 22px 20px;
+}
+
+.moduleDataHighlight-ft-data-number {
+    font: 300 28px / 1 $FONT;
+    color: $COLOR_BRAND;
+}
+
+.moduleDataHighlight-ft-data-label {
+    font: 400 10px / 1 $FONT_SECONDARY;
+    color: #cbccce;
+    text-transform: uppercase;
+}

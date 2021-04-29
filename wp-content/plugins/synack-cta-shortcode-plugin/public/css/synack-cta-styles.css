@@ -1,0 +1,96 @@
+.cta.synack-cta {
+  padding: 30px 20px 40px;
+  display: block;
+  position: relative;
+  background: linear-gradient(to bottom, #0f61ff, #6a96ea);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  text-align: center;
+}
+.cta.synack-cta .synack-cta-inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.cta.synack-cta .cta-title {
+  font-size: 26px;
+  line-height: 1.25em;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+}
+.cta.synack-cta .custom-message {
+  font-size: 20px;
+  line-height: 1.25em;
+}
+.cta.synack-cta .cta-content {
+  line-height: 1.5;
+}
+.cta.synack-cta .cta-content p {
+  color: #ffffff;
+}
+.cta.synack-cta .cta-btn {
+  min-width: 100px;
+  color: #ffffff;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  padding: 10px 15px 10px;
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  background-color: #000000;
+}
+.cta.synack-cta .cta-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.cta.synack-cta .has-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (min-width: 639px) {
+  .cta.synack-cta {
+    padding: 40px 30px 30px;
+  }
+  .cta.synack-cta .synack-cta-inner {
+    display: flex;
+    align-items: center;
+  }
+  .cta.synack-cta .cta-title,
+.cta.synack-cta .cta-content {
+    text-align: left;
+  }
+  .cta.synack-cta .cta-column-1,
+.cta.synack-cta .cta-column-2 {
+    box-sizing: border-box;
+  }
+  .cta.synack-cta .cta-column-1 {
+    width: 70%;
+    padding-right: 20px;
+  }
+  .cta.synack-cta .cta-column-2 {
+    width: 30%;
+  }
+}
+
+.cta.synack-cta:before,
+.cta.synack-cta:after {
+  display: table;
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 110%;
+  height: 23px;
+  position: absolute;
+}
+
+.cta.synack-cta:before {
+  top: 0;
+  left: 0;
+  background-position: center top;
+}
+
+.cta.synack-cta:after {
+  bottom: 0;
+  left: 0;
+  background-position: center bottom;
+}

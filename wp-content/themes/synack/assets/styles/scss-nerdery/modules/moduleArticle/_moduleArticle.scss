@@ -1,0 +1,69 @@
+/* ----------------------------------------------------------------------
+ moduleArticle - Module that has header, media, article content, and cta. Used on the Red page.
+---------------------------------------------------------------------- */
+.moduleArticle {
+    padding-top: 60px;
+    margin-bottom: 83px;
+    text-align: center;
+}
+
+.moduleArticle_solutions {
+    padding-top: 0;
+    margin-right: 2%;
+    margin-bottom: 112px;
+    margin-left: 2%;
+}
+
+.moduleArticle-hd {
+    position: relative; /* For z-index positioning over background container */
+    z-index: $Z_INDEX_REORDER;
+}
+
+.moduleArticle-bg {
+    margin-top: -85px; /* Background overlaps with heading above it for some breakpoints */
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative; /* Set up for aspect ratio inner container */
+    top: 0;
+    left: 0;
+    background-image: url("../media/images/red-face-m.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.moduleArticle-bg_pullTop {
+    margin-top: -150px;
+}
+
+.moduleArticle-bg:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 135%; /* For aspect ratio. */
+}
+
+.moduleArticle-bg-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* To move the container into place on top of the placeholder that forces aspect ratio */
+    top: 0;
+    left: 0;
+}
+
+.moduleArticle-bd {
+    margin-top: -145px;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-bottom: 20px;
+    position: relative; /* For z-index positioning */
+    z-index: $Z_INDEX_REORDER;
+    font: 300 15px / 1.5 $FONT;
+}
+
+.moduleArticle_solutions .moduleArticle-bd {
+    margin-top: 0; /* Reset */
+    font-size: 14px;
+    line-height: 1.8;
+    color: #7c7c7c;
+}

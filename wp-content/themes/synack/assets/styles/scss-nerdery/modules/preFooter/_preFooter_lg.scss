@@ -1,0 +1,68 @@
+/* ----------------------------------------------------------------------
+ preFooter
+---------------------------------------------------------------------- */
+// Finds the margin between the max-width of content and edge of browser and adds inner buffer
+$preFooter-SIDE_SPACE: calc( (50% - (#{$CONTAINER_MAX_WIDTH_LG} / 2) ) + 14.5%);
+
+.mix-preFooter_bg {
+    background-position: 50% 100%;
+}
+
+.preFooter-inner-section {
+    padding: 75px 0;
+}
+
+.mix-preFooter-inner-section_space {
+    padding: 60px 0;
+}
+
+.mix-preFooter_split .preFooter-inner-section {
+    padding-top: 60px;
+}
+
+.mix-preFooter_split .preFooter-inner-section:first-child {
+    padding-left: $preFooter-SIDE_SPACE;
+    padding-right: 136px;
+}
+
+.mix-preFooter_split .preFooter-inner-section:last-child {
+    padding-right: $preFooter-SIDE_SPACE;
+    padding-left: 136px;
+}
+
+.preFooter-inner-section-subHd {
+    margin-bottom: 20px;
+    font-size: 11px;
+}
+
+.preFooter-inner-section-hd {
+    font-size: 36px;
+}
+
+.preFooter-inner-section-hd_lg {
+    font-size: 45px;
+}
+
+.mix-preFooter-inner-section-hd_sm {
+    font-size: 20px;
+}
+
+.preFooter-inner-section-bd {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.mix-preFooter-inner-section-bd_sm {
+    font-size: 14px;
+}
+
+.mix-preFooter-inner-section-bd_spacedOut {
+    line-height: 2.1;
+}
+
+.preFooter-inner-section-icon {
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}

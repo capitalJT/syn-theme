@@ -1,0 +1,15 @@
+@import "base/variables";
+
+#tab-carousel-module{
+  background-color: $blue-dark;
+  .module-heading,
+  .module-subheading{
+    color: $white;
+  }
+  .section-tab-carousel__button{
+    color: #535F75;
+  }
+  .section-tab-carousel__button.slick-current{
+    color: $white;
+  }
+}
