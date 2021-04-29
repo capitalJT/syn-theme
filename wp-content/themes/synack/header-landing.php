@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
-
-	    <?php get_template_part('parts/shared/google-tags' ); ?>
-
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,8 +14,6 @@
         <link rel="apple-touch-icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/assets/media/images/favicon.png?" />
 
         <title><?php wp_title(); ?></title>
-
-        <?php get_template_part('parts/shared/munchkin'); ?>
 
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/fonts/fonts.css">
         <link rel="stylesheet" href="/wp-content/themes/synack/assets/styles/main.css?ver=<?php echo SYNACK_CACHE_BUST_DATE; ?>">

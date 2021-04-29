@@ -12,9 +12,6 @@ global $post;
 <!doctype html>
 <html class="no-js" lang="en-us">
     <head>
-
-	    <?php get_template_part('parts/shared/google-tags' ); ?>
-
         <!-- META DATA -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,17 +29,12 @@ global $post;
         <?php //SYNGetMetaDescription(); ?>
 
         <title><?php wp_title(); ?></title>
-        <?php get_template_part('parts/shared/munchkin'); ?>
+
         <?php wp_head() ?>
 
         <!-- shared styles -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/shared.css?v1.02">
 
-        <!-- OG tags -->
-        <?php //get_template_part('parts/shared/og-tags'); ?>
-
-        <!-- Third Party -->
-        <?php get_template_part('parts/shared/third-party'); ?>
     </head>
     <?php
     /*

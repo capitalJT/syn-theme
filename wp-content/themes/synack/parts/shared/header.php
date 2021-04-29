@@ -21,13 +21,6 @@
                 </a>
             </div>
 
-            <!-- <div class="header-title">
-                <div class="title">
-                    <div class="title-hd">Hacker-Powered</div>
-                    <div class="title-hd">Security</div>
-                </div>
-            </div> -->
-
             <div class="menu-toggle">
                 <button type="button" aria-label="Menu" class="hamburger">
                     <div class="padding-wrap">
@@ -48,15 +41,15 @@
                     <?php $locations = get_nav_menu_locations();
                     if (!empty($locations) && isset($locations['primary'])) { ?>
 
-                           <?php wp_nav_menu(
-                               array(
-                                   'container' => '',
-                                   'container_class' => '',
-                                   'theme_location' => 'primary',
-                                   'menu_class' => 'header-menu',
-                                   'items_wrap' => '<ul class="%2$s">%3$s</ul>'
-                               )
-                           ); ?>
+                        <?php wp_nav_menu(
+                            array(
+                                 'container' => '',
+                                'container_class' => '',
+                                'theme_location' => 'primary',
+                                'menu_class' => 'header-menu',
+                                'items_wrap' => '<ul class="%2$s">%3$s</ul>'
+                            )
+                        ); ?>
 
                     <?php } ?>
                 </nav>

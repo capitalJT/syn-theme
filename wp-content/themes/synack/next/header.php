@@ -16,9 +16,6 @@ $version_number = "1.45";
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-
-	    <?php get_template_part('parts/shared/google-tags' ); ?>
-
         <!-- META DATA -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,8 +40,6 @@ $version_number = "1.45";
 
         <title><?php wp_title(); ?></title>
 
-        <?php get_template_part('parts/shared/munchkin'); ?>
-
         <?php wp_head(); ?>
 
         <!-- shared styles -->
@@ -52,12 +47,6 @@ $version_number = "1.45";
 
         <!-- mapbox styles styles -->
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-
-        <!-- OG tags -->
-        <?php //get_template_part('parts/shared/og-tags'); ?>
-
-        <!-- Third Party -->
-        <?php get_template_part('parts/shared/third-party'); ?>
     </head>
 
     <?php
@@ -67,6 +56,7 @@ $version_number = "1.45";
         }
         $body_class .= wp_is_mobile() ? 'is-mobile' : 'not-mobile';
     ?>
+
     <body <?php body_class($body_class); ?>>
 
     <!-- Google Tag Manager (noscript) -->
