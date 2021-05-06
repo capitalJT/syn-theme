@@ -41,6 +41,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/acf-json\/group_5d8535a850ecc.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_5d8535a850ecc-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/acf-json\/group_5ee2887fc3838.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -6572,6 +6580,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/styles\/slider.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/styles\/slider-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/styles\/utility-classes.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -9733,6 +9753,58 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/next\/static\/images\/pillars\/hydra-front-active.png" : {
+      "ft" : 32768,
+      "iS" : 681577,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/hydra-front-active.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/pillars\/hydra-front.png" : {
+      "ft" : 32768,
+      "iS" : 299873,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/hydra-front.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/pillars\/hydra-full-active.png" : {
+      "ft" : 32768,
+      "iS" : 1073654,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/hydra-full-active.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/pillars\/hydra-full.png" : {
+      "ft" : 32768,
+      "iS" : 472498,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/hydra-full.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/next\/static\/images\/pillars\/hydra-inactive-front.png" : {
       "ft" : 32768,
       "iS" : 258577,
@@ -9764,6 +9836,58 @@
       "iS" : 978864,
       "oA" : 0,
       "oAP" : "\/next\/static\/images\/pillars\/LP-active.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/pillars\/lp-front-active.png" : {
+      "ft" : 32768,
+      "iS" : 618901,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/lp-front-active.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/pillars\/lp-front.png" : {
+      "ft" : 32768,
+      "iS" : 598106,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/lp-front.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/pillars\/lp-full-active.png" : {
+      "ft" : 32768,
+      "iS" : 1008233,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/lp-full-active.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/pillars\/lp-full.png" : {
+      "ft" : 32768,
+      "iS" : 920020,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/pillars\/lp-full.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -9922,6 +10046,19 @@
       "iS" : 3783,
       "oA" : 0,
       "oAP" : "\/next\/static\/images\/solutions-icon\/discover.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/next\/static\/images\/solutions-icon\/platform.png" : {
+      "ft" : 32768,
+      "iS" : 2765,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/images\/solutions-icon\/platform.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -10354,6 +10491,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/page-careers.php" : {
       "cB" : 0,
@@ -10811,22 +10956,6 @@
       "oAP" : "\/parts\/shared\/footerModules.php",
       "oF" : 0
     },
-    "\/parts\/shared\/gclid.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/parts\/shared\/gclid.php",
-      "oF" : 0
-    },
-    "\/parts\/shared\/google-tags.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/parts\/shared\/google-tags.php",
-      "oF" : 0
-    },
     "\/parts\/shared\/header.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -10867,14 +10996,6 @@
       "oAP" : "\/parts\/shared\/icons.php",
       "oF" : 0
     },
-    "\/parts\/shared\/munchkin.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/parts\/shared\/munchkin.php",
-      "oF" : 0
-    },
     "\/parts\/shared\/og-tags.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -10889,14 +11010,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/parts\/shared\/socialShare.php",
-      "oF" : 0
-    },
-    "\/parts\/shared\/third-party.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/parts\/shared\/third-party.php",
       "oF" : 0
     },
     "\/parts\/solutions\/main.php" : {
@@ -11095,92 +11208,108 @@
       "oAP" : "\/template-parts\/content\/content-single.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-cta.php" : {
+    "\/template-parts\/modules.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-cta.php",
+      "oAP" : "\/template-parts\/modules.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-heading.php" : {
+    "\/template-parts\/modules\/module-cta.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-heading.php",
+      "oAP" : "\/template-parts\/modules\/module-cta.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-hero.php" : {
+    "\/template-parts\/modules\/module-heading.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-hero.php",
+      "oAP" : "\/template-parts\/modules\/module-heading.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-multi-column-content.php" : {
+    "\/template-parts\/modules\/module-hero.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-multi-column-content.php",
+      "oAP" : "\/template-parts\/modules\/module-hero.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-quote.php" : {
+    "\/template-parts\/modules\/module-multi-column-content.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-quote.php",
+      "oAP" : "\/template-parts\/modules\/module-multi-column-content.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-resources-static.php" : {
+    "\/template-parts\/modules\/module-quote.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-resources-static.php",
+      "oAP" : "\/template-parts\/modules\/module-quote.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-spacer.php" : {
+    "\/template-parts\/modules\/module-resources-static.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-spacer.php",
+      "oAP" : "\/template-parts\/modules\/module-resources-static.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-tab-carousel.php" : {
+    "\/template-parts\/modules\/module-spacer.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-tab-carousel.php",
+      "oAP" : "\/template-parts\/modules\/module-spacer.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-two-col-image-and-content.php" : {
+    "\/template-parts\/modules\/module-tab-carousel.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-two-col-image-and-content.php",
+      "oAP" : "\/template-parts\/modules\/module-tab-carousel.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-two-col-media-and-content.php" : {
+    "\/template-parts\/modules\/module-two-col-image-and-content.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-two-col-media-and-content.php",
+      "oAP" : "\/template-parts\/modules\/module-two-col-image-and-content.php",
       "oF" : 0
     },
-    "\/templates\/modules\/module-wysiwyg.php" : {
+    "\/template-parts\/modules\/module-two-col-media-and-content.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/modules\/module-wysiwyg.php",
+      "oAP" : "\/template-parts\/modules\/module-two-col-media-and-content.php",
+      "oF" : 0
+    },
+    "\/template-parts\/modules\/module-wysiwyg.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/modules\/module-wysiwyg.php",
+      "oF" : 0
+    },
+    "\/template-parts\/synack-favicon.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/synack-favicon.php",
       "oF" : 0
     },
     "\/templates\/template-modules.php" : {
@@ -12629,7 +12758,7 @@
       }
     },
     "esLintSourceType" : 0,
-    "externalServerAddress" : "http:\/\/synack.test\/",
+    "externalServerAddress" : "http:\/\/synack-marketing-site.test\/",
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",

@@ -21,17 +21,17 @@
                 </a>
             </div>
 
-            <div class="menu-toggle">
-                <button type="button" aria-label="Menu" class="hamburger">
-                    <div class="padding-wrap">
-                        <span class="line-wrap">
-                            <span class="line line-top"></span>
-                            <span class="line line-middle"></span>
-                            <span class="line line-bottom"></span>
-                        </span>
-                    </div>
-                </button>
-            </div>
+<!--            <div class="menu-toggle">-->
+<!--                <button type="button" aria-label="Menu" class="hamburger">-->
+<!--                    <div class="padding-wrap">-->
+<!--                        <span class="line-wrap">-->
+<!--                            <span class="line line-top"></span>-->
+<!--                            <span class="line line-middle"></span>-->
+<!--                            <span class="line line-bottom"></span>-->
+<!--                        </span>-->
+<!--                    </div>-->
+<!--                </button>-->
+<!--            </div>-->
 
             <div class="menu-nav-wrap">
 
@@ -74,49 +74,49 @@
         <script type="text/javascript">
 
             // polyfills
-            (function() {
-                if (typeof NodeList.prototype.forEach === "function")
-                    return false;
-                else
-                    NodeList.prototype.forEach = Array.prototype.forEach;
-            })();
-            (function(){
-                if (!String.prototype.includes) {
-                    String.prototype.includes = function(search, start) {
-                        'use strict'
-                        if (typeof start !== 'number') {
-                            start = 0
-                        }
-
-                        if (start + search.length > this.length) {
-                            return false
-                        } else {
-                            return this.indexOf(search, start) !== -1
-                        }
-                    }
-                }
-            })()
+            // (function() {
+            //     if (typeof NodeList.prototype.forEach === "function")
+            //         return false;
+            //     else
+            //         NodeList.prototype.forEach = Array.prototype.forEach;
+            // })();
+            // (function(){
+            //     if (!String.prototype.includes) {
+            //         String.prototype.includes = function(search, start) {
+            //             'use strict'
+            //             if (typeof start !== 'number') {
+            //                 start = 0
+            //             }
+            //
+            //             if (start + search.length > this.length) {
+            //                 return false
+            //             } else {
+            //                 return this.indexOf(search, start) !== -1
+            //             }
+            //         }
+            //     }
+            // })()
 
             // toggle body class
-            document.querySelector('button.hamburger').addEventListener('click', function(){
-                document.body.classList.toggle('menu-opened');
-
-                if (!document.body.classList.contains('menu-opened')){
-                    document.body.classList.add('menu-transition-active');
-                    setTimeout(function(){
-                        document.body.classList.remove('menu-transition-active')
-                    }, 400);
-                }
-            });
+            // document.querySelector('button.hamburger').addEventListener('click', function(){
+            //     document.body.classList.toggle('menu-opened');
+            //
+            //     if (!document.body.classList.contains('menu-opened')){
+            //         document.body.classList.add('menu-transition-active');
+            //         setTimeout(function(){
+            //             document.body.classList.remove('menu-transition-active')
+            //         }, 400);
+            //     }
+            // });
 
             // add briefing class if menu item present
-            const menuItems = document.querySelectorAll('.header-menu .menu-item')
-            for(var i = 0; i < menuItems.length; i++){
-                const link = menuItems[i].querySelector('a')
-                if (link && link.innerHTML.indexOf('Briefing') != -1) {
-                    menuItems[i].classList.add('the-briefing');
-                }
-            }
+            // const menuItems = document.querySelectorAll('.header-menu .menu-item')
+            // for(var i = 0; i < menuItems.length; i++){
+            //     const link = menuItems[i].querySelector('a')
+            //     if (link && link.innerHTML.indexOf('Briefing') != -1) {
+            //         menuItems[i].classList.add('the-briefing');
+            //     }
+            // }
 
         </script>
     </header>

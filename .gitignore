@@ -1,13 +1,14 @@
 # Ignore everything in the root except the "wp-content" directory.
 /*
 !.gitignore
+!robots.txt
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
 wp-content/*
 !wp-content/plugins/
-!wp-content/themes/
+!wp-content/themes/synack/*
 wp-content/themes/synack/next/node_modules/*
 
 # Choose plugins to check-in
