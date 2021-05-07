@@ -20,10 +20,6 @@
     get_header('modules');
 ?>
 
-
-</div><?php  // End header-hero-wrapper (header-modules.php) ?>
-
 <?php get_template_part('template-parts/modules'); ?>
-
 
 <?php get_footer('modules'); ?>

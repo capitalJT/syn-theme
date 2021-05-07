@@ -96,7 +96,7 @@ function remove_widget_title( $widget_title ) {
  * Utility Class Styles and Cache-Busting Global Variable - JT
  */
 // Shared variable between uitlity class styles (utility-class.css) and landing page styles (header-landing.php)
-define('SYNACK_CACHE_BUST_DATE', "2021.04.04");
+define('SYNACK_CACHE_BUST_DATE', "2021.05.07");
 
 function synack_enqueue_util_styles() {
     if ( is_page_template('templates/template-modules.php') || is_page_template('templates/template-trust-report.php') || is_singular('synack-lp') ){

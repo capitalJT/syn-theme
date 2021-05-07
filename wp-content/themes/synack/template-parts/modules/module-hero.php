@@ -97,12 +97,10 @@ if ($hero_thumbnail_toggle){
 
 <script type="text/javascript">
     jQuery( document ).ready(function($) {
-
-        if ($('.header-wrapper').length){
-            var $headerWrapper = $('.header-wrapper').outerHeight();
+        if ($('.header-hero-wrapper').length){
+            var $headerWrapper = $('.header-hero-wrapper').outerHeight();
 
             $('.synack-module.hero').css({'margin-top' : '-' + $headerWrapper + 'px', 'padding-top' : $headerWrapper + 'px'});
         }
-
     });
 </script>

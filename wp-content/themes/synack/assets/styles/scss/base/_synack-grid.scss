@@ -55,14 +55,12 @@
       float: left;
       padding-left: $syn-grid-gutter-val;
       padding-right: $syn-grid-gutter-val;
-
     }
     @media (max-width: 767px) {
       [class*="span"] {
         width: 100%;
       }
     }
-
   }
 
   // @media (max-width: 767px) {}

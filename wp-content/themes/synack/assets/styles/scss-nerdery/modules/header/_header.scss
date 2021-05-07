@@ -12,19 +12,94 @@
 }
 
 .header-logo {
-    width: 105px;
+    //border: solid thin red;
+    height: 40px;
+    a{
+        height: 40px;
+        //border: solid thin red;
+        position: relative;
+        z-index: 100;
+        width: 120px;
+        svg{
+            height: 40px;
+            //border: solid thin red;
+        }
+    }
 }
 
 .header-title {
     display: none; /* Not an accessibility concern. Only needed for desktop. */
 }
 
-.header-nav {
-    flex-grow: 1; /* So the nav section fills the space */
-}
+//.header-nav {
+//    flex-grow: 1; /* So the nav section fills the space */
+//}
 
 /* Theme for Red page */
 .theme-red .header {
     background-color: $COLOR_BACKGROUND_THEME;
     border-bottom-color: $COLOR_UI_ACCENT_THEME;
+}
+
+
+/* Jabal's additions */
+.header-logo{
+    svg{
+        path.badge{
+            fill: $COLOR_BRAND;
+        }
+        path.text{
+            fill: #ffffff;
+        }
+    }
+}
+#mega-menu-wrap-primary{
+    margin-top: -40px;
+    .mega-button.mega-btn{
+        .mega-menu-link{
+            transition: background-color 0.3s ease, color 0.4s linear !important;
+            background-color: $COLOR_BRAND !important;
+            border-radius: 50px !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            &:hover{
+                background-color: #ffffff !important;
+                color: $COLOR_BRAND !important;
+            }
+        }
+    }
+    @media screen and (max-width: $WIDTH_MD) {
+        .mega-button.mega-btn{
+            .mega-menu-link{
+                text-align: center !important;
+            }
+        }
+    }
+    @media screen and (min-width: $WIDTH_MD) {
+        #mega-menu-primary{
+            text-align: right;
+        }
+        .mega-log-in{
+            margin-left: 20px !important;
+        }
+        .mega-button.mega-btn{
+            margin-left: 10px !important;
+        }
+    }
+    @media screen and (min-width: $WIDTH_LG) {
+        .mega-log-in{
+            margin-left: 80px !important;
+        }
+    }
+}
+
+.header-hero-wrapper{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //background-color: rgba(0,0,0,0.5);
+    background-color: $COLOR_BACKGROUND_THEME;
+}
+
+#mega-menu-wrap-primary{
+    background-color: $COLOR_BACKGROUND_THEME;
 }

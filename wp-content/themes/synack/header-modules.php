@@ -42,5 +42,4 @@
             }
         ?>
 
-        <div class="header-hero-wrapper container">
-            <?php get_template_part('parts/shared/headerModules'); ?>
+        <?php get_template_part('parts/shared/headerModules'); ?>

@@ -1,4 +1,3 @@
-
 <?php
     // LP Synack Red Team Options - ACF Field Group
     $synack_red_logo_options = get_field('synack_red_logo_options');
