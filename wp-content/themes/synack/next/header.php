@@ -19,24 +19,16 @@ global $post;
         <!-- META DATA -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="google-site-verification" content="ZpS_z2LqM0lu41hEK4cmTW4TtGBzeF9z8Et_sdkDVoY" />
         <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
 
         <!-- primary stylesheet -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/bundle.css?v<?php echo SYNACK_CACHE_BUST_VER; ?>">
 
-        <!-- fonts -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/fonts/fonts.css?v<?php echo SYNACK_CACHE_BUST_VER; ?>">
-
         <!-- ICONS -->
-        <!-- <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/next/static/images/favicon.png?"> -->
         <?php get_template_part('template-parts/synack-favicon'); ?>
-
+<!--        <link rel="icon" type="image/png" href="--><?php //echo get_stylesheet_directory_uri();?><!--/next/static/images/favicon.png?">-->
         <link rel="apple-touch-icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/assets/media/images/favicon.png?" />
-
-        <!-- <title> --> <?php //SYNGetPageTitleTag(); ?> <!-- </title> -->
-        <?php // SYNGetMetaDescription(); ?>
 
         <title><?php wp_title(); ?></title>
 

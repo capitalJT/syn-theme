@@ -15,16 +15,12 @@ global $post;
         <!-- META DATA -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
 
+        <!-- ICONS -->
         <?php get_template_part('template-parts/synack-favicon'); ?>
-
-        <!-- NEXT fonts -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/fonts/fonts.css">
-
-        <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/next/static/images/favicon.png?">
+<!--        <link rel="icon" type="image/png" href="--><?php //echo get_stylesheet_directory_uri();?><!--/next/static/images/favicon.png?">-->
         <link rel="apple-touch-icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/assets/media/images/favicon.png?" />
 
         <title><?php wp_title(); ?></title>

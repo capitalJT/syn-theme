@@ -945,6 +945,126 @@
       "oAP" : "\/assets\/media\/fonts\/criquegroteskdisplay\/criquegroteskdisplay-uilightitalic.woff",
       "oF" : 0
     },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Bold.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Bold.eot",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Bold.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Bold.ttf",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Bold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Bold.woff",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Bold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Bold.woff2",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Light.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Light.eot",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Light.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Light.ttf",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Light.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Light.woff",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Light.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Light.woff2",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Regular.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Regular.eot",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Regular.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Regular.ttf",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Regular.woff",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Regular.woff2",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Semibold.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Semibold.eot",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Semibold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Semibold.woff",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/graphik\/Graphik-Semibold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/graphik\/Graphik-Semibold.woff2",
+      "oF" : 0
+    },
     "\/assets\/media\/fonts\/montserrat\/montserrat-bold-webfont.eot" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1069,6 +1189,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/media\/fonts\/montserrat\/montserrat-ultralight-webfont.woff2",
+      "oF" : 0
+    },
+    "\/assets\/media\/fonts\/roboto\/RobotoMono-Regular.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/media\/fonts\/roboto\/RobotoMono-Regular.ttf",
       "oF" : 0
     },
     "\/assets\/media\/images\/awards\/cnbcDisruptor.png" : {
@@ -2655,20 +2783,6 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/styles\/scss-nerdery\/_elements.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/assets\/styles\/scss-nerdery\/base\/_fonts.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/assets\/styles\/scss-nerdery\/_fonts.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -6216,6 +6330,34 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/styles\/scss-nerdery\/shared\/_clip-button.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/styles\/scss-nerdery\/_clip-button.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/styles\/scss-nerdery\/shared\/_fonts.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/styles\/scss-nerdery\/_fonts.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/styles\/scss-nerdery\/shared\/_shared.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -9009,6 +9151,18 @@
       "oAP" : "\/next\/static\/fonts\/CriqueGrotesk-Medium.woff2",
       "oF" : 0
     },
+    "\/next\/static\/fonts\/fonts-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/next\/static\/fonts\/fonts-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/next\/static\/fonts\/fonts.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -9020,134 +9174,6 @@
       "oAP" : "\/next\/static\/fonts\/fonts-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Bold.eot" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Bold.eot",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Bold.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Bold.ttf",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Bold.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Bold.woff",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Bold.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Bold.woff2",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Light.eot" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Light.eot",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Light.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Light.ttf",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Light.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Light.woff",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Light.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Light.woff2",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Regular.eot" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Regular.eot",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Regular.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Regular.ttf",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Regular.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Regular.woff",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Regular.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Regular.woff2",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Semibold.eot" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Semibold.eot",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Semibold.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Semibold.woff",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/Graphik-Semibold.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/Graphik-Semibold.woff2",
-      "oF" : 0
-    },
-    "\/next\/static\/fonts\/RobotoMono-Regular.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/next\/static\/fonts\/RobotoMono-Regular.ttf",
-      "oF" : 0
     },
     "\/next\/static\/images\/634x477.png" : {
       "ft" : 32768,

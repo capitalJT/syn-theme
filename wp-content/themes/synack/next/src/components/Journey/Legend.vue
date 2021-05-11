@@ -20,9 +20,9 @@
             <!-- Score text and graphic -->
             <g transform="translate(72, 15)" class="score-wrap">
                 <text
-                    font-family="CriqueGrotesk-Medium, Crique Grotesk"
+                    font-family="criquegrotesk"
                     font-size="21"
-                    font-weight="400"
+                    font-weight="500"
                     line-spacing="12"
                     letter-spacing="3"
                     fill="#FFFFFF"
@@ -52,9 +52,9 @@
                     rx="12.5"
                 ></rect>
                 <text
-                    font-family="CriqueGrotesk-Medium, Crique Grotesk"
+                    font-family="criquegrotesk"
                     font-size="10"
-                    font-weight="400"
+                    font-weight="500"
                     letter-spacing="3"
                     fill="#535F75"
                     textLength="51"
@@ -64,9 +64,9 @@
                     </tspan>
                 </text>
                 <text
-                    font-family="CriqueGroteskDisplay-Medium, Crique Grotesk Display"
+                    font-family="criquegrotesk"
                     font-size="20"
-                    font-weight="400"
+                    font-weight="500"
                     fill="#535F75"
                 >
                     <tspan x="20.5766605" y="19.7846097">
@@ -91,9 +91,9 @@
                     rx="12.5"
                 ></rect>
                 <text
-                    font-family="CriqueGrotesk-Medium, Crique Grotesk"
+                    font-family="criquegrotesk"
                     font-size="10"
-                    font-weight="400"
+                    font-weight="500"
                     letter-spacing="3"
                     fill="#13F7E2"
                     textLength="57"
@@ -101,9 +101,9 @@
                     <tspan x="9.14794922" y="42">PATCHES</tspan>
                 </text>
                 <text
-                    font-family="CriqueGroteskDisplay-Medium, Crique Grotesk Display"
+                    font-family="criquegrotesk"
                     font-size="20"
-                    font-weight="400"
+                    font-weight="500"
                     fill="#13F7E2"
                 >
                     <tspan x="21.0366605" y="19.7846097">
@@ -198,7 +198,7 @@ $teal: #13f7e2;
     }
     text {
         transition: fill 0.3s;
-        font-family: 'Crique Grotesk';
+        font-family: 'criquegrotesk';
     }
 
     .score {

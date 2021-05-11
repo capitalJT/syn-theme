@@ -51,9 +51,9 @@
             opacity="0.5"
         ></path>
         <text
-            font-family="CriqueGroteskDisplay-Medium, Crique Grotesk Display"
+            font-family="criquegrotesk"
             font-size="28"
-            font-weight="400"
+            font-weight="500"
             fill="#FFFFFF"
             text-anchor="middle"
         >

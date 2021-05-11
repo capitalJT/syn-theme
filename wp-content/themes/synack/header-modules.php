@@ -13,9 +13,6 @@
 
 	    <?php get_template_part('template-parts/synack-favicon'); ?>
 
-        <!-- fonts -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/next/static/fonts/fonts.css">
-
         <link rel="stylesheet" href="/wp-content/themes/synack/assets/styles/main.css?ver=<?php echo SYNACK_CACHE_BUST_VER; ?>">
 
         <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/next/static/images/favicon.png?">
