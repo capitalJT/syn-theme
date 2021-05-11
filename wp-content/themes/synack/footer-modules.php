@@ -9,10 +9,7 @@
     }
 ?>
 
-        <div class="modules-footer">
-            <?php get_template_part('parts/shared/footerModules' ); ?>
-        </div>
-
+        <?php get_template_part('parts/shared/footer' ); ?>
         <?php wp_footer(); ?>
 
     </body>

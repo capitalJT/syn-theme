@@ -32,10 +32,11 @@
 }
 
 /* Theme for Red page */
-.theme-red .footer {
-    color: #414141;
-}
-
-.theme-red .footer-bd-navSecondary {
-    border-bottom-color: #292929;
+.theme-red{
+    .footer {
+        color: #414141;
+    }
+    .footer-bd-navSecondary {
+        border-bottom-color: #292929;
+    }
 }

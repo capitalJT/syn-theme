@@ -18,8 +18,8 @@ body.page-template-template-solutions {
     #app {
         min-height: 100vh;
     }
-    header {
-        position: absolute;
-    }
+    //header {
+    //    position: absolute;
+    //}
 }
 </style>

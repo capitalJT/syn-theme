@@ -101,8 +101,8 @@
   }
   @media screen and (max-width: $WIDTH_MD) {
     .row-fluid{
-        padding-left: $syn-grid-gutter-val;
-        padding-right: $syn-grid-gutter-val;
+        padding-left: 30px;
+        padding-right: 30px;
     }
   }
   @media screen and (min-width: $WIDTH_MD) {

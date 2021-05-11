@@ -43,7 +43,7 @@ global $post;
         <?php wp_head(); ?>
 
         <!-- shared styles -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/shared.css?v<?php echo SYNACK_CACHE_BUST_VER; ?>">
+<!--        <link rel="stylesheet" href="--><?php //echo get_stylesheet_directory_uri();?><!--/next/static/shared.css?v--><?//= SYNACK_CACHE_BUST_VER; ?><!--">-->
 
         <!-- mapbox styles styles -->
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />

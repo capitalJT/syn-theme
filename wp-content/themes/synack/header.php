@@ -15,9 +15,11 @@ global $post;
         <!-- META DATA -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="google-site-verification" content="ZpS_z2LqM0lu41hEK4cmTW4TtGBzeF9z8Et_sdkDVoY" />
+
         <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+
+        <?php get_template_part('template-parts/synack-favicon'); ?>
 
         <!-- NEXT fonts -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/fonts/fonts.css">
@@ -25,15 +27,10 @@ global $post;
         <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/next/static/images/favicon.png?">
         <link rel="apple-touch-icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/assets/media/images/favicon.png?" />
 
-        <!-- <title> --> <?php //SYNGetPageTitleTag(); ?> <!-- </title> -->
-        <?php //SYNGetMetaDescription(); ?>
-
         <title><?php wp_title(); ?></title>
 
-        <?php wp_head() ?>
+        <?php wp_head(); ?>
 
-        <!-- shared styles -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/shared.css?v<?= SYNACK_CACHE_BUST_VER; ?>">
     </head>
     <?php
     /*
@@ -45,10 +42,7 @@ global $post;
     ?>
     <body <?php body_class($body_class); ?>>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W82WNBG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <?php get_template_part('parts/shared/gtm-noscript'); ?>
 
     <?php get_template_part('parts/shared/icons'); ?>
     <?php

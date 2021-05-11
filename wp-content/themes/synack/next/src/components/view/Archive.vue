@@ -165,7 +165,7 @@ main.blog {
         padding: 0;
         height: 400px;
         position: absolute;
-        top: 0;
+        //top: 0;
         right: 0;
         left: 0;
     }

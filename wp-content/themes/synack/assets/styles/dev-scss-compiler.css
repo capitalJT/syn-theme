@@ -1,3 +1,11 @@
-#tab-carousel-module{background-color:#000e1a}#tab-carousel-module .module-heading,#tab-carousel-module .module-subheading{color:#fff}#tab-carousel-module .section-tab-carousel__button{color:#535F75}#tab-carousel-module .section-tab-carousel__button.slick-current{color:#fff}
+#tab-carousel-module {
+  background-color: #000e1a; }
+  #tab-carousel-module .module-heading,
+  #tab-carousel-module .module-subheading {
+    color: #fff; }
+  #tab-carousel-module .section-tab-carousel__button {
+    color: #535F75; }
+  #tab-carousel-module .section-tab-carousel__button.slick-current {
+    color: #fff; }
 
 /*# sourceMappingURL=dev-scss-compiler.css.map */

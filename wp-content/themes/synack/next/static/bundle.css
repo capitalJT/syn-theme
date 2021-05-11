@@ -8055,7 +8055,6 @@ main.blog .landing-section {
     padding: 0;
     height: 400px;
     position: absolute;
-    top: 0;
     right: 0;
     left: 0;
 }
@@ -8865,9 +8864,6 @@ body.single #app {
 
 body.page-template-template-solutions #app {
   min-height: 100vh;
-}
-body.page-template-template-solutions header {
-  position: absolute;
 }
 
 
