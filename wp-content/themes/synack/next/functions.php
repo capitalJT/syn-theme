@@ -353,7 +353,7 @@ add_shortcode( 'product-pillar', 'SYN_register_product_pillar_shortcode' );
 /**
  * Utility function to clean up the way WordPress auto formats text in a shortcode.
  *
- * @param string $text A stirng of HTML text
+ * @param string $text A string of HTML text
  */
     function custom_filter_shortcode_text($text = '') {
         // Replace all the poorly formatted P tags that WP adds by default.

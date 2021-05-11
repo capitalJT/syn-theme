@@ -8,6 +8,10 @@
  * @since 1.0
  *
  */
+
+// Centralized cache busting variable
+define('SYNACK_CACHE_BUST_VER', "2.01");
+
 define('SYNACK_THEME_DIR', get_template_directory());
 define('SYNACK_THEME_URI', get_template_directory_uri());
 
@@ -95,12 +99,10 @@ function remove_widget_title( $widget_title ) {
 /**
  * Utility Class Styles and Cache-Busting Global Variable - JT
  */
-// Shared variable between uitlity class styles (utility-class.css) and landing page styles (header-landing.php)
-define('SYNACK_CACHE_BUST_DATE', "2021.05.07");
 
 function synack_enqueue_util_styles() {
     if ( is_page_template('templates/template-modules.php') || is_page_template('templates/template-trust-report.php') || is_singular('synack-lp') ){
-        wp_register_style('util-classes', get_stylesheet_directory_uri().'/assets/styles/utility-classes.css', false ,''. SYNACK_CACHE_BUST_DATE .'');
+        wp_register_style('util-classes', get_stylesheet_directory_uri().'/assets/styles/utility-classes.css', false ,''. SYNACK_CACHE_BUST_VER .'');
         wp_enqueue_style( 'util-classes' );
     }
 

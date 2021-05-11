@@ -24,21 +24,21 @@ $site-HD_HEIGHT: 50px;
     flex-grow: 1; /* So this element fills the space */
 }
 
-.site-ft {
-    position: relative;
-    z-index: $Z_INDEX_REORDER;
-    background-color: $COLOR_BACKGROUND_REVERSE;
-}
+//.site-ft {
+//    position: relative;
+//    z-index: $Z_INDEX_REORDER;
+//    background-color: $COLOR_BACKGROUND_REVERSE;
+//}
 
 /* Theme for Red page */
-.theme-red .site {
-    background-color: $COLOR_BACKGROUND_THEME;
-}
-
-.theme-red .site-bd {
-    color: #7c7c7c;
-}
-
-.theme-red .site-ft {
-    background-color: #111111;
+.theme-red{
+    .site {
+        background-color: $COLOR_BACKGROUND_THEME;
+    }
+    .site-bd {
+        color: #7c7c7c;
+    }
+    .site-ft {
+        background-color: #111111;
+    }
 }

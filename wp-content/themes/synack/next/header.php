@@ -10,7 +10,7 @@
 global $post;
 
 // Change this when forcing a cache clear
-$version_number = "1.45";
+//$version_number = "1.46";
 
 ?>
 <!DOCTYPE html>
@@ -24,10 +24,10 @@ $version_number = "1.45";
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
 
         <!-- primary stylesheet -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/bundle.css?v<?php echo $version_number; ?>">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/bundle.css?v<?php echo SYNACK_CACHE_BUST_VER; ?>">
 
         <!-- fonts -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/fonts/fonts.css?v<?php echo $version_number; ?>">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/fonts/fonts.css?v<?php echo SYNACK_CACHE_BUST_VER; ?>">
 
         <!-- ICONS -->
         <!-- <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/next/static/images/favicon.png?"> -->
@@ -43,7 +43,7 @@ $version_number = "1.45";
         <?php wp_head(); ?>
 
         <!-- shared styles -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/shared.css?v<?php echo $version_number; ?>">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/shared.css?v<?php echo SYNACK_CACHE_BUST_VER; ?>">
 
         <!-- mapbox styles styles -->
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />

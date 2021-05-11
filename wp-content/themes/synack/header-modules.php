@@ -17,7 +17,7 @@
         <!-- fonts -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/next/static/fonts/fonts.css">
 
-        <link rel="stylesheet" href="/wp-content/themes/synack/assets/styles/main.css?ver=<?php echo SYNACK_CACHE_BUST_DATE; ?>">
+        <link rel="stylesheet" href="/wp-content/themes/synack/assets/styles/main.css?ver=<?php echo SYNACK_CACHE_BUST_VER; ?>">
     </head>
 
     <?php

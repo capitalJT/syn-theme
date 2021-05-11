@@ -33,8 +33,7 @@ global $post;
         <?php wp_head() ?>
 
         <!-- shared styles -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/shared.css?v1.02">
-
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/next/static/shared.css?v<?= SYNACK_CACHE_BUST_VER; ?>">
     </head>
     <?php
     /*
@@ -57,11 +56,12 @@ global $post;
         rewind_posts();
     ?>
     <?php
-    $particleClass = '';
-    $particles = get_option('options_display_particles');
-    if($particles[0] === 'true') {
-        $particleClass = 'js-particleBg';
-    } ?>
+        $particleClass = '';
+        $particles = get_option('options_display_particles');
+        if($particles[0] === 'true') {
+            $particleClass = 'js-particleBg';
+        }
+    ?>
         <div class="site <?php echo $particleClass;?>" id="js-mainNavigation" data-particle-color="rgb(175, 175, 175)">
             <div class="site-hd js-navScroll-siteHd" role="banner">
                 <a href="#main" class="u-isVisuallyHidden js-mainNavigation-disabled">Skip to Content</a>

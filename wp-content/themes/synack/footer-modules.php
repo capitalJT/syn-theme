@@ -15,8 +15,5 @@
 
         <?php wp_footer(); ?>
 
-        <?php // get_template_part('parts/shared/analytics' ); ?>
-        <?php // get_template_part('parts/shared/gclid' ); ?>
-
     </body>
 </html>

@@ -232,14 +232,14 @@ class SYNSetup
     {
         global $wp_styles;
         $stylesPath = SYNACK_THEME_URI. '/assets/styles/';
-        $cacheBustVersionNumCSS = '1.6.2';
+        // $cacheBustVersionNumCSS = '1.6.2';
 
         //Register legacy stylesheet
         wp_register_style(
             'Legacy',
             $stylesPath . 'legacy.css',
             array(),
-	        $cacheBustVersionNumCSS,
+            SYNACK_CACHE_BUST_VER,
             'all'
         );
 
@@ -248,7 +248,7 @@ class SYNSetup
             'Modern',
             $stylesPath. 'modern.css',
             array(),
-	        $cacheBustVersionNumCSS,
+            SYNACK_CACHE_BUST_VER,
             'all'
         );
 

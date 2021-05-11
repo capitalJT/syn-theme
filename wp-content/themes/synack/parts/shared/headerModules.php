@@ -42,20 +42,6 @@
 
                         <?php } ?>
                     </nav>
-
-                    <!--                <nav class="action-menu" role="navigation">-->
-                    <!--                    --><?php //if(get_option('options_login_url' )){?>
-                    <!--                        <a href="--><?php //echo get_option('options_login_url' );?><!--" class="log-in">-->
-                    <!--                            <svg class="log-in-icon" width="14px" height="13px" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
-                    <!--                                <path d="M8,9.041 L8,8.216 C9.102,7.595 10,6.048 10,4.5 C10,2.015 10,0 7,0 C4,0 4,2.015 4,4.5 C4,6.048 4.898,7.595 6,8.216 L6,9.041 C2.608,9.318 0,10.985 0,13 L14,13 C14,10.985 11.392,9.318 8,9.041 Z"></path>-->
-                    <!--                            </svg>-->
-                    <!--                            <span>Log In</span>-->
-                    <!--                        </a>-->
-                    <!--                    --><?php //} ?>
-                    <!--                    --><?php //if(get_option('options_contact_url' )){?>
-                    <!--                        <a href="--><?php //echo get_permalink( get_option('options_contact_url' ) );?><!--" class="contact-us">Contact Us</a>-->
-                    <!--                    --><?php //} ?>
-                    <!--                </nav>-->
                 </div>
             </div>
         </div>
