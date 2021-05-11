@@ -34,9 +34,6 @@ global $post;
 
         <?php wp_head(); ?>
 
-        <!-- shared styles -->
-<!--        <link rel="stylesheet" href="--><?php //echo get_stylesheet_directory_uri();?><!--/next/static/shared.css?v--><?//= SYNACK_CACHE_BUST_VER; ?><!--">-->
-
         <!-- mapbox styles styles -->
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
     </head>
@@ -51,11 +48,7 @@ global $post;
 
     <body <?php body_class($body_class); ?>>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W82WNBG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <?php get_template_part('parts/shared/gtm-noscript'); ?>
 
-    <!-- Open Container -->
-    <div class="container">
+
         <?php get_template_part('parts/shared/header'); ?>

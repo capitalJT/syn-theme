@@ -5,11 +5,11 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @subpackage Synack
+ * @author Jabal Torres <jtorres@synack.com>
+ * @since 1.0
  */
 
-//get_header('modules');
 get_header();
 
 /* Start the Loop */

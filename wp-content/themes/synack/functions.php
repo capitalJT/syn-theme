@@ -10,7 +10,7 @@
  */
 
 // Centralized cache busting variable
-define('SYNACK_CACHE_BUST_VER', "2.01");
+define('SYNACK_CACHE_BUST_VER', "2.02");
 
 define('SYNACK_THEME_DIR', get_template_directory());
 define('SYNACK_THEME_URI', get_template_directory_uri());

@@ -10,8 +10,6 @@
     get_template_part('parts/shared/footer');
 ?>
 
-</div><!-- END .container -->
-
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/next/static/bundle.js?v<?php echo SYNACK_CACHE_BUST_VER; ?>" type="text/javascript"/></script>
 
 <?php wp_footer(); ?>
