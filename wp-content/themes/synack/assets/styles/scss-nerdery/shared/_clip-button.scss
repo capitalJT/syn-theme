@@ -1,0 +1,52 @@
+/* Clip button (any button with a sliding background color) */
+.clip-button {
+  position: relative;
+  overflow: hidden;
+
+  --fill-color: black;
+  --text-color: white;
+  .text {
+    position: relative;
+    transition: color 0.3s;
+    font-weight: 500;
+  }
+}
+
+.clip-button.blue {
+  --fill-color: white;
+  --text-color: #106bff;
+}
+
+.clip-button.white,
+.front-page .globe .clip-button,
+.front-page-red-team .clip-button {
+  --fill-color: #106bff;
+  --text-color: white;
+}
+
+
+/* Clip styling only if supported */
+@supports (-webkit-clip-path: inset(100% -10% 0% -10%)) or (clip-path: inset(100% -10% 0% -10%)) {
+  .clip-button .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--fill-color);
+
+    -webkit-clip-path: inset(100% -10% 0% -10%);
+    clip-path: inset(100% -10% 0% -10%);
+
+    transition: clip-path 0.3s;
+  }
+  .not-mobile .clip-button:hover .background,
+  .not-mobile .clip-button:focus .background {
+    -webkit-clip-path: inset(-1% -10% -1% -10%);
+    clip-path: inset(-1% -10% -1% -10%);
+  }
+  .not-mobile .clip-button:hover .text,
+  .not-mobile .clip-button:focus .text {
+    color: var(--text-color);
+  }
+}
