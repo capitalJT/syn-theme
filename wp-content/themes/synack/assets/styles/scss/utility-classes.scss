@@ -1,6 +1,4 @@
-@import "base/reset";
 @import "base/variables";
-@import "base/mixins";
 @import "base/typography";
 
 // - Display
@@ -221,11 +219,6 @@ ol.list-numbered{
   a{
     color: $primary-color;
   }
-}
-
-
-.has-boxshadow{
-  @include global-card-shadow;
 }
 
 // From Bootstrap 4

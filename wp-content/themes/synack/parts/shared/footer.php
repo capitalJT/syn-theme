@@ -9,7 +9,7 @@
  */
 ?>
 
-<footer aria-label="Company and Website Information">
+<footer class="syn-footer" aria-label="Company and Website Information">
 
     <!-- newsletter signup -->
     <div class="newsletter-wrap">

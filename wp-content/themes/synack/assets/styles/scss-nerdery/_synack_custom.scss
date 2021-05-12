@@ -116,17 +116,6 @@
     line-height: 1.1;
   }
 }
-.post-type-archive-synack-resources{
-  .resource-wrap{
-    a *{
-      text-decoration: none;
-    }
-    svg.icon{
-      display: inline;
-      width: initial;
-    }
-  }
-}
 
 // Partner Program
 section.partner-program-opportunities{
@@ -144,43 +133,3 @@ section.partner-program-opportunities{
     }
   }
 }
-
-// Blog Archive
-main.blog{
-  .archive-featured{
-      .title{
-        line-height: 1.1;
-        text-transform: initial;
-        font-weight: bold;
-      }
-  }
-  .archive-post-block .title{
-    text-transform: initial;
-  }
-}
-
-// Full width video wrapper
-// implemented on: blog/exploits-explained-zero-day-remote-code-execution-in-file-upload-feature/
-.fluid-width-video-wrapper {
-  width: 100%;
-  position: relative;
-  padding: 0;
-  padding-top: 56.25%;
-  iframe,
-  object,
-  embed{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-// styles for custom shortcode created by Jabal
-@import "components/synack-ctas";
-
-@import "templates/single-blog-post";
-
-@import "pages/page-bali-photos-2018";
-@import "pages/page-srt-veterans";

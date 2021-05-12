@@ -3,13 +3,14 @@
 // ------------------------------------------------------------------
 @import "helpers/vars";
 @import "helpers/utils";
+@import "helpers/synack-grid";
 
 // ------------------------------------------------------------------
 // Base
 // ------------------------------------------------------------------
 @import "base/reset";
 @import "base/elements";
-// @import "base/fonts";
+@import "base/fonts";
 
 // ------------------------------------------------------------------
 // Content
@@ -57,6 +58,13 @@
 @import "layout/vR/vR";
 @import "layout/wrapper/wrapper";
 
+
+// ------------------------------------------------------------------
+// Components
+// ------------------------------------------------------------------
+@import "components/clip-button";
+@import "components/synack-ctas";
+
 // ------------------------------------------------------------------
 // Modules
 // ------------------------------------------------------------------
@@ -72,7 +80,8 @@
 @import "modules/contactListing/contactListing";
 @import "modules/cycler/cycler";
 @import "modules/feature/feature";
-@import "modules/footer/footer";
+//@import "modules/footer/footer";
+@import "modules/footer/syn-footer";
 @import "modules/header/header";
 @import "modules/heading/heading";
 @import "modules/headingHighlight/headingHighlight";
@@ -135,6 +144,14 @@
 @import "vendor/odometer";
 
 // ------------------------------------------------------------------
-// Shared - From Fuzzco
+// Templates
 // ------------------------------------------------------------------
-@import "shared/shared";
+@import "templates/single-blog-post";
+@import "templates/archive-blog";
+@import "templates/archive-synack-resources";
+
+// ------------------------------------------------------------------
+// Pages
+// ------------------------------------------------------------------
+@import "pages/page-bali-photos-2018";
+@import "pages/page-srt-veterans";

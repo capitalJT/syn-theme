@@ -1,0 +1,13 @@
+// Blog Archive
+main.blog{
+  .archive-featured{
+    .title{
+      line-height: 1.1;
+      text-transform: initial;
+      font-weight: bold;
+    }
+  }
+  .archive-post-block .title{
+    text-transform: initial;
+  }
+}

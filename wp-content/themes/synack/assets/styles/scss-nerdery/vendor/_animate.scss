@@ -99,3 +99,21 @@
 .fadeInRight {
     animation-name: fadeInRight;
 }
+
+/* Animations */
+@-webkit-keyframes text-shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -200%;
+    }
+}
+@keyframes text-shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -200%;
+    }
+}
